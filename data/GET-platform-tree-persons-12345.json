@@ -1,0 +1,96 @@
+{
+  "title" : "Person Get",
+  "description" : "How to get the person resource.",
+  "requests" : {
+    "application/x-gedcomx-v1+json" : {
+      "operation" : "GET",
+      "path" : "/platform/tree/persons/12345",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-gedcomx-v1+json"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "{\n  \"persons\" : [ {\n    \"names\" : [ {\n      \"type\" : \"http://gedcomx.org/BirthName\",\n      \"nameForms\" : [ {\n        \"fullText\" : \"Anastasia Aleksandrova\",\n        \"parts\" : [ {\n          \"value\" : \"Anastasia\",\n          \"type\" : \"http://gedcomx.org/Given\"\n        }, {\n          \"value\" : \"Aleksandrova\",\n          \"type\" : \"http://gedcomx.org/Surname\"\n        } ]\n      }, {\n        \"fullText\" : \"????????? ????????????\",\n        \"parts\" : [ {\n          \"value\" : \"?????????\",\n          \"type\" : \"http://gedcomx.org/Given\"\n        }, {\n          \"value\" : \"????????????\",\n          \"type\" : \"http://gedcomx.org/Surname\"\n        } ]\n      } ],\n      \"preferred\" : true,\n      \"attribution\" : {\n        \"contributor\" : {\n          \"resource\" : \"urn:name-attribution\",\n          \"resourceId\" : \"KNCV-RMZ\"\n        }\n      },\n      \"links\" : {\n        \"conclusion\" : {\n          \"title\" : \"Person Conclusion\",\n          \"href\" : \"https://familysearch.org/platform/tree/persons/12345/conclusions/name-id\"\n        }\n      },\n      \"id\" : \"name-id\"\n    } ],\n    \"gender\" : {\n      \"type\" : \"http://gedcomx.org/Female\"\n    },\n    \"facts\" : [ {\n      \"type\" : \"http://gedcomx.org/Birth\",\n      \"date\" : {\n        \"original\" : \"3 Apr 1836\",\n        \"formal\" : \"+1836\"\n      },\n      \"place\" : {\n        \"original\" : \"Moscow, Russia\"\n      },\n      \"attribution\" : {\n        \"contributor\" : {\n          \"resource\" : \"urn:fact-attribution\",\n          \"resourceId\" : \"RMQW-LPK\"\n        }\n      },\n      \"links\" : {\n        \"conclusion\" : {\n          \"title\" : \"Person Conclusion\",\n          \"href\" : \"https://familysearch.org/platform/tree/persons/12345/conclusions/born\"\n        }\n      },\n      \"id\" : \"born\"\n    }, {\n      \"type\" : \"http://gedcomx.org/Adoption\",\n      \"date\" : {\n        \"original\" : \"13 Apr 1836\",\n        \"formal\" : \"+1836-04-13\"\n      },\n      \"place\" : {\n        \"description\" : \"#-1276974106\",\n        \"original\" : \"Moscow, Russia\"\n      },\n      \"attribution\" : {\n        \"contributor\" : {\n          \"resource\" : \"https://familysearch.org/platform/users/agents/JNYR-KJP\",\n          \"resourceId\" : \"JNYR-KJP\"\n        }\n      },\n      \"links\" : {\n        \"conclusion\" : {\n          \"title\" : \"Person Conclusion\",\n          \"href\" : \"https://familysearch.org/platform/tree/persons/12345/conclusions/adopted\"\n        }\n      },\n      \"id\" : \"adopted\"\n    } ],\n    \"living\" : true,\n    \"attribution\" : {\n      \"changeMessage\" : \"wikipedia knows\"\n    },\n    \"links\" : {\n      \"ancestry\" : {\n        \"title\" : \"Ancestry\",\n        \"href\" : \"https://familysearch.org/platform/tree/ancestry?person=pid\"\n      },\n      \"fs-child-relationships\" : {\n        \"title\" : \"Child-and-Parents Relationships to Children\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/pid/fs-child-relationships\"\n      },\n      \"person\" : {\n        \"title\" : \"Conclusions\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/pid\"\n      },\n      \"descendancy\" : {\n        \"title\" : \"Descendancy\",\n        \"href\" : \"https://familysearch.org/platform/tree/descendancy?person=pid\"\n      },\n      \"discussion-references\" : {\n        \"title\" : \"Person Discussion References\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/pid/discussion-references\"\n      },\n      \"person-with-relationships\" : {\n        \"title\" : \"Person With Relationships\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons-with-relationships?person=pid\"\n      },\n      \"change-history\" : {\n        \"title\" : \"Person Change History\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/pid/changes\"\n      },\n      \"fs-parent-relationships\" : {\n        \"title\" : \"Child-and-Parents Relationships to Parents\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/pid/fs-parent-relationships\"\n      },\n      \"spouse-relationships\" : {\n        \"title\" : \"Person Relationships to Spouses\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/pid/spouse-relationships\"\n      },\n      \"child-relationships\" : {\n        \"title\" : \"Parent-Child Relationships to Children\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/pid/child-relationships\"\n      },\n      \"parent-relationships\" : {\n        \"title\" : \"Parent-Child Relationships to Parents\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/pid/parent-relationships\"\n      },\n      \"source-references\" : {\n        \"title\" : \"Person Source References\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/pid/source-references\"\n      },\n      \"notes\" : {\n        \"title\" : \"Person Notes\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/pid/notes\"\n      },\n      \"person-matches\" : {\n        \"title\" : \"Person Matches\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/pid/matches\"\n      }\n    },\n    \"id\" : \"pid\"\n  } ],\n  \"places\" : [ {\n    \"names\" : [ {\n      \"value\" : \"Moskva, Moscow, Russia\"\n    } ],\n    \"latitude\" : 37.613983,\n    \"longitude\" : 55.784296,\n    \"id\" : \"-1276974106\"\n  } ]\n}",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-gedcomx-v1+json"
+          },
+          {
+            "name" : "Last-modified",
+            "value" : "Tue, 14 May 2013 21:16:23 GMT"
+          },
+          {
+            "name" : "Etag",
+            "value" : "\"vjfje78v34\""
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "4"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/persons/12345"
+          }
+        ]
+      }
+    },
+    "application/x-gedcomx-v1+xml" : {
+      "operation" : "GET",
+      "path" : "/platform/tree/persons/12345",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-gedcomx-v1+xml"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gedcomx xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <person id=\"pid\">\n        <link href=\"https://familysearch.org/platform/tree/ancestry?person=pid\" rel=\"ancestry\" title=\"Ancestry\"/>\n        <link href=\"https://familysearch.org/platform/tree/persons/pid/changes\" rel=\"change-history\" title=\"Person Change History\"/>\n        <link href=\"https://familysearch.org/platform/tree/persons/pid/child-relationships\" rel=\"child-relationships\" title=\"Parent-Child Relationships to Children\"/>\n        <link href=\"https://familysearch.org/platform/tree/descendancy?person=pid\" rel=\"descendancy\" title=\"Descendancy\"/>\n        <link href=\"https://familysearch.org/platform/tree/persons/pid/discussion-references\" rel=\"discussion-references\" title=\"Person Discussion References\"/>\n        <link href=\"https://familysearch.org/platform/tree/persons/pid/fs-child-relationships\" rel=\"fs-child-relationships\" title=\"Child-and-Parents Relationships to Children\"/>\n        <link href=\"https://familysearch.org/platform/tree/persons/pid/fs-parent-relationships\" rel=\"fs-parent-relationships\" title=\"Child-and-Parents Relationships to Parents\"/>\n        <link href=\"https://familysearch.org/platform/tree/persons/pid/notes\" rel=\"notes\" title=\"Person Notes\"/>\n        <link href=\"https://familysearch.org/platform/tree/persons/pid/parent-relationships\" rel=\"parent-relationships\" title=\"Parent-Child Relationships to Parents\"/>\n        <link href=\"https://familysearch.org/platform/tree/persons/pid/matches\" rel=\"person-matches\" title=\"Person Matches\"/>\n        <link href=\"https://familysearch.org/platform/tree/persons-with-relationships?person=pid\" rel=\"person-with-relationships\" title=\"Person With Relationships\"/>\n        <link href=\"https://familysearch.org/platform/tree/persons/pid\" rel=\"person\" title=\"Conclusions\"/>\n        <link href=\"https://familysearch.org/platform/tree/persons/pid/source-references\" rel=\"source-references\" title=\"Person Source References\"/>\n        <link href=\"https://familysearch.org/platform/tree/persons/pid/spouse-relationships\" rel=\"spouse-relationships\" title=\"Person Relationships to Spouses\"/>\n        <attribution>\n            <changeMessage>wikipedia knows<\/changeMessage>\n        <\/attribution>\n        <living>true<\/living>\n        <gender type=\"http://gedcomx.org/Female\"/>\n        <name type=\"http://gedcomx.org/BirthName\" id=\"name-id\">\n            <link href=\"https://familysearch.org/platform/tree/persons/12345/conclusions/name-id\" rel=\"conclusion\" title=\"Person Conclusion\"/>\n            <attribution>\n                <contributor resource=\"urn:name-attribution\" resourceId=\"KNCV-RMZ\"/>\n            <\/attribution>\n            <preferred>true<\/preferred>\n            <nameForm>\n                <fullText>Anastasia Aleksandrova<\/fullText>\n                <part type=\"http://gedcomx.org/Given\" value=\"Anastasia\"/>\n                <part type=\"http://gedcomx.org/Surname\" value=\"Aleksandrova\"/>\n            <\/nameForm>\n            <nameForm>\n                <fullText>????????? ????????????<\/fullText>\n                <part type=\"http://gedcomx.org/Given\" value=\"?????????\"/>\n                <part type=\"http://gedcomx.org/Surname\" value=\"????????????\"/>\n            <\/nameForm>\n        <\/name>\n        <fact type=\"http://gedcomx.org/Birth\" id=\"born\">\n            <link href=\"https://familysearch.org/platform/tree/persons/12345/conclusions/born\" rel=\"conclusion\" title=\"Person Conclusion\"/>\n            <attribution>\n                <contributor resource=\"urn:fact-attribution\" resourceId=\"RMQW-LPK\"/>\n            <\/attribution>\n            <date>\n                <original>3 Apr 1836<\/original>\n                <formal>+1836<\/formal>\n            <\/date>\n            <place>\n                <original>Moscow, Russia<\/original>\n            <\/place>\n        <\/fact>\n        <fact type=\"http://gedcomx.org/Adoption\" id=\"adopted\">\n            <link href=\"https://familysearch.org/platform/tree/persons/12345/conclusions/adopted\" rel=\"conclusion\" title=\"Person Conclusion\"/>\n            <attribution>\n                <contributor resource=\"https://familysearch.org/platform/users/agents/JNYR-KJP\" resourceId=\"JNYR-KJP\"/>\n            <\/attribution>\n            <date>\n                <original>13 Apr 1836<\/original>\n                <formal>+1836-04-13<\/formal>\n            <\/date>\n            <place description=\"#-1276974106\">\n                <original>Moscow, Russia<\/original>\n            <\/place>\n        <\/fact>\n    <\/person>\n    <place id=\"-1276974106\">\n        <name>Moskva, Moscow, Russia<\/name>\n        <latitude>37.613983<\/latitude>\n        <longitude>55.784296<\/longitude>\n    <\/place>\n<\/gedcomx>",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-gedcomx-v1+xml"
+          },
+          {
+            "name" : "Last-modified",
+            "value" : "Tue, 14 May 2013 21:16:17 GMT"
+          },
+          {
+            "name" : "Etag",
+            "value" : "\"vjfje78v34\""
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "4"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/persons/12345"
+          }
+        ]
+      }
+    }
+  }
+}
