@@ -1,0 +1,96 @@
+{
+  "title" : "Search For Persons With Warnings and Errors",
+  "description" : "What happens when there are warnings and errors during a person search.",
+  "requests" : {
+    "application/atom+xml" : {
+      "operation" : "GET",
+      "path" : "/platform/tree/search?q=givenNameMisspelled:Israel",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/atom+xml"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "400",
+        "status_message" : "Bad Request",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Cache-control",
+            "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/atom+xml"
+          },
+          {
+            "name" : "Warning",
+            "value" : "413 FamilySearch \"A search query must include at least a given name or a family name.\""
+          },
+          {
+            "name" : "Warning",
+            "value" : "299 FamilySearch \"Unsupported search parameter: givenNameMisspelled\""
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "0"
+          }
+        ]
+      }
+    },
+    "application/x-gedcomx-atom+json" : {
+      "operation" : "GET",
+      "path" : "/platform/tree/search?q=givenNameMisspelled:Israel",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-gedcomx-atom+json"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "400",
+        "status_message" : "Bad Request",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Cache-control",
+            "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-gedcomx-atom+json"
+          },
+          {
+            "name" : "Warning",
+            "value" : "413 FamilySearch \"A search query must include at least a given name or a family name.\""
+          },
+          {
+            "name" : "Warning",
+            "value" : "299 FamilySearch \"Unsupported search parameter: givenNameMisspelled\""
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "0"
+          }
+        ]
+      }
+    }
+  }
+}

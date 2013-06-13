@@ -1,0 +1,72 @@
+{
+  "title" : "Child-and-Parents Relationship Change History Get",
+  "description" : "How to get the change history for a child-and-parents relationship.",
+  "requests" : {
+    "application/atom+xml" : {
+      "operation" : "GET",
+      "path" : "/platform/tree/child-and-parents-relationships/PC12-345/changes",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/atom+xml"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<feed xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns=\"http://www.w3.org/2005/Atom\">\n    <id>uuid:ac5ffaa9-5c5d-4249-98ef-fce24af410e9<\/id>\n    <link href=\"https://familysearch.org/platform/tree/child-and-parents-relationships/PC12-345\" rel=\"child-and-parents\" title=\"Child-and-Parents Relationship\"/>\n    <link href=\"https://familysearch.org/platform/tree/child-and-parents-relationships/PC12-345/changes\" rel=\"self\" title=\"Child-and-Parents Relationship Change History\"/>\n    <title>Change History for Parent Relationship Pair PC12-345<\/title>\n    <updated>2013-05-14T21:15:03.437Z<\/updated>\n    <entry>\n        <fs:changeInfo objectType=\"http://familysearch.org/v1/CoupleChildRelationship\" operation=\"http://familysearch.org/v1/Create\" reason=\"because it was necessary\"/>\n        <contributor>\n            <name>Mr. Contributor<\/name>\n        <\/contributor>\n        <link href=\"https://familysearch.org/platform/users/agents/UKMGTY\" rel=\"agent\"/>\n        <link href=\"https://familysearch.org/platform/tree/changes/183893/restore\" rel=\"restore\" title=\"Restore Change\"/>\n        <title>Child and Parents Relationship Created<\/title>\n        <updated>2013-05-14T21:15:03.440Z<\/updated>\n    <\/entry>\n    <entry>\n        <fs:changeInfo objectModifier=\"http://familysearch.org/v1/ChildAndParentsRelationship\" objectType=\"http://gedcomx.org/Fact\" operation=\"http://familysearch.org/v1/Create\" reason=\"because it was necessary\"/>\n        <contributor>\n            <name>Mr. Contributor<\/name>\n        <\/contributor>\n        <link href=\"https://familysearch.org/platform/users/agents/UKMGTY\" rel=\"agent\"/>\n        <link href=\"https://familysearch.org/platform/tree/changes/130709/restore\" rel=\"restore\" title=\"Restore Change\"/>\n        <title>Lineage Added<\/title>\n        <updated>2013-05-14T21:15:03.446Z<\/updated>\n    <\/entry>\n    <entry>\n        <fs:changeInfo objectType=\"http://familysearch.org/v1/CoupleChildRelationship\" operation=\"http://familysearch.org/v1/Delete\" reason=\"because it was necessary\"/>\n        <contributor>\n            <name>Mr. Contributor<\/name>\n        <\/contributor>\n        <link href=\"https://familysearch.org/platform/users/agents/UKMGTY\" rel=\"agent\"/>\n        <link href=\"https://familysearch.org/platform/tree/changes/176382/restore\" rel=\"restore\" title=\"Restore Change\"/>\n        <title>Child and Parents Relationship Removed<\/title>\n        <updated>2013-05-14T21:15:03.447Z<\/updated>\n    <\/entry>\n<\/feed>",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/atom+xml"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "8"
+          }
+        ]
+      }
+    },
+    "application/x-gedcomx-atom+json" : {
+      "operation" : "GET",
+      "path" : "/platform/tree/child-and-parents-relationships/PC12-345/changes",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-gedcomx-atom+json"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "{\n  \"id\" : \"uuid:0e3e8465-0e58-4688-b4be-08f59b3710cb\",\n  \"entries\" : [ {\n    \"title\" : \"Child and Parents Relationship Created\",\n    \"links\" : {\n      \"restore\" : {\n        \"title\" : \"Restore Change\",\n        \"href\" : \"https://familysearch.org/platform/tree/changes/129138/restore\"\n      },\n      \"agent\" : {\n        \"href\" : \"https://familysearch.org/platform/users/agents/UKMGTY\"\n      }\n    },\n    \"contributors\" : [ {\n      \"name\" : \"Mr. Contributor\"\n    } ],\n    \"updated\" : 1368566105150,\n    \"changeInfo\" : [ {\n      \"objectType\" : \"http://familysearch.org/v1/CoupleChildRelationship\",\n      \"reason\" : \"because it was necessary\",\n      \"operation\" : \"http://familysearch.org/v1/Create\"\n    } ]\n  }, {\n    \"title\" : \"Lineage Added\",\n    \"links\" : {\n      \"restore\" : {\n        \"title\" : \"Restore Change\",\n        \"href\" : \"https://familysearch.org/platform/tree/changes/181446/restore\"\n      },\n      \"agent\" : {\n        \"href\" : \"https://familysearch.org/platform/users/agents/UKMGTY\"\n      }\n    },\n    \"contributors\" : [ {\n      \"name\" : \"Mr. Contributor\"\n    } ],\n    \"updated\" : 1368566105151,\n    \"changeInfo\" : [ {\n      \"objectType\" : \"http://gedcomx.org/Fact\",\n      \"reason\" : \"because it was necessary\",\n      \"operation\" : \"http://familysearch.org/v1/Create\",\n      \"objectModifier\" : \"http://familysearch.org/v1/ChildAndParentsRelationship\"\n    } ]\n  }, {\n    \"title\" : \"Child and Parents Relationship Removed\",\n    \"links\" : {\n      \"restore\" : {\n        \"title\" : \"Restore Change\",\n        \"href\" : \"https://familysearch.org/platform/tree/changes/139894/restore\"\n      },\n      \"agent\" : {\n        \"href\" : \"https://familysearch.org/platform/users/agents/UKMGTY\"\n      }\n    },\n    \"contributors\" : [ {\n      \"name\" : \"Mr. Contributor\"\n    } ],\n    \"updated\" : 1368566105151,\n    \"changeInfo\" : [ {\n      \"objectType\" : \"http://familysearch.org/v1/CoupleChildRelationship\",\n      \"reason\" : \"because it was necessary\",\n      \"operation\" : \"http://familysearch.org/v1/Delete\"\n    } ]\n  } ],\n  \"title\" : \"Change History for Parent Relationship Pair PC12-345\",\n  \"links\" : {\n    \"self\" : {\n      \"title\" : \"Child-and-Parents Relationship Change History\",\n      \"href\" : \"https://familysearch.org/platform/tree/child-and-parents-relationships/PC12-345/changes\"\n    },\n    \"child-and-parents\" : {\n      \"title\" : \"Child-and-Parents Relationship\",\n      \"href\" : \"https://familysearch.org/platform/tree/child-and-parents-relationships/PC12-345\"\n    }\n  },\n  \"updated\" : 1368566105150\n}",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-gedcomx-atom+json"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "3"
+          }
+        ]
+      }
+    }
+  }
+}

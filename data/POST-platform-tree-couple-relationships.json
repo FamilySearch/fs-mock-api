@@ -1,0 +1,106 @@
+{
+  "title" : "Couple Relationships Create",
+  "description" : "How to create a couple resource.",
+  "requests" : {
+    "application/x-gedcomx-v1+json" : {
+      "operation" : "POST",
+      "path" : "/platform/tree/couple-relationships",
+      "headers" : [
+        {
+          "name" : "Content-Type",
+          "value" : "application/x-gedcomx-v1+json"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "body" : "{\n  \"relationships\" : [ {\n    \"type\" : \"http://gedcomx.org/Couple\",\n    \"facts\" : [ {\n      \"type\" : \"http://gedcomx.org/Marriage\",\n      \"date\" : {\n        \"original\" : \"June 1800\",\n        \"formal\" : \"+1800-06\"\n      },\n      \"place\" : {\n        \"original\" : \"Provo, Utah, Utah, United States\"\n      }\n    } ],\n    \"person1\" : {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/pid-1\",\n      \"resourceId\" : \"pid-1\"\n    },\n    \"person2\" : {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/pid-2\",\n      \"resourceId\" : \"pid-2\"\n    },\n    \"id\" : \"cid\"\n  } ]\n}",
+      "response" : {
+        "code" : "201",
+        "status_message" : "Created",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "X-entity-id",
+            "value" : "12345"
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/couple-relationships/12345/source-references>; rel=\"source-references\"; title=\"Couple Relationship Source References\""
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/couple-relationships/12345/notes>; rel=\"notes\"; title=\"Couple Relationship Notes\""
+          },
+          {
+            "name" : "Content-type",
+            "value" : "text/html"
+          },
+          {
+            "name" : "Location",
+            "value" : "https://familysearch.org/platform/tree/couple-relationships/12345"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "37"
+          }
+        ]
+      }
+    },
+    "application/x-gedcomx-v1+xml" : {
+      "operation" : "POST",
+      "path" : "/platform/tree/couple-relationships",
+      "headers" : [
+        {
+          "name" : "Content-Type",
+          "value" : "application/x-gedcomx-v1+xml"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gedcomx xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <relationship type=\"http://gedcomx.org/Couple\" id=\"cid\">\n        <person1 resource=\"https://familysearch.org/platform/tree/persons/pid-1\" resourceId=\"pid-1\"/>\n        <person2 resource=\"https://familysearch.org/platform/tree/persons/pid-2\" resourceId=\"pid-2\"/>\n        <fact type=\"http://gedcomx.org/Marriage\">\n            <date>\n                <original>June 1800<\/original>\n                <formal>+1800-06<\/formal>\n            <\/date>\n            <place>\n                <original>Provo, Utah, Utah, United States<\/original>\n            <\/place>\n        <\/fact>\n    <\/relationship>\n<\/gedcomx>\n",
+      "response" : {
+        "code" : "201",
+        "status_message" : "Created",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "X-entity-id",
+            "value" : "12345"
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/couple-relationships/12345/source-references>; rel=\"source-references\"; title=\"Couple Relationship Source References\""
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/couple-relationships/12345/notes>; rel=\"notes\"; title=\"Couple Relationship Notes\""
+          },
+          {
+            "name" : "Content-type",
+            "value" : "text/html"
+          },
+          {
+            "name" : "Location",
+            "value" : "https://familysearch.org/platform/tree/couple-relationships/12345"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "3"
+          }
+        ]
+      }
+    }
+  }
+}

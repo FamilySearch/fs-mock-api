@@ -1,0 +1,98 @@
+{
+  "title" : "Couple Relationship Source Reference Create",
+  "description" : "How to create a source reference resource.",
+  "requests" : {
+    "application/x-gedcomx-v1+json" : {
+      "operation" : "POST",
+      "path" : "/platform/tree/couple-relationships/RRRR-RRR/source-references",
+      "headers" : [
+        {
+          "name" : "Content-Type",
+          "value" : "application/x-gedcomx-v1+json"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "body" : "{\n  \"relationships\" : [ {\n    \"sources\" : [ {\n      \"attribution\" : {\n        \"contributor\" : {\n          \"resource\" : \"/platform/tree/contributor/UUUU-UUU\",\n          \"resourceId\" : \"UUUU-UUU\"\n        },\n        \"modified\" : 123456789,\n        \"changeMessage\" : \"Family is at the same address found in other sources associated with this family.  Names are a good match.  Estimated births are reasonable.\"\n      },\n      \"description\" : \"/platform/sources/sources/MMMM-MMM\",\n      \"tags\" : [ {\n        \"resource\" : \"http://gedcomx.org/Name\"\n      }, {\n        \"resource\" : \"http://gedcomx.org/Gender\"\n      }, {\n        \"resource\" : \"http://gedcomx.org/Birth\"\n      } ]\n    } ],\n    \"id\" : \"RRRR-RRR\"\n  } ]\n}",
+      "response" : {
+        "code" : "201",
+        "status_message" : "Created",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "X-entity-id",
+            "value" : "SRSR-R01"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "text/html"
+          },
+          {
+            "name" : "Location",
+            "value" : "https://familysearch.org/platform/tree/couple-relationships/RRRR-RRR/source-references/SRSR-R01"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "49"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/couple-relationships/RRRR-RRR/source-references"
+          }
+        ]
+      }
+    },
+    "application/x-gedcomx-v1+xml" : {
+      "operation" : "POST",
+      "path" : "/platform/tree/couple-relationships/RRRR-RRR/source-references",
+      "headers" : [
+        {
+          "name" : "Content-Type",
+          "value" : "application/x-gedcomx-v1+xml"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gedcomx xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <relationship id=\"RRRR-RRR\">\n        <source description=\"/platform/sources/sources/MMMM-MMM\">\n            <fs:tag resource=\"http://gedcomx.org/Name\"/>\n            <fs:tag resource=\"http://gedcomx.org/Gender\"/>\n            <fs:tag resource=\"http://gedcomx.org/Birth\"/>\n            <attribution>\n                <contributor resource=\"/platform/tree/contributor/UUUU-UUU\" resourceId=\"UUUU-UUU\"/>\n                <modified>1970-01-02T10:17:36.789Z<\/modified>\n                <changeMessage>Family is at the same address found in other sources associated with this family.  Names are a good match.  Estimated births are reasonable.<\/changeMessage>\n            <\/attribution>\n        <\/source>\n    <\/relationship>\n<\/gedcomx>\n",
+      "response" : {
+        "code" : "201",
+        "status_message" : "Created",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "X-entity-id",
+            "value" : "SRSR-R01"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "text/html"
+          },
+          {
+            "name" : "Location",
+            "value" : "https://familysearch.org/platform/tree/couple-relationships/RRRR-RRR/source-references/SRSR-R01"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "4"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/couple-relationships/RRRR-RRR/source-references"
+          }
+        ]
+      }
+    }
+  }
+}

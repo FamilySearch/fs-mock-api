@@ -1,0 +1,194 @@
+{
+  "title" : "Person Create",
+  "description" : "How to create a person resource.",
+  "requests" : {
+    "application/x-gedcomx-v1+json" : {
+      "operation" : "POST",
+      "path" : "/platform/tree/persons",
+      "headers" : [
+        {
+          "name" : "Content-Type",
+          "value" : "application/x-gedcomx-v1+json"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "body" : "{\n  \"persons\" : [ {\n    \"names\" : [ {\n      \"type\" : \"http://gedcomx.org/BirthName\",\n      \"nameForms\" : [ {\n        \"fullText\" : \"Anastasia Aleksandrova\",\n        \"parts\" : [ {\n          \"value\" : \"Anastasia\",\n          \"type\" : \"http://gedcomx.org/Given\"\n        }, {\n          \"value\" : \"Aleksandrova\",\n          \"type\" : \"http://gedcomx.org/Surname\"\n        } ]\n      }, {\n        \"fullText\" : \"Анастасия Александрова\",\n        \"parts\" : [ {\n          \"value\" : \"Анастасия\",\n          \"type\" : \"http://gedcomx.org/Given\"\n        }, {\n          \"value\" : \"Александрова\",\n          \"type\" : \"http://gedcomx.org/Surname\"\n        } ]\n      } ],\n      \"preferred\" : true\n    } ],\n    \"gender\" : {\n      \"type\" : \"http://gedcomx.org/Female\"\n    },\n    \"facts\" : [ {\n      \"type\" : \"http://gedcomx.org/Birth\",\n      \"date\" : {\n        \"original\" : \"3 Apr 1836\",\n        \"formal\" : \"+1836\"\n      },\n      \"place\" : {\n        \"original\" : \"Moscow, Russia\"\n      }\n    }, {\n      \"type\" : \"http://gedcomx.org/Adoption\",\n      \"date\" : {\n        \"original\" : \"13 Apr 1836\",\n        \"formal\" : \"+1836-04-13\"\n      },\n      \"place\" : {\n        \"original\" : \"Moscow, Russia\"\n      }\n    } ]\n  } ]\n}",
+      "response" : {
+        "code" : "201",
+        "status_message" : "Created",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "X-entity-id",
+            "value" : "12345"
+          },
+          {
+            "name" : "Cache-control",
+            "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/persons/12345/spouse-relationships>; rel=\"spouse-relationships\"; title=\"Person Relationships to Spouses\""
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/persons/12345/source-references>; rel=\"source-references\"; title=\"Person Source References\""
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/persons-with-relationships?person=12345>; rel=\"person-with-relationships\"; title=\"Person With Relationships\""
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/persons/12345/matches>; rel=\"person-matches\"; title=\"Person Matches\""
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/persons/12345/parent-relationships>; rel=\"parent-relationships\"; title=\"Parent-Child Relationships to Parents\""
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/persons/12345/notes>; rel=\"notes\"; title=\"Person Notes\""
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/persons/12345/fs-parent-relationships>; rel=\"fs-parent-relationships\"; title=\"Child-and-Parents Relationships to Parents\""
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/persons/12345/fs-child-relationships>; rel=\"fs-child-relationships\"; title=\"Child-and-Parents Relationships to Children\""
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/persons/12345/discussion-references>; rel=\"discussion-references\"; title=\"Person Discussion References\""
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/descendancy?person=12345>; rel=\"descendancy\"; title=\"Descendancy\""
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/persons/12345/child-relationships>; rel=\"child-relationships\"; title=\"Parent-Child Relationships to Children\""
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/ancestry?person=12345>; rel=\"ancestry\"; title=\"Ancestry\""
+          },
+          {
+            "name" : "Content-type",
+            "value" : "text/html"
+          },
+          {
+            "name" : "Location",
+            "value" : "https://familysearch.org/platform/tree/persons/12345"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "32"
+          }
+        ]
+      }
+    },
+    "application/x-gedcomx-v1+xml" : {
+      "operation" : "POST",
+      "path" : "/platform/tree/persons",
+      "headers" : [
+        {
+          "name" : "Content-Type",
+          "value" : "application/x-gedcomx-v1+xml"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gedcomx xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <person>\n        <gender type=\"http://gedcomx.org/Female\"/>\n        <name type=\"http://gedcomx.org/BirthName\">\n            <preferred>true<\/preferred>\n            <nameForm>\n                <fullText>Anastasia Aleksandrova<\/fullText>\n                <part type=\"http://gedcomx.org/Given\" value=\"Anastasia\"/>\n                <part type=\"http://gedcomx.org/Surname\" value=\"Aleksandrova\"/>\n            <\/nameForm>\n            <nameForm>\n                <fullText>Анастасия Александрова<\/fullText>\n                <part type=\"http://gedcomx.org/Given\" value=\"Анастасия\"/>\n                <part type=\"http://gedcomx.org/Surname\" value=\"Александрова\"/>\n            <\/nameForm>\n        <\/name>\n        <fact type=\"http://gedcomx.org/Birth\">\n            <date>\n                <original>3 Apr 1836<\/original>\n                <formal>+1836<\/formal>\n            <\/date>\n            <place>\n                <original>Moscow, Russia<\/original>\n            <\/place>\n        <\/fact>\n        <fact type=\"http://gedcomx.org/Adoption\">\n            <date>\n                <original>13 Apr 1836<\/original>\n                <formal>+1836-04-13<\/formal>\n            <\/date>\n            <place>\n                <original>Moscow, Russia<\/original>\n            <\/place>\n        <\/fact>\n    <\/person>\n<\/gedcomx>\n",
+      "response" : {
+        "code" : "201",
+        "status_message" : "Created",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "X-entity-id",
+            "value" : "12345"
+          },
+          {
+            "name" : "Cache-control",
+            "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/persons/12345/spouse-relationships>; rel=\"spouse-relationships\"; title=\"Person Relationships to Spouses\""
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/persons/12345/source-references>; rel=\"source-references\"; title=\"Person Source References\""
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/persons-with-relationships?person=12345>; rel=\"person-with-relationships\"; title=\"Person With Relationships\""
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/persons/12345/matches>; rel=\"person-matches\"; title=\"Person Matches\""
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/persons/12345/parent-relationships>; rel=\"parent-relationships\"; title=\"Parent-Child Relationships to Parents\""
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/persons/12345/notes>; rel=\"notes\"; title=\"Person Notes\""
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/persons/12345/fs-parent-relationships>; rel=\"fs-parent-relationships\"; title=\"Child-and-Parents Relationships to Parents\""
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/persons/12345/fs-child-relationships>; rel=\"fs-child-relationships\"; title=\"Child-and-Parents Relationships to Children\""
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/persons/12345/discussion-references>; rel=\"discussion-references\"; title=\"Person Discussion References\""
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/descendancy?person=12345>; rel=\"descendancy\"; title=\"Descendancy\""
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/persons/12345/child-relationships>; rel=\"child-relationships\"; title=\"Parent-Child Relationships to Children\""
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/ancestry?person=12345>; rel=\"ancestry\"; title=\"Ancestry\""
+          },
+          {
+            "name" : "Content-type",
+            "value" : "text/html"
+          },
+          {
+            "name" : "Location",
+            "value" : "https://familysearch.org/platform/tree/persons/12345"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "5"
+          }
+        ]
+      }
+    }
+  }
+}

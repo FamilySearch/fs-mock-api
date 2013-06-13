@@ -1,0 +1,51 @@
+{
+  "title" : "Child-and-Parents Relationship Conclusion Delete",
+  "description" : "How to delete a fact on a child-and-parents relationship.",
+  "requests" : {
+    "null" : {
+      "operation" : "DELETE",
+      "path" : "/platform/tree/child-and-parents-relationships/R123-456/father/conclusions/C123-456",
+      "headers" : [
+        {
+          "name" : "Content-Type",
+          "value" : "application/x-fs-v1+xml"
+        },
+        {
+          "name" : "X-Reason",
+          "value" : "Deleted for reason 1"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "204",
+        "status_message" : "No Content",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Cache-control",
+            "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "text/html"
+          },
+          {
+            "name" : "Content-length",
+            "value" : "0"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "1"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/child-and-parents-relationships/R123-456"
+          }
+        ]
+      }
+    }
+  }
+}

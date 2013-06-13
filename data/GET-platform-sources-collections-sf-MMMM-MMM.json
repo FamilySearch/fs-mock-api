@@ -1,0 +1,96 @@
+{
+  "title" : "Get User-Defined Collection",
+  "description" : "How to get a user-defined collection.",
+  "requests" : {
+    "application/x-fs-v1+json" : {
+      "operation" : "GET",
+      "path" : "/platform/sources/collections/sf-MMMM-MMM",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-fs-v1+json"
+        },
+        {
+          "name" : "Content-Type",
+          "value" : "application/x-fs-v1+json"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "{\n  \"collections\" : [ {\n    \"title\" : \"Name\",\n    \"links\" : {\n      \"user-collection-source-descriptions\" : {\n        \"title\" : \"User-Defined Collection Source Descriptions\",\n        \"href\" : \"https://familysearch.org/platform/sources/collections/sf-MMMM-MMM/descriptions\"\n      }\n    },\n    \"id\" : \"sf-MMMM-MMM\"\n  } ]\n}",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "X-entity-id",
+            "value" : "sf-MMMM-MMM"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-fs-v1+json"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "1"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/sources/collections/sf-MMMM-MMM"
+          }
+        ]
+      }
+    },
+    "application/x-fs-v1+xml" : {
+      "operation" : "GET",
+      "path" : "/platform/sources/collections/sf-MMMM-MMM",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-fs-v1+xml"
+        },
+        {
+          "name" : "Content-Type",
+          "value" : "application/x-fs-v1+xml"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns:atom=\"http://www.w3.org/2005/Atom\" xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\">\n    <collection id=\"sf-MMMM-MMM\">\n        <link href=\"https://familysearch.org/platform/sources/collections/sf-MMMM-MMM/descriptions\" rel=\"user-collection-source-descriptions\" title=\"User-Defined Collection Source Descriptions\"/>\n        <title>Name<\/title>\n    <\/collection>\n<\/fs:familysearch>",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "X-entity-id",
+            "value" : "sf-MMMM-MMM"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-fs-v1+xml"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "1"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/sources/collections/sf-MMMM-MMM"
+          }
+        ]
+      }
+    }
+  }
+}

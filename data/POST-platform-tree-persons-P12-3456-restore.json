@@ -1,0 +1,43 @@
+{
+  "title" : "Restore Person Action",
+  "description" : "How to un-delete or recover a person resource that has been deleted.",
+  "requests" : {
+    "null" : {
+      "operation" : "POST",
+      "path" : "/platform/tree/persons/P12-3456/restore",
+      "headers" : [
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "204",
+        "status_message" : "No Content",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Cache-control",
+            "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "text/html"
+          },
+          {
+            "name" : "Content-length",
+            "value" : "0"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "1"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/persons/P12-3456"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "title" : "Person Matches Not Found",
+  "description" : "Example illustrating a request for person matches that don't exist.",
+  "requests" : {
+    "application/atom+xml" : {
+      "operation" : "GET",
+      "path" : "/platform/tree/persons/NOTFOUND/matches",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/atom+xml"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "404",
+        "status_message" : "Not Found",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Cache-control",
+            "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/atom+xml"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "0"
+          }
+        ]
+      }
+    },
+    "application/x-gedcomx-atom+json" : {
+      "operation" : "GET",
+      "path" : "/platform/tree/persons/NOTFOUND/matches",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-gedcomx-atom+json"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "404",
+        "status_message" : "Not Found",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Cache-control",
+            "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-gedcomx-atom+json"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "0"
+          }
+        ]
+      }
+    }
+  }
+}

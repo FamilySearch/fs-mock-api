@@ -1,0 +1,82 @@
+{
+  "title" : "Child-and-Parents Relationship Update",
+  "description" : "How to update a child-and-parents relationship.",
+  "requests" : {
+    "application/x-fs-v1+json" : {
+      "operation" : "POST",
+      "path" : "/platform/tree/child-and-parents-relationships/PPPX-PP0",
+      "headers" : [
+        {
+          "name" : "Content-Type",
+          "value" : "application/x-fs-v1+json"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "body" : "{\n  \"childAndParentsRelationships\" : [ {\n    \"mother\" : {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/PPPX-PP2\",\n      \"resourceId\" : \"PPPX-PP2\"\n    },\n    \"motherFacts\" : [ {\n      \"type\" : \"http://gedcomx.org/AdoptiveParent\",\n      \"id\" : \"C.1\"\n    } ]\n  } ]\n}",
+      "response" : {
+        "code" : "204",
+        "status_message" : "No Content",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Content-type",
+            "value" : "text/html"
+          },
+          {
+            "name" : "Content-length",
+            "value" : "0"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "50"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/child-and-parents-relationships/PPPX-PP0"
+          }
+        ]
+      }
+    },
+    "application/x-fs-v1+xml" : {
+      "operation" : "POST",
+      "path" : "/platform/tree/child-and-parents-relationships/PPPX-PP0",
+      "headers" : [
+        {
+          "name" : "Content-Type",
+          "value" : "application/x-fs-v1+xml"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <fs:childAndParentsRelationship>\n        <fs:mother resource=\"https://familysearch.org/platform/tree/persons/PPPX-PP2\" resourceId=\"PPPX-PP2\"/>\n        <fs:motherFact type=\"http://gedcomx.org/AdoptiveParent\" id=\"C.1\"/>\n    <\/fs:childAndParentsRelationship>\n<\/fs:familysearch>\n",
+      "response" : {
+        "code" : "204",
+        "status_message" : "No Content",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Content-type",
+            "value" : "text/html"
+          },
+          {
+            "name" : "Content-length",
+            "value" : "0"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "2"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/child-and-parents-relationships/PPPX-PP0"
+          }
+        ]
+      }
+    }
+  }
+}

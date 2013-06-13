@@ -1,0 +1,51 @@
+{
+  "title" : "Get Source Description Request Headers",
+  "description" : "How to get request headers for a source description.",
+  "requests" : {
+    "null" : {
+      "operation" : "HEAD",
+      "path" : "/platform/sources/descriptions/MMMM-MMM",
+      "headers" : [
+        {
+          "name" : "Content-Type",
+          "value" : "application/x-gedcomx-v1+json"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "text/html"
+          },
+          {
+            "name" : "Last-modified",
+            "value" : "Tue, 14 May 2013 21:19:19 GMT"
+          },
+          {
+            "name" : "Etag",
+            "value" : "\"_version_54321_\""
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "2"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/sources/descriptions/MMMM-MMM"
+          }
+        ]
+      }
+    }
+  }
+}

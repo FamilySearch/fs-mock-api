@@ -1,0 +1,88 @@
+{
+  "title" : "Preferred Parent Relationship Set",
+  "description" : "How to set a preferred parent relationship.",
+  "requests" : {
+    "application/x-gedcomx-v1+json" : {
+      "operation" : "PUT",
+      "path" : "/platform/tree/users/54321/preferred-parent-relationships/12345",
+      "headers" : [
+        {
+          "name" : "Location",
+          "value" : "https://familysearch.org/platform/tree/child-and-parents-relationships/23456"
+        },
+        {
+          "name" : "Content-Type",
+          "value" : "application/x-gedcomx-v1+json"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "204",
+        "status_message" : "No Content",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Content-type",
+            "value" : "text/html"
+          },
+          {
+            "name" : "Content-length",
+            "value" : "0"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "0"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/users/54321/preferred-parent-relationships/12345"
+          }
+        ]
+      }
+    },
+    "application/x-gedcomx-v1+xml" : {
+      "operation" : "PUT",
+      "path" : "/platform/tree/users/54321/preferred-parent-relationships/12345",
+      "headers" : [
+        {
+          "name" : "Location",
+          "value" : "https://familysearch.org/platform/tree/child-and-parents-relationships/23456"
+        },
+        {
+          "name" : "Content-Type",
+          "value" : "application/x-gedcomx-v1+xml"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "204",
+        "status_message" : "No Content",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Content-type",
+            "value" : "text/html"
+          },
+          {
+            "name" : "Content-length",
+            "value" : "0"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "1"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/users/54321/preferred-parent-relationships/12345"
+          }
+        ]
+      }
+    }
+  }
+}

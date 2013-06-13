@@ -1,0 +1,80 @@
+{
+  "title" : "Note Get",
+  "description" : "How to get a note.",
+  "requests" : {
+    "application/x-fs-v1+json" : {
+      "operation" : "GET",
+      "path" : "/platform/tree/persons/12345/notes/12345",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-fs-v1+json"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "{\n  \"persons\" : [ {\n    \"notes\" : [ {\n      \"text\" : \"Sample note text\",\n      \"subject\" : \"Sample\",\n      \"links\" : {\n        \"notes\" : {\n          \"title\" : \"Person Notes\",\n          \"href\" : \"https://familysearch.org/platform/tree/persons/12345/notes\"\n        }\n      },\n      \"id\" : \"1586334607\"\n    } ],\n    \"links\" : {\n      \"person\" : {\n        \"title\" : \"Conclusions\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/12345\"\n      }\n    },\n    \"id\" : \"12345\"\n  } ]\n}",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-fs-v1+json"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "2"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/persons/12345/notes/12345"
+          }
+        ]
+      }
+    },
+    "application/x-fs-v1+xml" : {
+      "operation" : "GET",
+      "path" : "/platform/tree/persons/12345/notes/12345",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-fs-v1+xml"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <person id=\"12345\">\n        <link href=\"https://familysearch.org/platform/tree/persons/12345\" rel=\"person\" title=\"Conclusions\"/>\n        <note id=\"1586334607\">\n            <link href=\"https://familysearch.org/platform/tree/persons/12345/notes\" rel=\"notes\" title=\"Person Notes\"/>\n            <subject>Sample<\/subject>\n            <text>Sample note text<\/text>\n        <\/note>\n    <\/person>\n<\/fs:familysearch>",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-fs-v1+xml"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "1"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/persons/12345/notes/12345"
+          }
+        ]
+      }
+    }
+  }
+}

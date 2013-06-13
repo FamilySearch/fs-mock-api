@@ -1,0 +1,80 @@
+{
+  "title" : "Person Source References",
+  "description" : "How to get a list of source reference resources.",
+  "requests" : {
+    "application/x-gedcomx-v1+json" : {
+      "operation" : "GET",
+      "path" : "/platform/tree/persons/PPPP-PPP/source-references",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-gedcomx-v1+json"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "{\n  \"persons\" : [ {\n    \"sources\" : [ {\n      \"attribution\" : {\n        \"contributor\" : {\n          \"resource\" : \"/platform/tree/contributor/UUUU-UUU\",\n          \"resourceId\" : \"UUUU-UUU\"\n        },\n        \"modified\" : 123456789,\n        \"changeMessage\" : \"Family is at the same address found in other sources associated with this family.  Names are a good match.  Estimated births are reasonable.\"\n      },\n      \"description\" : \"/platform/sources/sources/MMMM-MMM\",\n      \"links\" : {\n        \"source-reference\" : {\n          \"title\" : \"Person Source Reference\",\n          \"href\" : \"https://familysearch.org/platform/tree/persons/PPPP-PPP/source-references/532118459\"\n        }\n      },\n      \"tags\" : [ {\n        \"resource\" : \"http://gedcomx.org/Name\"\n      }, {\n        \"resource\" : \"http://gedcomx.org/Gender\"\n      }, {\n        \"resource\" : \"http://gedcomx.org/Birth\"\n      } ]\n    }, {\n      \"attribution\" : {\n        \"contributor\" : {\n          \"resource\" : \"/platform/tree/contributor/UUUU-UUU\",\n          \"resourceId\" : \"UUUU-UUU\"\n        },\n        \"modified\" : 987654321,\n        \"changeMessage\" : \"Dates and location match with other sources.\"\n      },\n      \"description\" : \"/platform/sources/sources/BBBB-BBB\",\n      \"links\" : {\n        \"source-reference\" : {\n          \"title\" : \"Person Source Reference\",\n          \"href\" : \"https://familysearch.org/platform/tree/persons/PPPP-PPP/source-references/1193034305\"\n        }\n      },\n      \"tags\" : [ {\n        \"resource\" : \"http://gedcomx.org/Name\"\n      }, {\n        \"resource\" : \"http://gedcomx.org/Birth\"\n      }, {\n        \"resource\" : \"http://gedcomx.org/Occupation\"\n      } ]\n    } ],\n    \"links\" : {\n      \"person\" : {\n        \"title\" : \"Conclusions\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/PPPP-PPP\"\n      }\n    },\n    \"id\" : \"PPPP-PPP\"\n  } ]\n}",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-gedcomx-v1+json"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "2"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/persons/PPPP-PPP/source-references"
+          }
+        ]
+      }
+    },
+    "application/x-gedcomx-v1+xml" : {
+      "operation" : "GET",
+      "path" : "/platform/tree/persons/PPPP-PPP/source-references",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-gedcomx-v1+xml"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gedcomx xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <person id=\"PPPP-PPP\">\n        <link href=\"https://familysearch.org/platform/tree/persons/PPPP-PPP\" rel=\"person\" title=\"Conclusions\"/>\n        <source description=\"/platform/sources/sources/MMMM-MMM\">\n            <fs:tag resource=\"http://gedcomx.org/Name\"/>\n            <fs:tag resource=\"http://gedcomx.org/Gender\"/>\n            <fs:tag resource=\"http://gedcomx.org/Birth\"/>\n            <link href=\"https://familysearch.org/platform/tree/persons/PPPP-PPP/source-references/827822455\" rel=\"source-reference\" title=\"Person Source Reference\"/>\n            <attribution>\n                <contributor resource=\"/platform/tree/contributor/UUUU-UUU\" resourceId=\"UUUU-UUU\"/>\n                <modified>1970-01-02T10:17:36.789Z<\/modified>\n                <changeMessage>Family is at the same address found in other sources associated with this family.  Names are a good match.  Estimated births are reasonable.<\/changeMessage>\n            <\/attribution>\n        <\/source>\n        <source description=\"/platform/sources/sources/BBBB-BBB\">\n            <fs:tag resource=\"http://gedcomx.org/Name\"/>\n            <fs:tag resource=\"http://gedcomx.org/Birth\"/>\n            <fs:tag resource=\"http://gedcomx.org/Occupation\"/>\n            <link href=\"https://familysearch.org/platform/tree/persons/PPPP-PPP/source-references/1812935919\" rel=\"source-reference\" title=\"Person Source Reference\"/>\n            <attribution>\n                <contributor resource=\"/platform/tree/contributor/UUUU-UUU\" resourceId=\"UUUU-UUU\"/>\n                <modified>1970-01-12T10:20:54.321Z<\/modified>\n                <changeMessage>Dates and location match with other sources.<\/changeMessage>\n            <\/attribution>\n        <\/source>\n    <\/person>\n<\/gedcomx>",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-gedcomx-v1+xml"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "2"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/persons/PPPP-PPP/source-references"
+          }
+        ]
+      }
+    }
+  }
+}

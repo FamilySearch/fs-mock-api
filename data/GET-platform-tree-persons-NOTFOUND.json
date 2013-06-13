@@ -1,0 +1,80 @@
+{
+  "title" : "Person Not Found",
+  "description" : "Example illustrating a request for a person that doesn't exist.",
+  "requests" : {
+    "application/x-gedcomx-v1+json" : {
+      "operation" : "GET",
+      "path" : "/platform/tree/persons/NOTFOUND",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-gedcomx-v1+json"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "404",
+        "status_message" : "Not Found",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-gedcomx-v1+json"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "1"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/persons/NOTFOUND"
+          }
+        ]
+      }
+    },
+    "application/x-gedcomx-v1+xml" : {
+      "operation" : "GET",
+      "path" : "/platform/tree/persons/NOTFOUND",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-gedcomx-v1+xml"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "404",
+        "status_message" : "Not Found",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-gedcomx-v1+xml"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "1"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/persons/NOTFOUND"
+          }
+        ]
+      }
+    }
+  }
+}

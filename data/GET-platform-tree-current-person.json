@@ -1,0 +1,47 @@
+{
+  "title" : "Current User Person",
+  "description" : "How to query for the person for the current user.",
+  "requests" : {
+    "application/x-gedcomx-v1+xml" : {
+      "operation" : "GET",
+      "path" : "/platform/tree/current-person",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-gedcomx-v1+xml"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "303",
+        "status_message" : "See Other",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Cache-control",
+            "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-gedcomx-v1+xml"
+          },
+          {
+            "name" : "Location",
+            "value" : "https://familysearch.org/platform/tree/persons/12345"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "1"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "title" : "Get User-Defined Collections For User",
+  "description" : "How to get the list of user-defined collections for a specific user.",
+  "requests" : {
+    "application/x-fs-v1+json" : {
+      "operation" : "GET",
+      "path" : "/platform/sources/%7Buid%7D/collections",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-fs-v1+json"
+        },
+        {
+          "name" : "Content-Type",
+          "value" : "application/x-fs-v1+json"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "{\n  \"collections\" : [ {\n    \"links\" : {\n      \"user-collection\" : {\n        \"title\" : \"User-Defined Collection\",\n        \"href\" : \"https://familysearch.org/platform/sources/collections/MMMM-MMM\"\n      }\n    },\n    \"id\" : \"MMMM-MMM\"\n  } ]\n}",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-fs-v1+json"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "2"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/sources/{uid}/collections"
+          }
+        ]
+      }
+    },
+    "application/x-fs-v1+xml" : {
+      "operation" : "GET",
+      "path" : "/platform/sources/%7Buid%7D/collections",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-fs-v1+xml"
+        },
+        {
+          "name" : "Content-Type",
+          "value" : "application/x-fs-v1+xml"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns:atom=\"http://www.w3.org/2005/Atom\" xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\">\n    <collection id=\"MMMM-MMM\">\n        <link href=\"https://familysearch.org/platform/sources/collections/MMMM-MMM\" rel=\"user-collection\" title=\"User-Defined Collection\"/>\n    <\/collection>\n<\/fs:familysearch>",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-fs-v1+xml"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "2"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/sources/{uid}/collections"
+          }
+        ]
+      }
+    }
+  }
+}

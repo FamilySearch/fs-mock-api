@@ -1,0 +1,47 @@
+{
+  "title" : "Couple Relationship Head",
+  "description" : "How to get the couple resource headers.",
+  "requests" : {
+    "null" : {
+      "operation" : "HEAD",
+      "path" : "/platform/tree/couple-relationships/12345",
+      "headers" : [
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "text/html"
+          },
+          {
+            "name" : "Last-modified",
+            "value" : "Tue, 14 May 2013 21:16:12 GMT"
+          },
+          {
+            "name" : "Etag",
+            "value" : "\"vjfje78v34\""
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "1"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/couple-relationships/12345"
+          }
+        ]
+      }
+    }
+  }
+}

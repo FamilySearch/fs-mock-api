@@ -1,0 +1,98 @@
+{
+  "title" : "Person Notes Create",
+  "description" : "How to create a note on a person.",
+  "requests" : {
+    "application/x-gedcomx-v1+json" : {
+      "operation" : "POST",
+      "path" : "/platform/tree/persons/P12-3456/notes",
+      "headers" : [
+        {
+          "name" : "Content-Type",
+          "value" : "application/x-gedcomx-v1+json"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "body" : "{\n  \"persons\" : [ {\n    \"notes\" : [ {\n      \"text\" : \"Sample note text\",\n      \"subject\" : \"Sample\",\n      \"id\" : \"1586334607\"\n    } ]\n  } ]\n}",
+      "response" : {
+        "code" : "201",
+        "status_message" : "Created",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "X-entity-id",
+            "value" : "1"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "text/html"
+          },
+          {
+            "name" : "Location",
+            "value" : "https://familysearch.org/platform/tree/persons/P12-3456/notes/1"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "29"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/persons/P12-3456/notes"
+          }
+        ]
+      }
+    },
+    "application/x-gedcomx-v1+xml" : {
+      "operation" : "POST",
+      "path" : "/platform/tree/persons/P12-3456/notes",
+      "headers" : [
+        {
+          "name" : "Content-Type",
+          "value" : "application/x-gedcomx-v1+xml"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gedcomx xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <person>\n        <note id=\"1586334607\">\n            <subject>Sample<\/subject>\n            <text>Sample note text<\/text>\n        <\/note>\n    <\/person>\n<\/gedcomx>\n",
+      "response" : {
+        "code" : "201",
+        "status_message" : "Created",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "X-entity-id",
+            "value" : "1"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "text/html"
+          },
+          {
+            "name" : "Location",
+            "value" : "https://familysearch.org/platform/tree/persons/P12-3456/notes/1"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "2"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/persons/P12-3456/notes"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -44,12 +44,12 @@ var mediatypeSynonyms = {
 http.createServer(function(req, res){
 
   // Get the requested url and method
-  var requestUrl = url.parse(req.url).pathname,
+  var requestUrl = url.parse(req.url).path,
       requestMethod = req.method,
       requestAcceptHeader = req.headers.accept;
   
   // Convert the url to a file name
-  var requestFilename = 'data/' + requestMethod + requestUrl.replace(/\//g,'-') + '.json';
+  var requestFilename = 'data/' + requestMethod + requestUrl.replace(/\//g,'-').replace(/\./g,'') + '.json';
   
   // See if the file exists
   fs.readFile(requestFilename, { encoding: 'utf8' }, function(err, data){

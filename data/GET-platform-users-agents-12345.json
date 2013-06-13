@@ -1,0 +1,88 @@
+{
+  "title" : "User",
+  "description" : "How to get a user resource.",
+  "requests" : {
+    "application/x-gedcomx-v1+json" : {
+      "operation" : "GET",
+      "path" : "/platform/users/agents/12345",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-gedcomx-v1+json"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "{\n  \"agents\" : [ {\n    \"emails\" : [ {\n      \"resource\" : \"mailto:someone@somewhere.org\"\n    } ],\n    \"accounts\" : [ {\n      \"accountName\" : \"account\"\n    } ],\n    \"names\" : [ {\n      \"value\" : \"John Smith\"\n    } ],\n    \"links\" : {\n      \"self\" : {\n        \"href\" : \"https://familysearch.org/platform/users/agents/12345\"\n      }\n    },\n    \"id\" : \"12345\"\n  } ]\n}",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Cache-control",
+            "value" : "no-transform, max-age=604800"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-gedcomx-v1+json"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "2"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/users/agents/12345"
+          }
+        ]
+      }
+    },
+    "application/x-gedcomx-v1+xml" : {
+      "operation" : "GET",
+      "path" : "/platform/users/agents/12345",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-gedcomx-v1+xml"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gedcomx xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\">\n    <agent id=\"12345\">\n        <link href=\"https://familysearch.org/platform/users/agents/12345\" rel=\"self\"/>\n        <account>\n            <accountName>account<\/accountName>\n        <\/account>\n        <email resource=\"mailto:someone@somewhere.org\"/>\n        <name>John Smith<\/name>\n    <\/agent>\n<\/gedcomx>",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Cache-control",
+            "value" : "no-transform, max-age=604800"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-gedcomx-v1+xml"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "8"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/users/agents/12345"
+          }
+        ]
+      }
+    }
+  }
+}

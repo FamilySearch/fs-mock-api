@@ -1,0 +1,80 @@
+{
+  "title" : "Child-and-Parents Relationship Notes Get",
+  "description" : "How to get list of notes on a child-and-parents relationship.",
+  "requests" : {
+    "application/x-fs-v1+json" : {
+      "operation" : "GET",
+      "path" : "/platform/tree/child-and-parents-relationships/R12-3456/notes",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-fs-v1+json"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "{\n  \"childAndParentsRelationships\" : [ {\n    \"notes\" : [ {\n      \"subject\" : \"note 0\",\n      \"links\" : {\n        \"child-and-parents-note\" : {\n          \"title\" : \"Child-and-Parents Relationship Note\",\n          \"href\" : \"https://familysearch.org/platform/tree/child-and-parents-relationships/R12-3456/notes/1804317705\"\n        }\n      },\n      \"id\" : \"1804317705\"\n    }, {\n      \"subject\" : \"note 1\",\n      \"links\" : {\n        \"child-and-parents-note\" : {\n          \"title\" : \"Child-and-Parents Relationship Note\",\n          \"href\" : \"https://familysearch.org/platform/tree/child-and-parents-relationships/R12-3456/notes/1805241226\"\n        }\n      },\n      \"id\" : \"1805241226\"\n    } ],\n    \"links\" : {\n      \"child-and-parents-relationship\" : {\n        \"title\" : \"Child-and-Parents Relationship\",\n        \"href\" : \"https://familysearch.org/platform/tree/child-and-parents-relationships/R12-3456\"\n      }\n    },\n    \"id\" : \"R12-3456\"\n  } ]\n}",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-fs-v1+json"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "2"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/child-and-parents-relationships/R12-3456/notes"
+          }
+        ]
+      }
+    },
+    "application/x-fs-v1+xml" : {
+      "operation" : "GET",
+      "path" : "/platform/tree/child-and-parents-relationships/R12-3456/notes",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-fs-v1+xml"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <fs:childAndParentsRelationship id=\"R12-3456\">\n        <link href=\"https://familysearch.org/platform/tree/child-and-parents-relationships/R12-3456\" rel=\"child-and-parents-relationship\" title=\"Child-and-Parents Relationship\"/>\n        <note id=\"1804317705\">\n            <link href=\"https://familysearch.org/platform/tree/child-and-parents-relationships/R12-3456/notes/1804317705\" rel=\"child-and-parents-note\" title=\"Child-and-Parents Relationship Note\"/>\n            <subject>note 0<\/subject>\n        <\/note>\n        <note id=\"1805241226\">\n            <link href=\"https://familysearch.org/platform/tree/child-and-parents-relationships/R12-3456/notes/1805241226\" rel=\"child-and-parents-note\" title=\"Child-and-Parents Relationship Note\"/>\n            <subject>note 1<\/subject>\n        <\/note>\n    <\/fs:childAndParentsRelationship>\n<\/fs:familysearch>",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-fs-v1+xml"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "2"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/child-and-parents-relationships/R12-3456/notes"
+          }
+        ]
+      }
+    }
+  }
+}

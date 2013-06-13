@@ -1,0 +1,47 @@
+{
+  "title" : "Child-and-Parents Relationship Note Delete",
+  "description" : "How to delete a note on a child-and-parents relationship.",
+  "requests" : {
+    "null" : {
+      "operation" : "DELETE",
+      "path" : "/platform/tree/child-and-parents-relationships/RRRX-RRX/notes/NOTE1",
+      "headers" : [
+        {
+          "name" : "Content-Type",
+          "value" : "application/x-fs-v1+xml"
+        },
+        {
+          "name" : "X-Reason",
+          "value" : "The reason it was deleted"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "204",
+        "status_message" : "No Content",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Content-type",
+            "value" : "text/html"
+          },
+          {
+            "name" : "Content-length",
+            "value" : "0"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "1"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/child-and-parents-relationships/RRRX-RRX/notes/NOTE1"
+          }
+        ]
+      }
+    }
+  }
+}

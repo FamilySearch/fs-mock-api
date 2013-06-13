@@ -1,0 +1,96 @@
+{
+  "title" : "Person Merge Constraint (Can Merge Other Order Only)",
+  "description" : "How to get the constraints for a person merge.",
+  "requests" : {
+    "application/x-fs-v1+json" : {
+      "operation" : "OPTIONS",
+      "path" : "/platform/tree/persons/P12-345/merges/P54-321",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-fs-v1+json"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Cache-control",
+            "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/persons/P54-321/merges/P12-345>; rel=\"person-merge-mirror\""
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-fs-v1+json"
+          },
+          {
+            "name" : "Allow",
+            "value" : "OPTIONS"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "0"
+          }
+        ]
+      }
+    },
+    "application/x-fs-v1+xml" : {
+      "operation" : "OPTIONS",
+      "path" : "/platform/tree/persons/P12-345/merges/P54-321",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-fs-v1+xml"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Cache-control",
+            "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/persons/P54-321/merges/P12-345>; rel=\"person-merge-mirror\""
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-fs-v1+xml"
+          },
+          {
+            "name" : "Allow",
+            "value" : "OPTIONS"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "1"
+          }
+        ]
+      }
+    }
+  }
+}

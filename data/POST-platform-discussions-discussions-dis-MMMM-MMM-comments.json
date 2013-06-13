@@ -1,0 +1,82 @@
+{
+  "title" : "Comment Update",
+  "description" : "How to update a comment resource.",
+  "requests" : {
+    "application/x-fs-v1+json" : {
+      "operation" : "POST",
+      "path" : "/platform/discussions/discussions/dis-MMMM-MMM/comments",
+      "headers" : [
+        {
+          "name" : "Content-Type",
+          "value" : "application/x-fs-v1+json"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "body" : "{\n  \"discussions\" : [ {\n    \"comments\" : [ {\n      \"text\" : \"Just a comment.\",\n      \"id\" : \"CMMM-MMM\"\n    } ],\n    \"id\" : \"dis-MMMM-MMM\"\n  } ]\n}",
+      "response" : {
+        "code" : "204",
+        "status_message" : "No Content",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Content-type",
+            "value" : "text/html"
+          },
+          {
+            "name" : "Content-length",
+            "value" : "0"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "110"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/discussions/discussions/dis-MMMM-MMM/comments"
+          }
+        ]
+      }
+    },
+    "application/x-fs-v1+xml" : {
+      "operation" : "POST",
+      "path" : "/platform/discussions/discussions/dis-MMMM-MMM/comments",
+      "headers" : [
+        {
+          "name" : "Content-Type",
+          "value" : "application/x-fs-v1+xml"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\">\n    <fs:discussion id=\"dis-MMMM-MMM\">\n        <fs:comment id=\"CMMM-MMM\">\n            <fs:text>Just a comment.<\/fs:text>\n        <\/fs:comment>\n    <\/fs:discussion>\n<\/fs:familysearch>\n",
+      "response" : {
+        "code" : "204",
+        "status_message" : "No Content",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Content-type",
+            "value" : "text/html"
+          },
+          {
+            "name" : "Content-length",
+            "value" : "0"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "4"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/discussions/discussions/dis-MMMM-MMM/comments"
+          }
+        ]
+      }
+    }
+  }
+}

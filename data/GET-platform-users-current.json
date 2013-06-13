@@ -1,0 +1,80 @@
+{
+  "title" : "Current User",
+  "description" : "How to query for the current user.",
+  "requests" : {
+    "application/x-fs-v1+json" : {
+      "operation" : "GET",
+      "path" : "/platform/users/current",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-fs-v1+json"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "{\n  \"users\" : [ {\n    \"id\" : \"cis.MMM.RX9\",\n    \"contactName\" : \"Pete Townsend\",\n    \"fullName\" : \"Pete Townsend\",\n    \"email\" : \"peter@acme.org\",\n    \"treeUserId\" : \"PXRQ-FMXT\",\n    \"links\" : {\n      \"self\" : {\n        \"href\" : \"https://familysearch.org/platform/users/current\"\n      }\n    }\n  } ]\n}",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Cache-control",
+            "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-fs-v1+json"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "1"
+          }
+        ]
+      }
+    },
+    "application/x-fs-v1+xml" : {
+      "operation" : "GET",
+      "path" : "/platform/users/current",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-fs-v1+xml"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\">\n    <fs:user id=\"cis.MMM.RX9\">\n        <link href=\"https://familysearch.org/platform/users/current\" rel=\"self\"/>\n        <fs:contactName>Pete Townsend<\/fs:contactName>\n        <fs:email>peter@acme.org<\/fs:email>\n        <fs:fullName>Pete Townsend<\/fs:fullName>\n        <fs:treeUserId>PXRQ-FMXT<\/fs:treeUserId>\n    <\/fs:user>\n<\/fs:familysearch>",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Cache-control",
+            "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-fs-v1+xml"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "18"
+          }
+        ]
+      }
+    }
+  }
+}

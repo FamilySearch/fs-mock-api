@@ -1,0 +1,90 @@
+{
+  "title" : "Discussion Reference Create",
+  "description" : "How to attach a discussion to a person.",
+  "requests" : {
+    "application/x-fs-v1+json" : {
+      "operation" : "POST",
+      "path" : "/platform/tree/persons/12345/discussion-references",
+      "headers" : [
+        {
+          "name" : "Content-Type",
+          "value" : "application/x-fs-v1+json"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "body" : "{\n  \"persons\" : [ {\n    \"id\" : \"12345\",\n    \"discussion-references\" : [ \"https://familysearch.org/platform/discussions/discussions/dis-1\" ]\n  } ]\n}",
+      "response" : {
+        "code" : "201",
+        "status_message" : "Created",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "text/html"
+          },
+          {
+            "name" : "Location",
+            "value" : "https://familysearch.org/platform/tree/persons/12345/discussion-references/dis-1"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "42"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/persons/12345/discussion-references"
+          }
+        ]
+      }
+    },
+    "application/x-fs-v1+xml" : {
+      "operation" : "POST",
+      "path" : "/platform/tree/persons/12345/discussion-references",
+      "headers" : [
+        {
+          "name" : "Content-Type",
+          "value" : "application/x-fs-v1+xml"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <person id=\"12345\">\n        <fs:discussion-reference resource=\"https://familysearch.org/platform/discussions/discussions/dis-1\"/>\n    <\/person>\n<\/fs:familysearch>\n",
+      "response" : {
+        "code" : "201",
+        "status_message" : "Created",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "text/html"
+          },
+          {
+            "name" : "Location",
+            "value" : "https://familysearch.org/platform/tree/persons/12345/discussion-references/dis-1"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "3"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/persons/12345/discussion-references"
+          }
+        ]
+      }
+    }
+  }
+}

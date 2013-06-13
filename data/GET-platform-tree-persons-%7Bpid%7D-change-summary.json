@@ -1,0 +1,88 @@
+{
+  "title" : "Get Person Change Summary",
+  "description" : "How to get the change summary for a person.",
+  "requests" : {
+    "application/atom+xml" : {
+      "operation" : "GET",
+      "path" : "/platform/tree/persons/%7Bpid%7D/change-summary",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/atom+xml"
+        },
+        {
+          "name" : "Content-Type",
+          "value" : "application/atom+xml"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<feed xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns=\"http://www.w3.org/2005/Atom\">\n    <entry>\n        <id>12345<\/id>\n        <link href=\"https://familysearch.org/platform/tree/persons/{pid}\" rel=\"person\" title=\"Conclusions\"/>\n        <published>2013-05-14T21:17:42.544Z<\/published>\n        <title>Change Summary 1<\/title>\n        <updated>2013-05-14T21:17:42.544Z<\/updated>\n    <\/entry>\n<\/feed>",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Cache-control",
+            "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/atom+xml"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "1"
+          }
+        ]
+      }
+    },
+    "application/x-gedcomx-atom+json" : {
+      "operation" : "GET",
+      "path" : "/platform/tree/persons/%7Bpid%7D/change-summary",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-gedcomx-atom+json"
+        },
+        {
+          "name" : "Content-Type",
+          "value" : "application/x-gedcomx-atom+json"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "{\n  \"entries\" : [ {\n    \"id\" : \"12345\",\n    \"title\" : \"Change Summary 1\",\n    \"links\" : {\n      \"person\" : {\n        \"title\" : \"Conclusions\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/{pid}\"\n      }\n    },\n    \"updated\" : 1368566263175,\n    \"published\" : 1368566263175\n  } ]\n}",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Cache-control",
+            "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-gedcomx-atom+json"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "2"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "title" : "Comments Get",
+  "description" : "How to get a comment resource.",
+  "requests" : {
+    "application/x-fs-v1+json" : {
+      "operation" : "GET",
+      "path" : "/platform/discussions/discussions/dis-MMMM-MMM/comments",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-fs-v1+json"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "{\n  \"discussions\" : [ {\n    \"comments\" : [ {\n      \"text\" : \"Just a comment.\",\n      \"links\" : {\n        \"comment\" : {\n          \"title\" : \"Comment\",\n          \"href\" : \"https://familysearch.org/platform/discussions/discussions/dis-MMMM-MMM/comments/CMMM-MMM\"\n        }\n      },\n      \"id\" : \"CMMM-MMM\"\n    } ],\n    \"numberOfComments\" : 1,\n    \"links\" : {\n      \"discussion\" : {\n        \"title\" : \"Discussion\",\n        \"href\" : \"https://familysearch.org/platform/discussions/discussions/dis-MMMM-MMM\"\n      }\n    },\n    \"id\" : \"dis-MMMM-MMM\"\n  } ]\n}",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-fs-v1+json"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "3"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/discussions/discussions/dis-MMMM-MMM/comments"
+          }
+        ]
+      }
+    },
+    "application/x-fs-v1+xml" : {
+      "operation" : "GET",
+      "path" : "/platform/discussions/discussions/dis-MMMM-MMM/comments",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-fs-v1+xml"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\">\n    <fs:discussion id=\"dis-MMMM-MMM\">\n        <link href=\"https://familysearch.org/platform/discussions/discussions/dis-MMMM-MMM\" rel=\"discussion\" title=\"Discussion\"/>\n        <fs:numberOfComments>1<\/fs:numberOfComments>\n        <fs:comment id=\"CMMM-MMM\">\n            <link href=\"https://familysearch.org/platform/discussions/discussions/dis-MMMM-MMM/comments/CMMM-MMM\" rel=\"comment\" title=\"Comment\"/>\n            <fs:text>Just a comment.<\/fs:text>\n        <\/fs:comment>\n    <\/fs:discussion>\n<\/fs:familysearch>",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-fs-v1+xml"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "2"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/discussions/discussions/dis-MMMM-MMM/comments"
+          }
+        ]
+      }
+    }
+  }
+}

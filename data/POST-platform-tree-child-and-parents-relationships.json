@@ -1,0 +1,114 @@
+{
+  "title" : "Child-and-Parents Relationship Create",
+  "description" : "How to create a child-and-parents relationship.",
+  "requests" : {
+    "application/x-fs-v1+json" : {
+      "operation" : "POST",
+      "path" : "/platform/tree/child-and-parents-relationships",
+      "headers" : [
+        {
+          "name" : "Content-Type",
+          "value" : "application/x-fs-v1+json"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "body" : "{\n  \"childAndParentsRelationships\" : [ {\n    \"child\" : {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/PPPX-PP3\",\n      \"resourceId\" : \"PPPX-PP3\"\n    },\n    \"mother\" : {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/PPPX-PP2\",\n      \"resourceId\" : \"PPPX-PP2\"\n    },\n    \"motherFacts\" : [ {\n      \"type\" : \"http://gedcomx.org/BiologicalParent\",\n      \"id\" : \"C.2\"\n    } ],\n    \"father\" : {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/PPPX-PP1\",\n      \"resourceId\" : \"PPPX-PP1\"\n    },\n    \"fatherFacts\" : [ {\n      \"type\" : \"http://gedcomx.org/AdoptiveParent\",\n      \"id\" : \"C.1\"\n    } ]\n  } ]\n}",
+      "response" : {
+        "code" : "201",
+        "status_message" : "Created",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "X-entity-id",
+            "value" : "PPPX-PP0"
+          },
+          {
+            "name" : "Cache-control",
+            "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/child-and-parents-relationships/PPPX-PP0/source-references>; rel=\"child-and-parents-source-references\"; title=\"Child-and-Parents Relationship Source References\""
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/child-and-parents-relationships/PPPX-PP0/notes>; rel=\"child-and-parents-notes\"; title=\"Child-and-Parents Relationship Notes\""
+          },
+          {
+            "name" : "Content-type",
+            "value" : "text/html"
+          },
+          {
+            "name" : "Location",
+            "value" : "https://familysearch.org/platform/tree/child-and-parents-relationships/PPPX-PP0"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "63"
+          }
+        ]
+      }
+    },
+    "application/x-fs-v1+xml" : {
+      "operation" : "POST",
+      "path" : "/platform/tree/child-and-parents-relationships",
+      "headers" : [
+        {
+          "name" : "Content-Type",
+          "value" : "application/x-fs-v1+xml"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <fs:childAndParentsRelationship>\n        <fs:father resource=\"https://familysearch.org/platform/tree/persons/PPPX-PP1\" resourceId=\"PPPX-PP1\"/>\n        <fs:mother resource=\"https://familysearch.org/platform/tree/persons/PPPX-PP2\" resourceId=\"PPPX-PP2\"/>\n        <fs:child resource=\"https://familysearch.org/platform/tree/persons/PPPX-PP3\" resourceId=\"PPPX-PP3\"/>\n        <fs:fatherFact type=\"http://gedcomx.org/AdoptiveParent\" id=\"C.1\"/>\n        <fs:motherFact type=\"http://gedcomx.org/BiologicalParent\" id=\"C.2\"/>\n    <\/fs:childAndParentsRelationship>\n<\/fs:familysearch>\n",
+      "response" : {
+        "code" : "201",
+        "status_message" : "Created",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "X-entity-id",
+            "value" : "PPPX-PP0"
+          },
+          {
+            "name" : "Cache-control",
+            "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/child-and-parents-relationships/PPPX-PP0/source-references>; rel=\"child-and-parents-source-references\"; title=\"Child-and-Parents Relationship Source References\""
+          },
+          {
+            "name" : "Link",
+            "value" : "<https://familysearch.org/platform/tree/child-and-parents-relationships/PPPX-PP0/notes>; rel=\"child-and-parents-notes\"; title=\"Child-and-Parents Relationship Notes\""
+          },
+          {
+            "name" : "Content-type",
+            "value" : "text/html"
+          },
+          {
+            "name" : "Location",
+            "value" : "https://familysearch.org/platform/tree/child-and-parents-relationships/PPPX-PP0"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "4"
+          }
+        ]
+      }
+    }
+  }
+}

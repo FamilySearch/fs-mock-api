@@ -1,0 +1,98 @@
+{
+  "title" : "Update User-Defined Collection",
+  "description" : "How to update a user-defined collection.",
+  "requests" : {
+    "application/x-fs-v1+json" : {
+      "operation" : "POST",
+      "path" : "/platform/sources/collections/sf-MMMM-MMM",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-fs-v1+json"
+        },
+        {
+          "name" : "Content-Type",
+          "value" : "application/x-fs-v1+json"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "body" : "{\n  \"collections\" : [ {\n    \"id\" : \"sf-MMMM-MMM\"\n  } ]\n}",
+      "response" : {
+        "code" : "204",
+        "status_message" : "No Content",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "X-entity-id",
+            "value" : "sf-MMMM-MMM"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-fs-v1+json"
+          },
+          {
+            "name" : "Content-length",
+            "value" : "0"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "70"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/sources/collections/sf-MMMM-MMM"
+          }
+        ]
+      }
+    },
+    "application/x-fs-v1+xml" : {
+      "operation" : "POST",
+      "path" : "/platform/sources/collections/sf-MMMM-MMM",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-fs-v1+xml"
+        },
+        {
+          "name" : "Content-Type",
+          "value" : "application/x-fs-v1+xml"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns:atom=\"http://www.w3.org/2005/Atom\" xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\">\n    <collection id=\"sf-MMMM-MMM\"/>\n<\/fs:familysearch>\n",
+      "response" : {
+        "code" : "204",
+        "status_message" : "No Content",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "X-entity-id",
+            "value" : "sf-MMMM-MMM"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-fs-v1+xml"
+          },
+          {
+            "name" : "Content-length",
+            "value" : "0"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "3"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/sources/collections/sf-MMMM-MMM"
+          }
+        ]
+      }
+    }
+  }
+}

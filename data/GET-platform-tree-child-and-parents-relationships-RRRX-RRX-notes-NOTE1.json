@@ -1,0 +1,80 @@
+{
+  "title" : "Child-and-Parents Relationship Note Get",
+  "description" : "How to get a note on a child-and-parents relationship.",
+  "requests" : {
+    "application/x-fs-v1+json" : {
+      "operation" : "GET",
+      "path" : "/platform/tree/child-and-parents-relationships/RRRX-RRX/notes/NOTE1",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-fs-v1+json"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "{\n  \"childAndParentsRelationships\" : [ {\n    \"notes\" : [ {\n      \"text\" : \"Sample note text\",\n      \"subject\" : \"Sample\",\n      \"links\" : {\n        \"child-and-parents-notes\" : {\n          \"title\" : \"Child-and-Parents Relationship Notes\",\n          \"href\" : \"https://familysearch.org/platform/tree/child-and-parents-relationships/RRRX-RRX/notes\"\n        }\n      }\n    } ],\n    \"id\" : \"RRRX-RRX\"\n  } ]\n}",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-fs-v1+json"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "2"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/child-and-parents-relationships/RRRX-RRX/notes/NOTE1"
+          }
+        ]
+      }
+    },
+    "application/x-fs-v1+xml" : {
+      "operation" : "GET",
+      "path" : "/platform/tree/child-and-parents-relationships/RRRX-RRX/notes/NOTE1",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-fs-v1+xml"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <fs:childAndParentsRelationship id=\"RRRX-RRX\">\n        <note>\n            <link href=\"https://familysearch.org/platform/tree/child-and-parents-relationships/RRRX-RRX/notes\" rel=\"child-and-parents-notes\" title=\"Child-and-Parents Relationship Notes\"/>\n            <subject>Sample<\/subject>\n            <text>Sample note text<\/text>\n        <\/note>\n    <\/fs:childAndParentsRelationship>\n<\/fs:familysearch>",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-fs-v1+xml"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "1"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/child-and-parents-relationships/RRRX-RRX/notes/NOTE1"
+          }
+        ]
+      }
+    }
+  }
+}

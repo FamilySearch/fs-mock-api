@@ -1,0 +1,127 @@
+{
+  "title" : "Caching The Discussion By Etag",
+  "description" : "Example illustrating how a caching mechanism might work using the Etag header.",
+  "requests" : {
+    "application/x-fs-v1+json" : {
+      "operation" : "GET",
+      "path" : "/platform/discussions/discussions/dis-MMMM-MMM",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-fs-v1+json"
+        },
+        {
+          "name" : "If-None-Match",
+          "value" : "\"_version_54321_\""
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "304",
+        "status_message" : "Not Modified",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-fs-v1+json"
+          },
+          {
+            "name" : "Etag",
+            "value" : "\"_version_54321_\""
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "2"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/discussions/discussions/dis-MMMM-MMM"
+          }
+        ]
+      }
+    },
+    "application/x-fs-v1+xml" : {
+      "operation" : "GET",
+      "path" : "/platform/discussions/discussions/dis-MMMM-MMM",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-fs-v1+xml"
+        },
+        {
+          "name" : "If-None-Match",
+          "value" : "\"_version_54321_\""
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "304",
+        "status_message" : "Not Modified",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-fs-v1+xml"
+          },
+          {
+            "name" : "Etag",
+            "value" : "\"_version_54321_\""
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "3"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/discussions/discussions/dis-MMMM-MMM"
+          }
+        ]
+      }
+    }
+  }
+}
+on id=\"dis-MMMM-MMM\">\n        <link href=\"https://familysearch.org/platform/discussions/discussions/dis-MMMM-MMM/comments\" rel=\"comments\" title=\"Comments\"/>\n        <fs:title>1900 US Census, Ethel Hollivet<\/fs:title>\n        <fs:details>Ethel Hollivet (line 75) with husband Albert Hollivet (line 74); also in the dwelling: step-father Joseph E Watkins (line 72), mother Lina Watkins (line 73), and grandmother -- Lina's mother -- Mary Sasnett (line 76).  <\/fs:details>\n        <fs:numberOfComments>2<\/fs:numberOfComments>\n    <\/fs:discussion>\n<\/fs:familysearch>",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-fs-v1+xml"
+          },
+          {
+            "name" : "Last-modified",
+            "value" : "Tue, 14 May 2013 21:20:43 GMT"
+          },
+          {
+            "name" : "Etag",
+            "value" : "\"_version_54321_\""
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "10"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/discussions/discussions/dis-MMMM-MMM"
+          }
+        ]
+      }
+    }
+  }
+}

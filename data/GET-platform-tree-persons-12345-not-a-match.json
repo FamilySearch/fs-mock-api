@@ -1,0 +1,72 @@
+{
+  "title" : "Person Not-a-match Get",
+  "description" : "The result of reading the Person Not-a-match.",
+  "requests" : {
+    "application/x-gedcomx-v1+json" : {
+      "operation" : "GET",
+      "path" : "/platform/tree/persons/12345/not-a-match",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-gedcomx-v1+json"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "{\n  \"persons\" : [ {\n    \"names\" : [ {\n      \"type\" : \"http://gedcomx.org/FormalName\",\n      \"nameForms\" : [ {\n        \"fullText\" : \"Anastasia Aleksandrova\"\n      } ]\n    } ],\n    \"gender\" : {\n      \"type\" : \"http://gedcomx.org/Female\"\n    },\n    \"living\" : true,\n    \"links\" : {\n      \"self\" : {\n        \"title\" : \"Conclusions\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/pid\"\n      }\n    },\n    \"id\" : \"pid\"\n  } ]\n}",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-gedcomx-v1+json"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "1"
+          }
+        ]
+      }
+    },
+    "application/x-gedcomx-v1+xml" : {
+      "operation" : "GET",
+      "path" : "/platform/tree/persons/12345/not-a-match",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-gedcomx-v1+xml"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gedcomx xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <person id=\"pid\">\n        <link href=\"https://familysearch.org/platform/tree/persons/pid\" rel=\"self\" title=\"Conclusions\"/>\n        <living>true<\/living>\n        <gender type=\"http://gedcomx.org/Female\"/>\n        <name type=\"http://gedcomx.org/FormalName\">\n            <nameForm>\n                <fullText>Anastasia Aleksandrova<\/fullText>\n            <\/nameForm>\n        <\/name>\n    <\/person>\n<\/gedcomx>",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-gedcomx-v1+xml"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "1"
+          }
+        ]
+      }
+    }
+  }
+}

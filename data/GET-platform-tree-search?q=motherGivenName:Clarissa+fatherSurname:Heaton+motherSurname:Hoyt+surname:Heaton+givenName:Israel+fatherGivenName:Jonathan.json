@@ -1,0 +1,88 @@
+{
+  "title" : "Search For Persons",
+  "description" : "How to search for persons.",
+  "requests" : {
+    "application/atom+xml" : {
+      "operation" : "GET",
+      "path" : "/platform/tree/search?q=motherGivenName:Clarissa+fatherSurname:Heaton+motherSurname:Hoyt+surname:Heaton+givenName:Israel+fatherGivenName:Jonathan",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/atom+xml"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<feed xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns=\"http://www.w3.org/2005/Atom\">\n    <id>uuid:889e7184-f295-4942-b38d-93b0ce92ecee<\/id>\n    <gx:results>2<\/gx:results>\n    <gx:index>1<\/gx:index>\n    <link href=\"https://familysearch.org/platform/tree/search?start=0&amp;context=jvihef7\" rel=\"first\" title=\"Person Search\"/>\n    <link href=\"https://familysearch.org/platform/tree/search?start=20&amp;context=jvihef7\" rel=\"next\" title=\"Person Search\"/>\n    <link href=\"https://familysearch.org/platform/tree/search?q=motherGivenName:Clarissa+fatherSurname:Heaton+motherSurname:Hoyt+surname:Heaton+givenName:Israel+fatherGivenName:Jonathan\" rel=\"self\" title=\"Person Search\"/>\n    <subtitle>Results of searching for persons.<\/subtitle>\n    <title>Results<\/title>\n    <updated>2013-05-14T21:17:43.814Z<\/updated>\n    <entry>\n        <content type=\"application/x-gedcomx-v1+xml\">\n            <gx:gedcomx>\n                <gx:person id=\"98765\">\n                    <gx:link href=\"https://familysearch.org/platform/tree/persons/98765\" rel=\"person\" title=\"Conclusions\"/>\n                    <gx:identifier type=\"http://gedcomx.org/Persistent\">http://10.0.0.2/platform/tree/persons/98765<\/gx:identifier>\n                    <gx:gender type=\"http://gedcomx.org/Male\"/>\n                    <gx:name type=\"http://gedcomx.org/BirthName\">\n                        <gx:nameForm>\n                            <gx:fullText>Israel Heaton<\/gx:fullText>\n                        <\/gx:nameForm>\n                    <\/gx:name>\n                    <gx:fact type=\"http://gedcomx.org/Birth\">\n                        <gx:date>\n                            <gx:original>30 January 1880<\/gx:original>\n                        <\/gx:date>\n                        <gx:place>\n                            <gx:original>Orderville, UT<\/gx:original>\n                        <\/gx:place>\n                    <\/gx:fact>\n                    <gx:fact type=\"http://gedcomx.org/Death\">\n                        <gx:date>\n                            <gx:original>29 August 1936<\/gx:original>\n                        <\/gx:date>\n                        <gx:place>\n                            <gx:original>Kanab, Kane, UT<\/gx:original>\n                        <\/gx:place>\n                    <\/gx:fact>\n                <\/gx:person>\n                <gx:person id=\"87654\">\n                    <gx:link href=\"https://familysearch.org/platform/tree/persons/87654\" rel=\"person\" title=\"Conclusions\"/>\n                    <gx:gender type=\"http://gedcomx.org/Male\"/>\n                    <gx:name>\n                        <gx:nameForm>\n                            <gx:fullText>Jonathan Heaton<\/gx:fullText>\n                        <\/gx:nameForm>\n                    <\/gx:name>\n                <\/gx:person>\n                <gx:person id=\"76543\">\n                    <gx:link href=\"https://familysearch.org/platform/tree/persons/76543\" rel=\"person\" title=\"Conclusions\"/>\n                    <gx:gender type=\"http://gedcomx.org/Female\"/>\n                    <gx:name>\n                        <gx:nameForm>\n                            <gx:fullText>Clarissa Hoyt<\/gx:fullText>\n                        <\/gx:nameForm>\n                    <\/gx:name>\n                <\/gx:person>\n                <gx:person id=\"65432\">\n                    <gx:link href=\"https://familysearch.org/platform/tree/persons/65432\" rel=\"person\" title=\"Conclusions\"/>\n                    <gx:gender type=\"http://gedcomx.org/Female\"/>\n                    <gx:name>\n                        <gx:nameForm>\n                            <gx:fullText>Charlotte Cox<\/gx:fullText>\n                        <\/gx:nameForm>\n                    <\/gx:name>\n                <\/gx:person>\n                <gx:person id=\"54321\">\n                    <gx:link href=\"https://familysearch.org/platform/tree/persons/54321\" rel=\"person\" title=\"Conclusions\"/>\n                    <gx:gender type=\"http://gedcomx.org/Male\"/>\n                    <gx:name>\n                        <gx:nameForm>\n                            <gx:fullText>Alma Heaton<\/gx:fullText>\n                        <\/gx:nameForm>\n                    <\/gx:name>\n                <\/gx:person>\n                <gx:relationship type=\"http://gedcomx.org/ParentChild\">\n                    <gx:person1 resource=\"https://familysearch.org/platform/users/agents/87654\" resourceId=\"87654\"/>\n                    <gx:person2 resource=\"https://familysearch.org/platform/users/agents/98765\" resourceId=\"98765\"/>\n                <\/gx:relationship>\n                <gx:relationship type=\"http://gedcomx.org/ParentChild\">\n                    <gx:person1 resource=\"https://familysearch.org/platform/users/agents/76543\" resourceId=\"76543\"/>\n                    <gx:person2 resource=\"https://familysearch.org/platform/users/agents/98765\" resourceId=\"98765\"/>\n                <\/gx:relationship>\n                <gx:relationship type=\"http://gedcomx.org/Couple\">\n                    <gx:person1 resource=\"https://familysearch.org/platform/users/agents/98765\" resourceId=\"98765\"/>\n                    <gx:person2 resource=\"https://familysearch.org/platform/users/agents/65432\" resourceId=\"65432\"/>\n                <\/gx:relationship>\n                <gx:relationship type=\"http://gedcomx.org/ParentChild\">\n                    <gx:person1 resource=\"https://familysearch.org/platform/users/agents/98765\" resourceId=\"98765\"/>\n                    <gx:person2 resource=\"https://familysearch.org/platform/users/agents/54321\" resourceId=\"54321\"/>\n                <\/gx:relationship>\n            <\/gx:gedcomx>\n        <\/content>\n        <id>98765<\/id>\n        <link href=\"https://familysearch.org/platform/tree/persons/98765\" rel=\"person\" title=\"Conclusions\"/>\n        <gx:score>0.95<\/gx:score>\n        <title>Person 98765<\/title>\n        <updated>2013-05-14T21:17:43.814Z<\/updated>\n    <\/entry>\n    <entry>\n        <content type=\"application/x-gedcomx-v1+xml\">\n            <gx:gedcomx>\n                <gx:person id=\"43210\">\n                    <gx:link href=\"https://familysearch.org/platform/tree/persons/43210\" rel=\"person\" title=\"Conclusions\"/>\n                    <gx:identifier type=\"http://gedcomx.org/Persistent\">http://10.0.0.2/platform/tree/persons/43210<\/gx:identifier>\n                    <gx:name type=\"http://gedcomx.org/BirthName\">\n                        <gx:nameForm>\n                            <gx:fullText>Israel Hoyt Heaton<\/gx:fullText>\n                        <\/gx:nameForm>\n                    <\/gx:name>\n                <\/gx:person>\n            <\/gx:gedcomx>\n        <\/content>\n        <id>43210<\/id>\n        <link href=\"https://familysearch.org/platform/tree/persons/43210\" rel=\"person\" title=\"Conclusions\"/>\n        <gx:score>0.85<\/gx:score>\n        <title>Person 43210<\/title>\n        <updated>2013-05-14T21:17:43.814Z<\/updated>\n    <\/entry>\n<\/feed>",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Cache-control",
+            "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/atom+xml"
+          },
+          {
+            "name" : "X-fs-page-context",
+            "value" : "jvihef7"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "3"
+          }
+        ]
+      }
+    },
+    "application/x-gedcomx-atom+json" : {
+      "operation" : "GET",
+      "path" : "/platform/tree/search?q=motherGivenName:Clarissa+fatherSurname:Heaton+motherSurname:Hoyt+surname:Heaton+givenName:Israel+fatherGivenName:Jonathan",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-gedcomx-atom+json"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "{\n  \"id\" : \"uuid:a164db7d-9b15-4e9a-b1d8-55ea8abad144\",\n  \"entries\" : [ {\n    \"id\" : \"98765\",\n    \"content\" : {\n      \"gedcomx\" : {\n        \"persons\" : [ {\n          \"names\" : [ {\n            \"type\" : \"http://gedcomx.org/BirthName\",\n            \"nameForms\" : [ {\n              \"fullText\" : \"Israel Heaton\"\n            } ]\n          } ],\n          \"gender\" : {\n            \"type\" : \"http://gedcomx.org/Male\"\n          },\n          \"facts\" : [ {\n            \"type\" : \"http://gedcomx.org/Birth\",\n            \"date\" : {\n              \"original\" : \"30 January 1880\"\n            },\n            \"place\" : {\n              \"original\" : \"Orderville, UT\"\n            }\n          }, {\n            \"type\" : \"http://gedcomx.org/Death\",\n            \"date\" : {\n              \"original\" : \"29 August 1936\"\n            },\n            \"place\" : {\n              \"original\" : \"Kanab, Kane, UT\"\n            }\n          } ],\n          \"identifiers\" : {\n            \"http://gedcomx.org/Persistent\" : [ \"http://10.0.0.2/platform/tree/persons/98765\" ]\n          },\n          \"links\" : {\n            \"person\" : {\n              \"title\" : \"Conclusions\",\n              \"href\" : \"https://familysearch.org/platform/tree/persons/98765\"\n            }\n          },\n          \"id\" : \"98765\"\n        }, {\n          \"names\" : [ {\n            \"nameForms\" : [ {\n              \"fullText\" : \"Jonathan Heaton\"\n            } ]\n          } ],\n          \"gender\" : {\n            \"type\" : \"http://gedcomx.org/Male\"\n          },\n          \"links\" : {\n            \"person\" : {\n              \"title\" : \"Conclusions\",\n              \"href\" : \"https://familysearch.org/platform/tree/persons/87654\"\n            }\n          },\n          \"id\" : \"87654\"\n        }, {\n          \"names\" : [ {\n            \"nameForms\" : [ {\n              \"fullText\" : \"Clarissa Hoyt\"\n            } ]\n          } ],\n          \"gender\" : {\n            \"type\" : \"http://gedcomx.org/Female\"\n          },\n          \"links\" : {\n            \"person\" : {\n              \"title\" : \"Conclusions\",\n              \"href\" : \"https://familysearch.org/platform/tree/persons/76543\"\n            }\n          },\n          \"id\" : \"76543\"\n        }, {\n          \"names\" : [ {\n            \"nameForms\" : [ {\n              \"fullText\" : \"Charlotte Cox\"\n            } ]\n          } ],\n          \"gender\" : {\n            \"type\" : \"http://gedcomx.org/Female\"\n          },\n          \"links\" : {\n            \"person\" : {\n              \"title\" : \"Conclusions\",\n              \"href\" : \"https://familysearch.org/platform/tree/persons/65432\"\n            }\n          },\n          \"id\" : \"65432\"\n        }, {\n          \"names\" : [ {\n            \"nameForms\" : [ {\n              \"fullText\" : \"Alma Heaton\"\n            } ]\n          } ],\n          \"gender\" : {\n            \"type\" : \"http://gedcomx.org/Male\"\n          },\n          \"links\" : {\n            \"person\" : {\n              \"title\" : \"Conclusions\",\n              \"href\" : \"https://familysearch.org/platform/tree/persons/54321\"\n            }\n          },\n          \"id\" : \"54321\"\n        } ],\n        \"relationships\" : [ {\n          \"type\" : \"http://gedcomx.org/ParentChild\",\n          \"person1\" : {\n            \"resource\" : \"https://familysearch.org/platform/users/agents/87654\",\n            \"resourceId\" : \"87654\"\n          },\n          \"person2\" : {\n            \"resource\" : \"https://familysearch.org/platform/users/agents/98765\",\n            \"resourceId\" : \"98765\"\n          }\n        }, {\n          \"type\" : \"http://gedcomx.org/ParentChild\",\n          \"person1\" : {\n            \"resource\" : \"https://familysearch.org/platform/users/agents/76543\",\n            \"resourceId\" : \"76543\"\n          },\n          \"person2\" : {\n            \"resource\" : \"https://familysearch.org/platform/users/agents/98765\",\n            \"resourceId\" : \"98765\"\n          }\n        }, {\n          \"type\" : \"http://gedcomx.org/Couple\",\n          \"person1\" : {\n            \"resource\" : \"https://familysearch.org/platform/users/agents/98765\",\n            \"resourceId\" : \"98765\"\n          },\n          \"person2\" : {\n            \"resource\" : \"https://familysearch.org/platform/users/agents/65432\",\n            \"resourceId\" : \"65432\"\n          }\n        }, {\n          \"type\" : \"http://gedcomx.org/ParentChild\",\n          \"person1\" : {\n            \"resource\" : \"https://familysearch.org/platform/users/agents/98765\",\n            \"resourceId\" : \"98765\"\n          },\n          \"person2\" : {\n            \"resource\" : \"https://familysearch.org/platform/users/agents/54321\",\n            \"resourceId\" : \"54321\"\n          }\n        } ]\n      }\n    },\n    \"title\" : \"Person 98765\",\n    \"links\" : {\n      \"person\" : {\n        \"title\" : \"Conclusions\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/98765\"\n      }\n    },\n    \"updated\" : 1368566265854,\n    \"score\" : 0.95\n  }, {\n    \"id\" : \"43210\",\n    \"content\" : {\n      \"gedcomx\" : {\n        \"persons\" : [ {\n          \"names\" : [ {\n            \"type\" : \"http://gedcomx.org/BirthName\",\n            \"nameForms\" : [ {\n              \"fullText\" : \"Israel Hoyt Heaton\"\n            } ]\n          } ],\n          \"identifiers\" : {\n            \"http://gedcomx.org/Persistent\" : [ \"http://10.0.0.2/platform/tree/persons/43210\" ]\n          },\n          \"links\" : {\n            \"person\" : {\n              \"title\" : \"Conclusions\",\n              \"href\" : \"https://familysearch.org/platform/tree/persons/43210\"\n            }\n          },\n          \"id\" : \"43210\"\n        } ]\n      }\n    },\n    \"title\" : \"Person 43210\",\n    \"links\" : {\n      \"person\" : {\n        \"title\" : \"Conclusions\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/43210\"\n      }\n    },\n    \"updated\" : 1368566265854,\n    \"score\" : 0.85\n  } ],\n  \"index\" : 1,\n  \"title\" : \"Results\",\n  \"links\" : {\n    \"next\" : {\n      \"title\" : \"Person Search\",\n      \"href\" : \"https://familysearch.org/platform/tree/search?start=20&context=jvihef7\"\n    },\n    \"self\" : {\n      \"title\" : \"Person Search\",\n      \"href\" : \"https://familysearch.org/platform/tree/search?q=motherGivenName:Clarissa+fatherSurname:Heaton+motherSurname:Hoyt+surname:Heaton+givenName:Israel+fatherGivenName:Jonathan\"\n    },\n    \"first\" : {\n      \"title\" : \"Person Search\",\n      \"href\" : \"https://familysearch.org/platform/tree/search?start=0&context=jvihef7\"\n    }\n  },\n  \"results\" : 2,\n  \"subtitle\" : \"Results of searching for persons.\",\n  \"updated\" : 1368566265855\n}",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Cache-control",
+            "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-gedcomx-atom+json"
+          },
+          {
+            "name" : "X-fs-page-context",
+            "value" : "jvihef7"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "3"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "title" : "Caching The Couple By ETag",
+  "description" : "Example illustrating how the caching mechanism works on the couple using the ETag header.",
+  "requests" : {
+    "application/x-gedcomx-v1+json" : {
+      "operation" : "GET",
+      "path" : "/platform/tree/couple-relationships/12345",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-gedcomx-v1+json"
+        },
+        {
+          "name" : "If-None-Match",
+          "value" : "\"vjfje78v34\""
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "304",
+        "status_message" : "Not Modified",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-gedcomx-v1+json"
+          },
+          {
+            "name" : "Etag",
+            "value" : "\"vjfje78v34\""
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "1"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/couple-relationships/12345"
+          }
+        ]
+      }
+    },
+    "application/x-gedcomx-v1+xml" : {
+      "operation" : "GET",
+      "path" : "/platform/tree/couple-relationships/12345",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-gedcomx-v1+xml"
+        },
+        {
+          "name" : "If-None-Match",
+          "value" : "\"vjfje78v34\""
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "304",
+        "status_message" : "Not Modified",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-gedcomx-v1+xml"
+          },
+          {
+            "name" : "Etag",
+            "value" : "\"vjfje78v34\""
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "1"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/couple-relationships/12345"
+          }
+        ]
+      }
+    }
+  }
+}
+tle\" : \"Conclusions\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/pid-1\"\n      }\n    },\n    \"id\" : \"12345\"\n  } ]\n}",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-gedcomx-v1+json"
+          },
+          {
+            "name" : "Last-modified",
+            "value" : "Tue, 14 May 2013 21:16:11 GMT"
+          },
+          {
+            "name" : "Etag",
+            "value" : "\"vjfje78v34\""
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "5"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/couple-relationships/12345"
+          }
+        ]
+      }
+    },
+    "application/x-gedcomx-v1+xml" : {
+      "operation" : "GET",
+      "path" : "/platform/tree/couple-relationships/12345",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-gedcomx-v1+xml"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gedcomx xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <relationship type=\"http://gedcomx.org/Couple\" id=\"12345\">\n        <link href=\"https://familysearch.org/platform/tree/couple-relationships/12345/changes\" rel=\"change-history\" title=\"Couple Relationship Change History\"/>\n        <link href=\"https://familysearch.org/platform/tree/persons/pid-1\" rel=\"man\" title=\"Conclusions\"/>\n        <link href=\"https://familysearch.org/platform/tree/couple-relationships/12345/notes\" rel=\"notes\" title=\"Couple Relationship Notes\"/>\n        <link href=\"https://familysearch.org/platform/tree/persons/pid-1\" rel=\"person1\" title=\"Conclusions\"/>\n        <link href=\"https://familysearch.org/platform/tree/persons/pid-2\" rel=\"person2\" title=\"Conclusions\"/>\n        <link href=\"https://familysearch.org/platform/tree/couple-relationships/12345\" rel=\"relationship\" title=\"Couple Relationship\"/>\n        <link href=\"https://familysearch.org/platform/tree/couple-relationships/12345/source-references\" rel=\"source-references\" title=\"Couple Relationship Source References\"/>\n        <link href=\"https://familysearch.org/platform/tree/persons/pid-2\" rel=\"woman\" title=\"Conclusions\"/>\n        <person1 resource=\"https://familysearch.org/platform/tree/persons/pid-1\" resourceId=\"pid-1\"/>\n        <person2 resource=\"https://familysearch.org/platform/tree/persons/pid-2\" resourceId=\"pid-2\"/>\n        <fact type=\"http://gedcomx.org/Marriage\">\n            <date>\n                <original>June 1800<\/original>\n                <formal>+1800-06<\/formal>\n            <\/date>\n            <place>\n                <original>Provo, Utah, Utah, United States<\/original>\n            <\/place>\n        <\/fact>\n    <\/relationship>\n<\/gedcomx>",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-gedcomx-v1+xml"
+          },
+          {
+            "name" : "Last-modified",
+            "value" : "Tue, 14 May 2013 21:16:05 GMT"
+          },
+          {
+            "name" : "Etag",
+            "value" : "\"vjfje78v34\""
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "5"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/couple-relationships/12345"
+          }
+        ]
+      }
+    }
+  }
+}

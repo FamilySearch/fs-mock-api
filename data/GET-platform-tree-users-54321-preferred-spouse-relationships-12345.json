@@ -1,0 +1,94 @@
+{
+  "title" : "Preferred Spouse Relationship as Couple Relationship",
+  "description" : "The result of reading the preferred spouse relationship when the preference is a couple relationship in which the person is a spouse.",
+  "requests" : {
+    "application/x-gedcomx-v1+json" : {
+      "operation" : "GET",
+      "path" : "/platform/tree/users/54321/preferred-spouse-relationships/12345",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-gedcomx-v1+json"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "303",
+        "status_message" : "See Other",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-gedcomx-v1+json"
+          },
+          {
+            "name" : "Location",
+            "value" : "https://familysearch.org/platform/tree/couple-relationships/12345"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "1"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/users/54321/preferred-spouse-relationships/12345"
+          }
+        ]
+      }
+    },
+    "application/x-gedcomx-v1+xml" : {
+      "operation" : "GET",
+      "path" : "/platform/tree/users/54321/preferred-spouse-relationships/12345",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-gedcomx-v1+xml"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "303",
+        "status_message" : "See Other",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-gedcomx-v1+xml"
+          },
+          {
+            "name" : "Location",
+            "value" : "https://familysearch.org/platform/tree/couple-relationships/12345"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "0"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/users/54321/preferred-spouse-relationships/12345"
+          }
+        ]
+      }
+    }
+  }
+}
+  }
+        ]
+      }
+    }
+  }
+}

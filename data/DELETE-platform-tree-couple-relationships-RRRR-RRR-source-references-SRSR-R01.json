@@ -1,0 +1,47 @@
+{
+  "title" : "Couple Relationship Source Reference Delete",
+  "description" : "How to delete a source reference resource.",
+  "requests" : {
+    "null" : {
+      "operation" : "DELETE",
+      "path" : "/platform/tree/couple-relationships/RRRR-RRR/source-references/SRSR-R01",
+      "headers" : [
+        {
+          "name" : "X-Reason",
+          "value" : "testDelete use case 1 reason"
+        },
+        {
+          "name" : "Content-Type",
+          "value" : "application/x-gedcomx-v1+json"
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "204",
+        "status_message" : "No Content",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Content-type",
+            "value" : "text/html"
+          },
+          {
+            "name" : "Content-length",
+            "value" : "0"
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "0"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/couple-relationships/RRRR-RRR/source-references/SRSR-R01"
+          }
+        ]
+      }
+    }
+  }
+}
