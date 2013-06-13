@@ -1,5 +1,5 @@
 {
-  "title" : "Person Merge Constraint (Can Merge Other Order Only)",
+  "title" : "Person Merge Constraint (Cannot Merge Any Living Contributor Mismatch)",
   "description" : "How to get the constraints for a person merge.",
   "requests" : {
     "application/x-fs-v1+json" : {
@@ -29,16 +29,12 @@
             "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
           },
           {
-            "name" : "Link",
-            "value" : "<https://familysearch.org/platform/tree/persons/P54-321/merges/P12-345>; rel=\"person-merge-mirror\""
-          },
-          {
             "name" : "Content-type",
             "value" : "application/x-fs-v1+json"
           },
           {
-            "name" : "Allow",
-            "value" : "OPTIONS"
+            "name" : "Warning",
+            "value" : "473 FamilySearch \"Cannot merge any order (Living Contributor Mismatch)\""
           },
           {
             "name" : "X-processing-time",
@@ -74,16 +70,12 @@
             "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
           },
           {
-            "name" : "Link",
-            "value" : "<https://familysearch.org/platform/tree/persons/P54-321/merges/P12-345>; rel=\"person-merge-mirror\""
-          },
-          {
             "name" : "Content-type",
             "value" : "application/x-fs-v1+xml"
           },
           {
-            "name" : "Allow",
-            "value" : "OPTIONS"
+            "name" : "Warning",
+            "value" : "473 FamilySearch \"Cannot merge any order (Living Contributor Mismatch)\""
           },
           {
             "name" : "X-processing-time",

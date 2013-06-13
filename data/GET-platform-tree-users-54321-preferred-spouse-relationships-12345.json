@@ -1,6 +1,6 @@
 {
-  "title" : "Preferred Spouse Relationship as Couple Relationship",
-  "description" : "The result of reading the preferred spouse relationship when the preference is a couple relationship in which the person is a spouse.",
+  "title" : "Preferred Spouse Relationship as Couple-Child Relationship",
+  "description" : "The result of reading the preferred spouse relationship when the preference is a couple-child relationship in which the person is a parent.",
   "requests" : {
     "application/x-gedcomx-v1+json" : {
       "operation" : "GET",
@@ -30,7 +30,7 @@
           },
           {
             "name" : "Location",
-            "value" : "https://familysearch.org/platform/tree/couple-relationships/12345"
+            "value" : "https://familysearch.org/platform/tree/child-and-parents-relationships/12345"
           },
           {
             "name" : "X-processing-time",
@@ -71,7 +71,7 @@
           },
           {
             "name" : "Location",
-            "value" : "https://familysearch.org/platform/tree/couple-relationships/12345"
+            "value" : "https://familysearch.org/platform/tree/child-and-parents-relationships/12345"
           },
           {
             "name" : "X-processing-time",
@@ -81,12 +81,6 @@
             "name" : "Content-location",
             "value" : "/platform/tree/users/54321/preferred-spouse-relationships/12345"
           }
-        ]
-      }
-    }
-  }
-}
-  }
         ]
       }
     }

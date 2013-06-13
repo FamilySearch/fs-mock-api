@@ -1,6 +1,6 @@
 {
-  "title" : "Caching The Couple By ETag",
-  "description" : "Example illustrating how the caching mechanism works on the couple using the ETag header.",
+  "title" : "Couple Relationship Get",
+  "description" : "How to get a couple resource.",
   "requests" : {
     "application/x-gedcomx-v1+json" : {
       "operation" : "GET",
@@ -11,90 +11,14 @@
           "value" : "application/x-gedcomx-v1+json"
         },
         {
-          "name" : "If-None-Match",
-          "value" : "\"vjfje78v34\""
-        },
-        {
           "name" : "Authorization",
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
       "response" : {
-        "code" : "304",
-        "status_message" : "Not Modified",
-        "body" : "",
-        "headers" : [
-          {
-            "name" : "Transfer-encoding",
-            "value" : "chunked"
-          },
-          {
-            "name" : "Content-type",
-            "value" : "application/x-gedcomx-v1+json"
-          },
-          {
-            "name" : "Etag",
-            "value" : "\"vjfje78v34\""
-          },
-          {
-            "name" : "X-processing-time",
-            "value" : "1"
-          },
-          {
-            "name" : "Content-location",
-            "value" : "/platform/tree/couple-relationships/12345"
-          }
-        ]
-      }
-    },
-    "application/x-gedcomx-v1+xml" : {
-      "operation" : "GET",
-      "path" : "/platform/tree/couple-relationships/12345",
-      "headers" : [
-        {
-          "name" : "Accept",
-          "value" : "application/x-gedcomx-v1+xml"
-        },
-        {
-          "name" : "If-None-Match",
-          "value" : "\"vjfje78v34\""
-        },
-        {
-          "name" : "Authorization",
-          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
-        }
-      ],
-      "response" : {
-        "code" : "304",
-        "status_message" : "Not Modified",
-        "body" : "",
-        "headers" : [
-          {
-            "name" : "Transfer-encoding",
-            "value" : "chunked"
-          },
-          {
-            "name" : "Content-type",
-            "value" : "application/x-gedcomx-v1+xml"
-          },
-          {
-            "name" : "Etag",
-            "value" : "\"vjfje78v34\""
-          },
-          {
-            "name" : "X-processing-time",
-            "value" : "1"
-          },
-          {
-            "name" : "Content-location",
-            "value" : "/platform/tree/couple-relationships/12345"
-          }
-        ]
-      }
-    }
-  }
-}
-tle\" : \"Conclusions\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/pid-1\"\n      }\n    },\n    \"id\" : \"12345\"\n  } ]\n}",
+        "code" : "200",
+        "status_message" : "OK",
+        "body" : "{\n  \"relationships\" : [ {\n    \"type\" : \"http://gedcomx.org/Couple\",\n    \"facts\" : [ {\n      \"type\" : \"http://gedcomx.org/Marriage\",\n      \"date\" : {\n        \"original\" : \"June 1800\",\n        \"formal\" : \"+1800-06\"\n      },\n      \"place\" : {\n        \"original\" : \"Provo, Utah, Utah, United States\"\n      }\n    } ],\n    \"person1\" : {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/pid-1\",\n      \"resourceId\" : \"pid-1\"\n    },\n    \"person2\" : {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/pid-2\",\n      \"resourceId\" : \"pid-2\"\n    },\n    \"links\" : {\n      \"source-references\" : {\n        \"title\" : \"Couple Relationship Source References\",\n        \"href\" : \"https://familysearch.org/platform/tree/couple-relationships/12345/source-references\"\n      },\n      \"relationship\" : {\n        \"title\" : \"Couple Relationship\",\n        \"href\" : \"https://familysearch.org/platform/tree/couple-relationships/12345\"\n      },\n      \"person1\" : {\n        \"title\" : \"Conclusions\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/pid-1\"\n      },\n      \"person2\" : {\n        \"title\" : \"Conclusions\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/pid-2\"\n      },\n      \"woman\" : {\n        \"title\" : \"Conclusions\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/pid-2\"\n      },\n      \"change-history\" : {\n        \"title\" : \"Couple Relationship Change History\",\n        \"href\" : \"https://familysearch.org/platform/tree/couple-relationships/12345/changes\"\n      },\n      \"notes\" : {\n        \"title\" : \"Couple Relationship Notes\",\n        \"href\" : \"https://familysearch.org/platform/tree/couple-relationships/12345/notes\"\n      },\n      \"man\" : {\n        \"title\" : \"Conclusions\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/pid-1\"\n      }\n    },\n    \"id\" : \"12345\"\n  } ]\n}",
         "headers" : [
           {
             "name" : "Transfer-encoding",

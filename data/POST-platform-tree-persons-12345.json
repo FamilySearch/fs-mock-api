@@ -1,6 +1,6 @@
 {
-  "title" : "Conclusion Update",
-  "description" : "How to update a conclusion resource.",
+  "title" : "Conclusion Create",
+  "description" : "How to create a conclusion.",
   "requests" : {
     "application/x-gedcomx-v1+json" : {
       "operation" : "POST",
@@ -15,7 +15,7 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "{\n  \"persons\" : [ {\n    \"facts\" : [ {\n      \"type\" : \"http://gedcomx.org/Birth\",\n      \"date\" : {\n        \"original\" : \"3 Apr 1836\",\n        \"formal\" : \"+1836\"\n      },\n      \"place\" : {\n        \"original\" : \"Moscow, Russia\"\n      },\n      \"id\" : \"ABCDE\"\n    } ],\n    \"id\" : \"12345\"\n  } ]\n}",
+      "body" : "{\n  \"persons\" : [ {\n    \"facts\" : [ {\n      \"type\" : \"http://gedcomx.org/Birth\",\n      \"date\" : {\n        \"original\" : \"3 Apr 1836\",\n        \"formal\" : \"+1836\"\n      },\n      \"place\" : {\n        \"original\" : \"Moscow, Russia\"\n      }\n    } ],\n    \"id\" : \"12345\"\n  } ]\n}",
       "response" : {
         "code" : "204",
         "status_message" : "No Content",
@@ -31,7 +31,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "42"
+            "value" : "40"
           },
           {
             "name" : "Content-location",
@@ -53,7 +53,7 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gedcomx xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <person id=\"12345\">\n        <fact type=\"http://gedcomx.org/Birth\" id=\"ABCDE\">\n            <date>\n                <original>3 Apr 1836<\/original>\n                <formal>+1836<\/formal>\n            <\/date>\n            <place>\n                <original>Moscow, Russia<\/original>\n            <\/place>\n        <\/fact>\n    <\/person>\n<\/gedcomx>\n",
+      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gedcomx xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <person id=\"12345\">\n        <fact type=\"http://gedcomx.org/Birth\">\n            <date>\n                <original>3 Apr 1836<\/original>\n                <formal>+1836<\/formal>\n            <\/date>\n            <place>\n                <original>Moscow, Russia<\/original>\n            <\/place>\n        <\/fact>\n    <\/person>\n<\/gedcomx>\n",
       "response" : {
         "code" : "204",
         "status_message" : "No Content",
@@ -69,7 +69,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "2"
+            "value" : "3"
           },
           {
             "name" : "Content-location",

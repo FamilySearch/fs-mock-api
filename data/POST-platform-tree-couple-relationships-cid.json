@@ -1,6 +1,6 @@
 {
-  "title" : "Couple Relationship Update Persons Gender Constraint",
-  "description" : "Update the persons that are associated by a couple relationship, triggering the gender constraint.",
+  "title" : "Couple Relationship Update Persons",
+  "description" : "Update the persons that are associated by a couple relationship.",
   "requests" : {
     "application/x-gedcomx-v1+json" : {
       "operation" : "POST",
@@ -15,15 +15,19 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "{\n  \"relationships\" : [ {\n    \"type\" : \"http://gedcomx.org/Couple\",\n    \"facts\" : [ {\n      \"type\" : \"http://gedcomx.org/Marriage\",\n      \"date\" : {\n        \"original\" : \"June 1800\",\n        \"formal\" : \"+1800-06\"\n      },\n      \"place\" : {\n        \"original\" : \"Provo, Utah, Utah, United States\"\n      }\n    } ],\n    \"person1\" : {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/pid-1\",\n      \"resourceId\" : \"pid-1\"\n    },\n    \"person2\" : {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/pid-2\",\n      \"resourceId\" : \"pid-2\"\n    },\n    \"id\" : \"cid\"\n  } ]\n}",
+      "body" : "{\n  \"relationships\" : [ {\n    \"person1\" : {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/pid-1\",\n      \"resourceId\" : \"pid-1\"\n    },\n    \"person2\" : {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/pid-2\",\n      \"resourceId\" : \"pid-2\"\n    },\n    \"id\" : \"cid\"\n  } ]\n}",
       "response" : {
-        "code" : "400",
-        "status_message" : "Bad Request",
+        "code" : "204",
+        "status_message" : "No Content",
         "body" : "",
         "headers" : [
           {
-            "name" : "Transfer-encoding",
-            "value" : "chunked"
+            "name" : "Content-type",
+            "value" : "text/html"
+          },
+          {
+            "name" : "Content-length",
+            "value" : "0"
           },
           {
             "name" : "X-processing-time",
@@ -49,19 +53,23 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gedcomx xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <relationship type=\"http://gedcomx.org/Couple\" id=\"cid\">\n        <person1 resource=\"https://familysearch.org/platform/tree/persons/pid-1\" resourceId=\"pid-1\"/>\n        <person2 resource=\"https://familysearch.org/platform/tree/persons/pid-2\" resourceId=\"pid-2\"/>\n        <fact type=\"http://gedcomx.org/Marriage\">\n            <date>\n                <original>June 1800<\/original>\n                <formal>+1800-06<\/formal>\n            <\/date>\n            <place>\n                <original>Provo, Utah, Utah, United States<\/original>\n            <\/place>\n        <\/fact>\n    <\/relationship>\n<\/gedcomx>\n",
+      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gedcomx xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <relationship id=\"cid\">\n        <person1 resource=\"https://familysearch.org/platform/tree/persons/pid-1\" resourceId=\"pid-1\"/>\n        <person2 resource=\"https://familysearch.org/platform/tree/persons/pid-2\" resourceId=\"pid-2\"/>\n    <\/relationship>\n<\/gedcomx>\n",
       "response" : {
-        "code" : "400",
-        "status_message" : "Bad Request",
+        "code" : "204",
+        "status_message" : "No Content",
         "body" : "",
         "headers" : [
           {
-            "name" : "Transfer-encoding",
-            "value" : "chunked"
+            "name" : "Content-type",
+            "value" : "text/html"
+          },
+          {
+            "name" : "Content-length",
+            "value" : "0"
           },
           {
             "name" : "X-processing-time",
-            "value" : "7"
+            "value" : "3"
           },
           {
             "name" : "Content-location",

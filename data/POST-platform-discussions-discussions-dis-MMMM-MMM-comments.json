@@ -1,6 +1,6 @@
 {
-  "title" : "Comment Update",
-  "description" : "How to update a comment resource.",
+  "title" : "Comments Create",
+  "description" : "How to create a conclusion.",
   "requests" : {
     "application/x-fs-v1+json" : {
       "operation" : "POST",
@@ -15,7 +15,7 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "{\n  \"discussions\" : [ {\n    \"comments\" : [ {\n      \"text\" : \"Just a comment.\",\n      \"id\" : \"CMMM-MMM\"\n    } ],\n    \"id\" : \"dis-MMMM-MMM\"\n  } ]\n}",
+      "body" : "{\n  \"discussions\" : [ {\n    \"comments\" : [ {\n      \"text\" : \"Just a comment.\"\n    } ],\n    \"id\" : \"dis-MMMM-MMM\"\n  } ]\n}",
       "response" : {
         "code" : "204",
         "status_message" : "No Content",
@@ -31,7 +31,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "110"
+            "value" : "164"
           },
           {
             "name" : "Content-location",
@@ -53,7 +53,7 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\">\n    <fs:discussion id=\"dis-MMMM-MMM\">\n        <fs:comment id=\"CMMM-MMM\">\n            <fs:text>Just a comment.<\/fs:text>\n        <\/fs:comment>\n    <\/fs:discussion>\n<\/fs:familysearch>\n",
+      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\">\n    <fs:discussion id=\"dis-MMMM-MMM\">\n        <fs:comment>\n            <fs:text>Just a comment.<\/fs:text>\n        <\/fs:comment>\n    <\/fs:discussion>\n<\/fs:familysearch>\n",
       "response" : {
         "code" : "204",
         "status_message" : "No Content",

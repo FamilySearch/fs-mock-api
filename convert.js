@@ -49,31 +49,32 @@ function processUsecaseList(usecaseList) {
 
 // Open a use case file and save it in the data path as a mock api source
 function processUsecaseFile(usecaseFile) {
-  fs.readFile(sourceDir + '/' + usecaseFile.replace('../',''), function(err, data){
+  var data = fs.readFileSync(sourceDir + '/' + usecaseFile.replace('../','')),
+      usecase = JSON.parse(data);
     
-    if(err) {
-      console.error('Error reading use case file: ' + usecaseFile);
-    }
-    
-    var usecase = JSON.parse(data);
-    
-    // Extract the request method and path
-    var requestMethod, requestPath;
-    for(var mediaType in usecase.requests) {
-      requestMethod = usecase.requests[mediaType].operation;
-      requestPath = usecase.requests[mediaType].path;
-      break;
-    }
-    
-    // Save the usecase
-    var destinationPath = destinationDir + '/' + requestMethod + requestPath.replace(/\//g,'-').replace(/\./g,'') + '.json';
-    fs.writeFile(destinationPath, data, function(err){
-      if(err) {
-        console.error('Error creating ' + destinationPath);
-      } else {
-        console.log('Saved ' + destinationPath);
-      }
-    });
-    
-  });
+  // Extract the request method and path
+  var requestMethod, requestPath;
+  for(var mediaType in usecase.requests) {
+    requestMethod = usecase.requests[mediaType].operation;
+    requestPath = usecase.requests[mediaType].path;
+    break;
+  }
+  
+  var destinationPath = destinationDir + '/' + requestMethod + requestPath.replace(/\//g,'-').replace(/\./g,'') + '.json';
+  
+  // Validate the length of the file name.
+  // What should we do about names that are too long?
+  if( destinationPath.length > 255 ) {
+    console.error('File name too long: %s', destinationPath);
+    return;
+  }
+  
+  // Save the usecase if a file with it's name doesn't already exist
+  var exists = fs.existsSync(destinationPath);
+  if( exists) {
+    console.error('File already exists: %s', destinationPath);
+  } else {      
+    fs.writeFileSync(destinationPath, data);
+  }
+
 }
