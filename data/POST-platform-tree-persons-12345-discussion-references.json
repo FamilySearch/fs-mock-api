@@ -15,7 +15,7 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "{\n  \"persons\" : [ {\n    \"id\" : \"12345\",\n    \"discussion-references\" : [ \"https://familysearch.org/platform/discussions/discussions/dis-1\" ]\n  } ]\n}",
+      "body" : "{\r\n  \"persons\" : [ {\r\n    \"id\" : \"12345\",\r\n    \"discussion-references\" : [ \"https://familysearch.org/platform/discussions/discussions/dis-1\" ]\r\n  } ]\r\n}",
       "response" : {
         "code" : "201",
         "status_message" : "Created",
@@ -24,6 +24,10 @@
           {
             "name" : "Transfer-encoding",
             "value" : "chunked"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:20:18 GMT"
           },
           {
             "name" : "Content-type",
@@ -35,7 +39,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "42"
+            "value" : "55"
           },
           {
             "name" : "Content-location",
@@ -57,7 +61,7 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <person id=\"12345\">\n        <fs:discussion-reference resource=\"https://familysearch.org/platform/discussions/discussions/dis-1\"/>\n    <\/person>\n<\/fs:familysearch>\n",
+      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <gx:person id=\"12345\">\n        <fs:discussion-reference resource=\"https://familysearch.org/platform/discussions/discussions/dis-1\"/>\n    <\/gx:person>\n<\/fs:familysearch>\n",
       "response" : {
         "code" : "201",
         "status_message" : "Created",
@@ -66,6 +70,10 @@
           {
             "name" : "Transfer-encoding",
             "value" : "chunked"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:20:16 GMT"
           },
           {
             "name" : "Content-type",

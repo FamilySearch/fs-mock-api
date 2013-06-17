@@ -25,6 +25,10 @@
             "value" : "chunked"
           },
           {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 16:36:51 GMT"
+          },
+          {
             "name" : "Content-type",
             "value" : "application/x-fs-v1+json"
           },
@@ -55,11 +59,15 @@
       "response" : {
         "code" : "200",
         "status_message" : "OK",
-        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns:atom=\"http://www.w3.org/2005/Atom\" xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\">\n    <link href=\"https://familysearch.org/platform/sources/CCCC-CCC/collections/descriptions?start=0&amp;count=1\" rel=\"first\" title=\"User-Defined Collections Source Descriptions for a User\"/>\n    <link href=\"https://familysearch.org/platform/sources/CCCC-CCC/collections/descriptions?start=4&amp;count=1\" rel=\"last\" title=\"User-Defined Collections Source Descriptions for a User\"/>\n    <link href=\"https://familysearch.org/platform/sources/CCCC-CCC/collections/descriptions?start=3&amp;count=1\" rel=\"next\" title=\"User-Defined Collections Source Descriptions for a User\"/>\n    <link href=\"https://familysearch.org/platform/sources/CCCC-CCC/collections/descriptions?start=1&amp;count=1\" rel=\"prev\" title=\"User-Defined Collections Source Descriptions for a User\"/>\n    <link href=\"https://familysearch.org/platform/sources/CCCC-CCC/collections/descriptions?start=2&amp;count=1\" rel=\"self\" title=\"User-Defined Collections Source Descriptions for a User\"/>\n    <sourceDescription id=\"MMMM-CCC\">\n        <link href=\"https://familysearch.org/platform/sources/descriptions/MMMM-CCC\" rel=\"source-description\" title=\"Source Description\"/>\n        <title>NEW TITLE<\/title>\n    <\/sourceDescription>\n<\/fs:familysearch>",
+        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns:atom=\"http://www.w3.org/2005/Atom\" xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\">\n    <gx:link href=\"https://familysearch.org/platform/sources/CCCC-CCC/collections/descriptions?start=0&amp;count=1\" rel=\"first\" title=\"User-Defined Collections Source Descriptions for a User\"/>\n    <gx:link href=\"https://familysearch.org/platform/sources/CCCC-CCC/collections/descriptions?start=4&amp;count=1\" rel=\"last\" title=\"User-Defined Collections Source Descriptions for a User\"/>\n    <gx:link href=\"https://familysearch.org/platform/sources/CCCC-CCC/collections/descriptions?start=3&amp;count=1\" rel=\"next\" title=\"User-Defined Collections Source Descriptions for a User\"/>\n    <gx:link href=\"https://familysearch.org/platform/sources/CCCC-CCC/collections/descriptions?start=1&amp;count=1\" rel=\"prev\" title=\"User-Defined Collections Source Descriptions for a User\"/>\n    <gx:link href=\"https://familysearch.org/platform/sources/CCCC-CCC/collections/descriptions?start=2&amp;count=1\" rel=\"self\" title=\"User-Defined Collections Source Descriptions for a User\"/>\n    <gx:sourceDescription id=\"MMMM-CCC\">\n        <gx:link href=\"https://familysearch.org/platform/sources/descriptions/MMMM-CCC\" rel=\"source-description\" title=\"Source Description\"/>\n        <gx:title>NEW TITLE<\/gx:title>\n    <\/gx:sourceDescription>\n<\/fs:familysearch>",
         "headers" : [
           {
             "name" : "Transfer-encoding",
             "value" : "chunked"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 16:36:49 GMT"
           },
           {
             "name" : "Content-type",

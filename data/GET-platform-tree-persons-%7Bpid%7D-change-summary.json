@@ -22,7 +22,7 @@
       "response" : {
         "code" : "200",
         "status_message" : "OK",
-        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<feed xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns=\"http://www.w3.org/2005/Atom\">\n    <entry>\n        <id>12345<\/id>\n        <link href=\"https://familysearch.org/platform/tree/persons/{pid}\" rel=\"person\" title=\"Conclusions\"/>\n        <published>2013-05-14T21:17:42.544Z<\/published>\n        <title>Change Summary 1<\/title>\n        <updated>2013-05-14T21:17:42.544Z<\/updated>\n    <\/entry>\n<\/feed>",
+        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<atom:feed xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <atom:entry>\n        <atom:id>12345<\/atom:id>\n        <atom:link href=\"https://familysearch.org/platform/tree/persons/{pid}\" rel=\"person\" title=\"Person\"/>\n        <atom:published>2013-06-17T11:20:09.468-06:00<\/atom:published>\n        <atom:title>Change Summary 1<\/atom:title>\n        <atom:updated>2013-06-17T11:20:09.468-06:00<\/atom:updated>\n    <\/atom:entry>\n<\/atom:feed>",
         "headers" : [
           {
             "name" : "Transfer-encoding",
@@ -31,6 +31,10 @@
           {
             "name" : "Cache-control",
             "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:20:09 GMT"
           },
           {
             "name" : "Content-type",
@@ -63,7 +67,7 @@
       "response" : {
         "code" : "200",
         "status_message" : "OK",
-        "body" : "{\n  \"entries\" : [ {\n    \"id\" : \"12345\",\n    \"title\" : \"Change Summary 1\",\n    \"links\" : {\n      \"person\" : {\n        \"title\" : \"Conclusions\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/{pid}\"\n      }\n    },\n    \"updated\" : 1368566263175,\n    \"published\" : 1368566263175\n  } ]\n}",
+        "body" : "{\n  \"entries\" : [ {\n    \"id\" : \"12345\",\n    \"title\" : \"Change Summary 1\",\n    \"published\" : 1371489610201,\n    \"updated\" : 1371489610201,\n    \"links\" : {\n      \"person\" : {\n        \"title\" : \"Person\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/{pid}\"\n      }\n    }\n  } ]\n}",
         "headers" : [
           {
             "name" : "Transfer-encoding",
@@ -72,6 +76,10 @@
           {
             "name" : "Cache-control",
             "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:20:10 GMT"
           },
           {
             "name" : "Content-type",

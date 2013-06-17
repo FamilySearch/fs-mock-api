@@ -1,14 +1,18 @@
 {
-  "title" : "Couple Relationship Delete",
-  "description" : "How to delete a couple resource.",
+  "title" : "Person Delete",
+  "description" : "How to delete a person resource.",
   "requests" : {
     "null" : {
       "operation" : "DELETE",
-      "path" : "/platform/tree/couple-relationships/12345",
+      "path" : "/platform/tree/persons/PPPP-PPP",
       "headers" : [
         {
           "name" : "Content-Type",
           "value" : "application/x-gedcomx-v1+json"
+        },
+        {
+          "name" : "X-Reason",
+          "value" : "Reason for delete"
         },
         {
           "name" : "Authorization",
@@ -22,7 +26,7 @@
         "headers" : [
           {
             "name" : "Date",
-            "value" : "Mon, 17 Jun 2013 17:19:41 GMT"
+            "value" : "Mon, 17 Jun 2013 17:21:05 GMT"
           },
           {
             "name" : "Content-type",
@@ -34,11 +38,11 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "0"
+            "value" : "1"
           },
           {
             "name" : "Content-location",
-            "value" : "/platform/tree/couple-relationships/12345"
+            "value" : "/platform/tree/persons/PPPP-PPP"
           }
         ]
       }

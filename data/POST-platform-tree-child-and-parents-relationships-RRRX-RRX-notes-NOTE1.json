@@ -15,12 +15,16 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "{\n  \"childAndParentsRelationships\" : [ {\n    \"notes\" : [ {\n      \"text\" : \"Sample note text\",\n      \"subject\" : \"Sample\"\n    } ],\n    \"id\" : \"RRRX-RRX\"\n  } ]\n}",
+      "body" : "{\r\n  \"childAndParentsRelationships\" : [ {\r\n    \"notes\" : [ {\r\n      \"text\" : \"Sample note text\",\r\n      \"subject\" : \"Sample\"\r\n    } ],\r\n    \"id\" : \"RRRX-RRX\"\r\n  } ]\r\n}",
       "response" : {
         "code" : "204",
         "status_message" : "No Content",
         "body" : "",
         "headers" : [
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:18:40 GMT"
+          },
           {
             "name" : "Content-type",
             "value" : "text/html"
@@ -31,7 +35,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "46"
+            "value" : "96"
           },
           {
             "name" : "Content-location",
@@ -53,12 +57,16 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <fs:childAndParentsRelationship id=\"RRRX-RRX\">\n        <note>\n            <subject>Sample<\/subject>\n            <text>Sample note text<\/text>\n        <\/note>\n    <\/fs:childAndParentsRelationship>\n<\/fs:familysearch>\n",
+      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <fs:childAndParentsRelationship id=\"RRRX-RRX\">\n        <gx:note>\n            <gx:subject>Sample<\/gx:subject>\n            <gx:text>Sample note text<\/gx:text>\n        <\/gx:note>\n    <\/fs:childAndParentsRelationship>\n<\/fs:familysearch>\n",
       "response" : {
         "code" : "204",
         "status_message" : "No Content",
         "body" : "",
         "headers" : [
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:18:34 GMT"
+          },
           {
             "name" : "Content-type",
             "value" : "text/html"
@@ -69,7 +77,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "2"
+            "value" : "3"
           },
           {
             "name" : "Content-location",

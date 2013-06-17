@@ -1,10 +1,10 @@
 {
-  "title" : "Couple Relationship Not Found",
-  "description" : "Example illustrating a request for a couple that doesn't exist.",
+  "title" : "Person Not Found",
+  "description" : "Example illustrating a request for a person that doesn't exist.",
   "requests" : {
     "application/x-gedcomx-v1+json" : {
       "operation" : "GET",
-      "path" : "/platform/tree/couple-relationships/NOTFOUND",
+      "path" : "/platform/tree/persons/PPPP-404",
       "headers" : [
         {
           "name" : "Accept",
@@ -26,7 +26,7 @@
           },
           {
             "name" : "Date",
-            "value" : "Mon, 17 Jun 2013 17:19:43 GMT"
+            "value" : "Mon, 17 Jun 2013 17:21:07 GMT"
           },
           {
             "name" : "Content-type",
@@ -34,18 +34,18 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "1"
+            "value" : "0"
           },
           {
             "name" : "Content-location",
-            "value" : "/platform/tree/couple-relationships/NOTFOUND"
+            "value" : "/platform/tree/persons/PPPP-404"
           }
         ]
       }
     },
     "application/x-gedcomx-v1+xml" : {
       "operation" : "GET",
-      "path" : "/platform/tree/couple-relationships/NOTFOUND",
+      "path" : "/platform/tree/persons/PPPP-404",
       "headers" : [
         {
           "name" : "Accept",
@@ -67,7 +67,7 @@
           },
           {
             "name" : "Date",
-            "value" : "Mon, 17 Jun 2013 17:19:36 GMT"
+            "value" : "Mon, 17 Jun 2013 17:20:59 GMT"
           },
           {
             "name" : "Content-type",
@@ -79,7 +79,7 @@
           },
           {
             "name" : "Content-location",
-            "value" : "/platform/tree/couple-relationships/NOTFOUND"
+            "value" : "/platform/tree/persons/PPPP-404"
           }
         ]
       }

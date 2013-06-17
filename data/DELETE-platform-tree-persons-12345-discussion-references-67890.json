@@ -8,7 +8,7 @@
       "headers" : [
         {
           "name" : "Content-Type",
-          "value" : "application/x-fs-v1+xml"
+          "value" : "application/x-fs-v1+json"
         },
         {
           "name" : "Authorization",
@@ -25,6 +25,10 @@
             "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
           },
           {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:20:16 GMT"
+          },
+          {
             "name" : "Content-type",
             "value" : "text/html"
           },
@@ -34,7 +38,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "0"
+            "value" : "1"
           },
           {
             "name" : "Content-location",

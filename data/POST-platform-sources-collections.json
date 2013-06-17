@@ -19,23 +19,27 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "{\n  \"collections\" : [ {\n    \"title\" : \"Collection Name\"\n  } ]\n}",
+      "body" : "{\r\n  \"collections\" : [ {\r\n    \"title\" : \"Collection Name\"\r\n  } ]\r\n}",
       "response" : {
         "code" : "201",
         "status_message" : "Created",
         "body" : "",
         "headers" : [
           {
-            "name" : "Transfer-encoding",
-            "value" : "chunked"
-          },
-          {
             "name" : "X-entity-id",
             "value" : "src-MMMM-MMM"
           },
           {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
             "name" : "Cache-control",
             "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 16:36:59 GMT"
           },
           {
             "name" : "Content-type",
@@ -47,7 +51,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "341"
+            "value" : "76"
           }
         ]
       }
@@ -69,23 +73,27 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns:atom=\"http://www.w3.org/2005/Atom\" xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\">\n    <collection>\n        <title>Collection Name<\/title>\n    <\/collection>\n<\/fs:familysearch>\n",
+      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns:atom=\"http://www.w3.org/2005/Atom\" xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\">\n    <gx:collection>\n        <gx:title>Collection Name<\/gx:title>\n    <\/gx:collection>\n<\/fs:familysearch>\n",
       "response" : {
         "code" : "201",
         "status_message" : "Created",
         "body" : "",
         "headers" : [
           {
-            "name" : "Transfer-encoding",
-            "value" : "chunked"
-          },
-          {
             "name" : "X-entity-id",
             "value" : "src-MMMM-MMM"
           },
           {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
             "name" : "Cache-control",
             "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 16:36:58 GMT"
           },
           {
             "name" : "Content-type",
@@ -97,7 +105,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "71"
+            "value" : "4"
           }
         ]
       }

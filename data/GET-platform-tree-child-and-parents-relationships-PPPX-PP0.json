@@ -18,11 +18,15 @@
       "response" : {
         "code" : "200",
         "status_message" : "OK",
-        "body" : "{\n  \"childAndParentsRelationships\" : [ {\n    \"child\" : {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/PPPX-PP3\",\n      \"resourceId\" : \"PPPX-PP3\"\n    },\n    \"mother\" : {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/PPPX-PP2\",\n      \"resourceId\" : \"PPPX-PP2\"\n    },\n    \"motherFacts\" : [ {\n      \"type\" : \"http://gedcomx.org/BiologicalParent\",\n      \"links\" : {\n        \"conclusion\" : {\n          \"title\" : \"Child-and-Parents Relationship Conclusion\",\n          \"href\" : \"https://familysearch.org/platform/tree/child-and-parents-relationships/PPPX-PP0/mother/conclusions/C.2\"\n        }\n      },\n      \"id\" : \"C.2\"\n    } ],\n    \"father\" : {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/PPPX-PP1\",\n      \"resourceId\" : \"PPPX-PP1\"\n    },\n    \"fatherFacts\" : [ {\n      \"type\" : \"http://gedcomx.org/AdoptiveParent\",\n      \"links\" : {\n        \"conclusion\" : {\n          \"title\" : \"Child-and-Parents Relationship Conclusion\",\n          \"href\" : \"https://familysearch.org/platform/tree/child-and-parents-relationships/PPPX-PP0/mother/conclusions/C.1\"\n        }\n      },\n      \"id\" : \"C.1\"\n    } ],\n    \"links\" : {\n      \"child\" : {\n        \"title\" : \"Conclusions\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/PPPX-PP3\"\n      },\n      \"mother\" : {\n        \"title\" : \"Conclusions\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/PPPX-PP2\"\n      },\n      \"child-and-parents-notes\" : {\n        \"title\" : \"Child-and-Parents Relationship Notes\",\n        \"href\" : \"https://familysearch.org/platform/tree/child-and-parents-relationships/PPPX-PP0/notes\"\n      },\n      \"child-and-parents-relationship\" : {\n        \"title\" : \"Child-and-Parents Relationship\",\n        \"href\" : \"https://familysearch.org/platform/tree/child-and-parents-relationships/PPPX-PP0\"\n      },\n      \"child-and-parents-source-references\" : {\n        \"title\" : \"Child-and-Parents Relationship Source References\",\n        \"href\" : \"https://familysearch.org/platform/tree/child-and-parents-relationships/PPPX-PP0/source-references\"\n      },\n      \"father\" : {\n        \"title\" : \"Conclusions\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/PPPX-PP1\"\n      }\n    },\n    \"id\" : \"PPPX-PP0\"\n  } ],\n  \"links\" : {\n    \"change-history\" : {\n      \"title\" : \"Child-and-Parents Relationship Change History\",\n      \"href\" : \"https://familysearch.org/platform/tree/child-and-parents-relationships/PPPX-PP0/changes\"\n    }\n  }\n}",
+        "body" : "{\n  \"childAndParentsRelationships\" : [ {\n    \"mother\" : {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/PPPX-PP2\",\n      \"resourceId\" : \"PPPX-PP2\"\n    },\n    \"motherFacts\" : [ {\n      \"type\" : \"http://gedcomx.org/BiologicalParent\",\n      \"links\" : {\n        \"conclusion\" : {\n          \"title\" : \"Child-and-Parents Relationship Conclusion\",\n          \"href\" : \"https://familysearch.org/platform/tree/child-and-parents-relationships/PPPX-PP0/mother/conclusions/C.2\"\n        }\n      },\n      \"id\" : \"C.2\"\n    } ],\n    \"father\" : {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/PPPX-PP1\",\n      \"resourceId\" : \"PPPX-PP1\"\n    },\n    \"child\" : {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/PPPX-PP3\",\n      \"resourceId\" : \"PPPX-PP3\"\n    },\n    \"fatherFacts\" : [ {\n      \"type\" : \"http://gedcomx.org/AdoptiveParent\",\n      \"links\" : {\n        \"conclusion\" : {\n          \"title\" : \"Child-and-Parents Relationship Conclusion\",\n          \"href\" : \"https://familysearch.org/platform/tree/child-and-parents-relationships/PPPX-PP0/mother/conclusions/C.1\"\n        }\n      },\n      \"id\" : \"C.1\"\n    } ],\n    \"links\" : {\n      \"child\" : {\n        \"title\" : \"Person\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/PPPX-PP3\"\n      },\n      \"mother\" : {\n        \"title\" : \"Person\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/PPPX-PP2\"\n      },\n      \"child-and-parents-notes\" : {\n        \"title\" : \"Child-and-Parents Relationship Notes\",\n        \"href\" : \"https://familysearch.org/platform/tree/child-and-parents-relationships/PPPX-PP0/notes\"\n      },\n      \"child-and-parents-relationship\" : {\n        \"title\" : \"Child-and-Parents Relationship\",\n        \"href\" : \"https://familysearch.org/platform/tree/child-and-parents-relationships/PPPX-PP0\"\n      },\n      \"child-and-parents-source-references\" : {\n        \"title\" : \"Child-and-Parents Relationship Source References\",\n        \"href\" : \"https://familysearch.org/platform/tree/child-and-parents-relationships/PPPX-PP0/source-references\"\n      },\n      \"father\" : {\n        \"title\" : \"Person\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/PPPX-PP1\"\n      }\n    },\n    \"id\" : \"PPPX-PP0\"\n  } ],\n  \"links\" : {\n    \"change-history\" : {\n      \"title\" : \"Child-and-Parents Relationship Change History\",\n      \"href\" : \"https://familysearch.org/platform/tree/child-and-parents-relationships/PPPX-PP0/changes\"\n    }\n  }\n}",
         "headers" : [
           {
             "name" : "Transfer-encoding",
             "value" : "chunked"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:19:09 GMT"
           },
           {
             "name" : "Content-type",
@@ -30,7 +34,7 @@
           },
           {
             "name" : "Last-modified",
-            "value" : "Tue, 14 May 2013 21:15:57 GMT"
+            "value" : "Mon, 17 Jun 2013 17:19:09 GMT"
           },
           {
             "name" : "Etag",
@@ -63,11 +67,15 @@
       "response" : {
         "code" : "200",
         "status_message" : "OK",
-        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <link href=\"https://familysearch.org/platform/tree/child-and-parents-relationships/PPPX-PP0/changes\" rel=\"change-history\" title=\"Child-and-Parents Relationship Change History\"/>\n    <fs:childAndParentsRelationship id=\"PPPX-PP0\">\n        <link href=\"https://familysearch.org/platform/tree/child-and-parents-relationships/PPPX-PP0/notes\" rel=\"child-and-parents-notes\" title=\"Child-and-Parents Relationship Notes\"/>\n        <link href=\"https://familysearch.org/platform/tree/child-and-parents-relationships/PPPX-PP0\" rel=\"child-and-parents-relationship\" title=\"Child-and-Parents Relationship\"/>\n        <link href=\"https://familysearch.org/platform/tree/child-and-parents-relationships/PPPX-PP0/source-references\" rel=\"child-and-parents-source-references\" title=\"Child-and-Parents Relationship Source References\"/>\n        <link href=\"https://familysearch.org/platform/tree/persons/PPPX-PP3\" rel=\"child\" title=\"Conclusions\"/>\n        <link href=\"https://familysearch.org/platform/tree/persons/PPPX-PP1\" rel=\"father\" title=\"Conclusions\"/>\n        <link href=\"https://familysearch.org/platform/tree/persons/PPPX-PP2\" rel=\"mother\" title=\"Conclusions\"/>\n        <fs:father resource=\"https://familysearch.org/platform/tree/persons/PPPX-PP1\" resourceId=\"PPPX-PP1\"/>\n        <fs:mother resource=\"https://familysearch.org/platform/tree/persons/PPPX-PP2\" resourceId=\"PPPX-PP2\"/>\n        <fs:child resource=\"https://familysearch.org/platform/tree/persons/PPPX-PP3\" resourceId=\"PPPX-PP3\"/>\n        <fs:fatherFact type=\"http://gedcomx.org/AdoptiveParent\" id=\"C.1\">\n            <link href=\"https://familysearch.org/platform/tree/child-and-parents-relationships/PPPX-PP0/mother/conclusions/C.1\" rel=\"conclusion\" title=\"Child-and-Parents Relationship Conclusion\"/>\n        <\/fs:fatherFact>\n        <fs:motherFact type=\"http://gedcomx.org/BiologicalParent\" id=\"C.2\">\n            <link href=\"https://familysearch.org/platform/tree/child-and-parents-relationships/PPPX-PP0/mother/conclusions/C.2\" rel=\"conclusion\" title=\"Child-and-Parents Relationship Conclusion\"/>\n        <\/fs:motherFact>\n    <\/fs:childAndParentsRelationship>\n<\/fs:familysearch>",
+        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <gx:link href=\"https://familysearch.org/platform/tree/child-and-parents-relationships/PPPX-PP0/changes\" rel=\"change-history\" title=\"Child-and-Parents Relationship Change History\"/>\n    <fs:childAndParentsRelationship id=\"PPPX-PP0\">\n        <gx:link href=\"https://familysearch.org/platform/tree/child-and-parents-relationships/PPPX-PP0/notes\" rel=\"child-and-parents-notes\" title=\"Child-and-Parents Relationship Notes\"/>\n        <gx:link href=\"https://familysearch.org/platform/tree/child-and-parents-relationships/PPPX-PP0\" rel=\"child-and-parents-relationship\" title=\"Child-and-Parents Relationship\"/>\n        <gx:link href=\"https://familysearch.org/platform/tree/child-and-parents-relationships/PPPX-PP0/source-references\" rel=\"child-and-parents-source-references\" title=\"Child-and-Parents Relationship Source References\"/>\n        <gx:link href=\"https://familysearch.org/platform/tree/persons/PPPX-PP3\" rel=\"child\" title=\"Person\"/>\n        <gx:link href=\"https://familysearch.org/platform/tree/persons/PPPX-PP1\" rel=\"father\" title=\"Person\"/>\n        <gx:link href=\"https://familysearch.org/platform/tree/persons/PPPX-PP2\" rel=\"mother\" title=\"Person\"/>\n        <fs:father resource=\"https://familysearch.org/platform/tree/persons/PPPX-PP1\" resourceId=\"PPPX-PP1\"/>\n        <fs:mother resource=\"https://familysearch.org/platform/tree/persons/PPPX-PP2\" resourceId=\"PPPX-PP2\"/>\n        <fs:child resource=\"https://familysearch.org/platform/tree/persons/PPPX-PP3\" resourceId=\"PPPX-PP3\"/>\n        <fs:fatherFact type=\"http://gedcomx.org/AdoptiveParent\" id=\"C.1\">\n            <gx:link href=\"https://familysearch.org/platform/tree/child-and-parents-relationships/PPPX-PP0/mother/conclusions/C.1\" rel=\"conclusion\" title=\"Child-and-Parents Relationship Conclusion\"/>\n        <\/fs:fatherFact>\n        <fs:motherFact type=\"http://gedcomx.org/BiologicalParent\" id=\"C.2\">\n            <gx:link href=\"https://familysearch.org/platform/tree/child-and-parents-relationships/PPPX-PP0/mother/conclusions/C.2\" rel=\"conclusion\" title=\"Child-and-Parents Relationship Conclusion\"/>\n        <\/fs:motherFact>\n    <\/fs:childAndParentsRelationship>\n<\/fs:familysearch>",
         "headers" : [
           {
             "name" : "Transfer-encoding",
             "value" : "chunked"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:19:01 GMT"
           },
           {
             "name" : "Content-type",
@@ -75,7 +83,7 @@
           },
           {
             "name" : "Last-modified",
-            "value" : "Tue, 14 May 2013 21:15:50 GMT"
+            "value" : "Mon, 17 Jun 2013 17:19:00 GMT"
           },
           {
             "name" : "Etag",
@@ -83,7 +91,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "3"
+            "value" : "5"
           },
           {
             "name" : "Content-location",

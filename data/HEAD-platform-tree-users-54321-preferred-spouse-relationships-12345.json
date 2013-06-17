@@ -21,8 +21,8 @@
         "body" : "",
         "headers" : [
           {
-            "name" : "Transfer-encoding",
-            "value" : "chunked"
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:21:42 GMT"
           },
           {
             "name" : "Content-type",
@@ -34,7 +34,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "1"
+            "value" : "0"
           },
           {
             "name" : "Content-location",
@@ -62,8 +62,8 @@
         "body" : "",
         "headers" : [
           {
-            "name" : "Transfer-encoding",
-            "value" : "chunked"
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:21:38 GMT"
           },
           {
             "name" : "Content-type",

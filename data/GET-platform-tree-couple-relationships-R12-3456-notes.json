@@ -25,12 +25,16 @@
             "value" : "chunked"
           },
           {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:19:32 GMT"
+          },
+          {
             "name" : "Content-type",
             "value" : "application/x-gedcomx-v1+json"
           },
           {
             "name" : "X-processing-time",
-            "value" : "2"
+            "value" : "1"
           },
           {
             "name" : "Content-location",
@@ -55,11 +59,15 @@
       "response" : {
         "code" : "200",
         "status_message" : "OK",
-        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gedcomx xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <relationship id=\"R12-3456\">\n        <link href=\"https://familysearch.org/platform/tree/couple-relationships/R12-3456\" rel=\"relationship\" title=\"Couple Relationship\"/>\n        <note id=\"1804317705\">\n            <link href=\"https://familysearch.org/platform/tree/couple-relationships/R12-3456/notes/1804317705\" rel=\"note\" title=\"Couple Relationship Note\"/>\n            <subject>note 0<\/subject>\n        <\/note>\n        <note id=\"1805241226\">\n            <link href=\"https://familysearch.org/platform/tree/couple-relationships/R12-3456/notes/1805241226\" rel=\"note\" title=\"Couple Relationship Note\"/>\n            <subject>note 1<\/subject>\n        <\/note>\n    <\/relationship>\n<\/gedcomx>",
+        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gx:gedcomx xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <gx:relationship id=\"R12-3456\">\n        <gx:link href=\"https://familysearch.org/platform/tree/couple-relationships/R12-3456\" rel=\"relationship\" title=\"Couple Relationship\"/>\n        <gx:note id=\"1804317705\">\n            <gx:link href=\"https://familysearch.org/platform/tree/couple-relationships/R12-3456/notes/1804317705\" rel=\"note\" title=\"Couple Relationship Note\"/>\n            <gx:subject>note 0<\/gx:subject>\n        <\/gx:note>\n        <gx:note id=\"1805241226\">\n            <gx:link href=\"https://familysearch.org/platform/tree/couple-relationships/R12-3456/notes/1805241226\" rel=\"note\" title=\"Couple Relationship Note\"/>\n            <gx:subject>note 1<\/gx:subject>\n        <\/gx:note>\n    <\/gx:relationship>\n<\/gx:gedcomx>",
         "headers" : [
           {
             "name" : "Transfer-encoding",
             "value" : "chunked"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:19:31 GMT"
           },
           {
             "name" : "Content-type",
@@ -67,7 +75,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "2"
+            "value" : "1"
           },
           {
             "name" : "Content-location",

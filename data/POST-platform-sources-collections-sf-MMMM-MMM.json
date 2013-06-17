@@ -19,7 +19,7 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "{\n  \"collections\" : [ {\n    \"id\" : \"sf-MMMM-MMM\"\n  } ]\n}",
+      "body" : "{\r\n  \"collections\" : [ {\r\n    \"id\" : \"sf-MMMM-MMM\"\r\n  } ]\r\n}",
       "response" : {
         "code" : "204",
         "status_message" : "No Content",
@@ -28,6 +28,10 @@
           {
             "name" : "X-entity-id",
             "value" : "sf-MMMM-MMM"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 16:36:44 GMT"
           },
           {
             "name" : "Content-type",
@@ -39,7 +43,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "70"
+            "value" : "126"
           },
           {
             "name" : "Content-location",
@@ -65,7 +69,7 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns:atom=\"http://www.w3.org/2005/Atom\" xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\">\n    <collection id=\"sf-MMMM-MMM\"/>\n<\/fs:familysearch>\n",
+      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns:atom=\"http://www.w3.org/2005/Atom\" xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\">\n    <gx:collection id=\"sf-MMMM-MMM\"/>\n<\/fs:familysearch>\n",
       "response" : {
         "code" : "204",
         "status_message" : "No Content",
@@ -74,6 +78,10 @@
           {
             "name" : "X-entity-id",
             "value" : "sf-MMMM-MMM"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 16:36:41 GMT"
           },
           {
             "name" : "Content-type",
@@ -85,7 +93,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "3"
+            "value" : "4"
           },
           {
             "name" : "Content-location",

@@ -15,12 +15,16 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "{\n  \"childAndParentsRelationships\" : [ {\n    \"motherFacts\" : [ {\n      \"type\" : \"http://gedcomx.org/BiologicalParent\"\n    } ]\n  } ]\n}",
+      "body" : "{\r\n  \"childAndParentsRelationships\" : [ {\r\n    \"motherFacts\" : [ {\r\n      \"type\" : \"http://gedcomx.org/BiologicalParent\"\r\n    } ]\r\n  } ]\r\n}",
       "response" : {
         "code" : "204",
         "status_message" : "No Content",
         "body" : "",
         "headers" : [
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:19:08 GMT"
+          },
           {
             "name" : "Content-type",
             "value" : "text/html"
@@ -31,7 +35,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "49"
+            "value" : "75"
           },
           {
             "name" : "Content-location",
@@ -53,12 +57,16 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <fs:childAndParentsRelationship>\n        <fs:motherFact type=\"http://gedcomx.org/BiologicalParent\"/>\n    <\/fs:childAndParentsRelationship>\n<\/fs:familysearch>\n",
+      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <fs:childAndParentsRelationship>\n        <fs:motherFact type=\"http://gedcomx.org/BiologicalParent\"/>\n    <\/fs:childAndParentsRelationship>\n<\/fs:familysearch>\n",
       "response" : {
         "code" : "204",
         "status_message" : "No Content",
         "body" : "",
         "headers" : [
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:18:59 GMT"
+          },
           {
             "name" : "Content-type",
             "value" : "text/html"

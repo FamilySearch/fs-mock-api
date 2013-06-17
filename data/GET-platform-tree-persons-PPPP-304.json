@@ -1,55 +1,18 @@
 {
-  "title" : "Couple Relationship Not Found",
-  "description" : "Example illustrating a request for a couple that doesn't exist.",
+  "title" : "Caching The Person By ETag",
+  "description" : "Example illustrating how the caching mechanism works on the person using the ETag header.",
   "requests" : {
     "application/x-gedcomx-v1+json" : {
       "operation" : "GET",
-      "path" : "/platform/tree/couple-relationships/NOTFOUND",
+      "path" : "/platform/tree/persons/PPPP-304",
       "headers" : [
         {
           "name" : "Accept",
           "value" : "application/x-gedcomx-v1+json"
         },
         {
-          "name" : "Authorization",
-          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
-        }
-      ],
-      "response" : {
-        "code" : "404",
-        "status_message" : "Not Found",
-        "body" : "",
-        "headers" : [
-          {
-            "name" : "Transfer-encoding",
-            "value" : "chunked"
-          },
-          {
-            "name" : "Date",
-            "value" : "Mon, 17 Jun 2013 17:19:43 GMT"
-          },
-          {
-            "name" : "Content-type",
-            "value" : "application/x-gedcomx-v1+json"
-          },
-          {
-            "name" : "X-processing-time",
-            "value" : "1"
-          },
-          {
-            "name" : "Content-location",
-            "value" : "/platform/tree/couple-relationships/NOTFOUND"
-          }
-        ]
-      }
-    },
-    "application/x-gedcomx-v1+xml" : {
-      "operation" : "GET",
-      "path" : "/platform/tree/couple-relationships/NOTFOUND",
-      "headers" : [
-        {
-          "name" : "Accept",
-          "value" : "application/x-gedcomx-v1+xml"
+          "name" : "If-None-Match",
+          "value" : "\"vjfje78v34\""
         },
         {
           "name" : "Authorization",
@@ -57,21 +20,25 @@
         }
       ],
       "response" : {
-        "code" : "404",
-        "status_message" : "Not Found",
+        "code" : "304",
+        "status_message" : "Not Modified",
         "body" : "",
         "headers" : [
           {
-            "name" : "Transfer-encoding",
-            "value" : "chunked"
-          },
-          {
             "name" : "Date",
-            "value" : "Mon, 17 Jun 2013 17:19:36 GMT"
+            "value" : "Mon, 17 Jun 2013 17:21:08 GMT"
           },
           {
             "name" : "Content-type",
-            "value" : "application/x-gedcomx-v1+xml"
+            "value" : "application/x-gedcomx-v1+json"
+          },
+          {
+            "name" : "Content-length",
+            "value" : "0"
+          },
+          {
+            "name" : "Etag",
+            "value" : "\"vjfje78v34\""
           },
           {
             "name" : "X-processing-time",
@@ -79,7 +46,56 @@
           },
           {
             "name" : "Content-location",
-            "value" : "/platform/tree/couple-relationships/NOTFOUND"
+            "value" : "/platform/tree/persons/PPPP-304"
+          }
+        ]
+      }
+    },
+    "application/x-gedcomx-v1+xml" : {
+      "operation" : "GET",
+      "path" : "/platform/tree/persons/PPPP-304",
+      "headers" : [
+        {
+          "name" : "Accept",
+          "value" : "application/x-gedcomx-v1+xml"
+        },
+        {
+          "name" : "If-None-Match",
+          "value" : "\"vjfje78v34\""
+        },
+        {
+          "name" : "Authorization",
+          "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      ],
+      "response" : {
+        "code" : "304",
+        "status_message" : "Not Modified",
+        "body" : "",
+        "headers" : [
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:21:01 GMT"
+          },
+          {
+            "name" : "Content-type",
+            "value" : "application/x-gedcomx-v1+xml"
+          },
+          {
+            "name" : "Content-length",
+            "value" : "0"
+          },
+          {
+            "name" : "Etag",
+            "value" : "\"vjfje78v34\""
+          },
+          {
+            "name" : "X-processing-time",
+            "value" : "1"
+          },
+          {
+            "name" : "Content-location",
+            "value" : "/platform/tree/persons/PPPP-304"
           }
         ]
       }

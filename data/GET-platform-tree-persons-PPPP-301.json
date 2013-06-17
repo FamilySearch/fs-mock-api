@@ -1,10 +1,10 @@
 {
-  "title" : "Couple Relationship Not Found",
-  "description" : "Example illustrating a request for a couple that doesn't exist.",
+  "title" : "Person Merged",
+  "description" : "Example illustrating the result of reading a person that has been merged.",
   "requests" : {
     "application/x-gedcomx-v1+json" : {
       "operation" : "GET",
-      "path" : "/platform/tree/couple-relationships/NOTFOUND",
+      "path" : "/platform/tree/persons/PPPP-301",
       "headers" : [
         {
           "name" : "Accept",
@@ -16,8 +16,8 @@
         }
       ],
       "response" : {
-        "code" : "404",
-        "status_message" : "Not Found",
+        "code" : "301",
+        "status_message" : "Moved Permanently",
         "body" : "",
         "headers" : [
           {
@@ -26,26 +26,34 @@
           },
           {
             "name" : "Date",
-            "value" : "Mon, 17 Jun 2013 17:19:43 GMT"
+            "value" : "Mon, 17 Jun 2013 17:21:10 GMT"
           },
           {
             "name" : "Content-type",
             "value" : "application/x-gedcomx-v1+json"
           },
           {
+            "name" : "X-entity-forwarded-id",
+            "value" : "67890"
+          },
+          {
+            "name" : "Location",
+            "value" : "https://familysearch.org/platform/tree/persons/67890"
+          },
+          {
             "name" : "X-processing-time",
-            "value" : "1"
+            "value" : "2"
           },
           {
             "name" : "Content-location",
-            "value" : "/platform/tree/couple-relationships/NOTFOUND"
+            "value" : "/platform/tree/persons/PPPP-301"
           }
         ]
       }
     },
     "application/x-gedcomx-v1+xml" : {
       "operation" : "GET",
-      "path" : "/platform/tree/couple-relationships/NOTFOUND",
+      "path" : "/platform/tree/persons/PPPP-301",
       "headers" : [
         {
           "name" : "Accept",
@@ -57,8 +65,8 @@
         }
       ],
       "response" : {
-        "code" : "404",
-        "status_message" : "Not Found",
+        "code" : "301",
+        "status_message" : "Moved Permanently",
         "body" : "",
         "headers" : [
           {
@@ -67,11 +75,19 @@
           },
           {
             "name" : "Date",
-            "value" : "Mon, 17 Jun 2013 17:19:36 GMT"
+            "value" : "Mon, 17 Jun 2013 17:21:02 GMT"
           },
           {
             "name" : "Content-type",
             "value" : "application/x-gedcomx-v1+xml"
+          },
+          {
+            "name" : "X-entity-forwarded-id",
+            "value" : "67890"
+          },
+          {
+            "name" : "Location",
+            "value" : "https://familysearch.org/platform/tree/persons/67890"
           },
           {
             "name" : "X-processing-time",
@@ -79,7 +95,7 @@
           },
           {
             "name" : "Content-location",
-            "value" : "/platform/tree/couple-relationships/NOTFOUND"
+            "value" : "/platform/tree/persons/PPPP-301"
           }
         ]
       }

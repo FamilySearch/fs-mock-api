@@ -15,19 +15,23 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "{\n  \"relationships\" : [ {\n    \"sources\" : [ {\n      \"attribution\" : {\n        \"contributor\" : {\n          \"resource\" : \"/platform/tree/contributor/UUUU-UUU\",\n          \"resourceId\" : \"UUUU-UUU\"\n        },\n        \"modified\" : 123456789,\n        \"changeMessage\" : \"Family is at the same address found in other sources associated with this family.  Names are a good match.  Estimated births are reasonable.\"\n      },\n      \"description\" : \"/platform/sources/sources/MMMM-MMM\",\n      \"tags\" : [ {\n        \"resource\" : \"http://gedcomx.org/Name\"\n      }, {\n        \"resource\" : \"http://gedcomx.org/Gender\"\n      }, {\n        \"resource\" : \"http://gedcomx.org/Birth\"\n      } ]\n    } ],\n    \"id\" : \"RRRR-RRR\"\n  } ]\n}",
+      "body" : "{\r\n  \"relationships\" : [ {\r\n    \"sources\" : [ {\r\n      \"attribution\" : {\r\n        \"contributor\" : {\r\n          \"resource\" : \"/platform/tree/contributor/UUUU-UUU\",\r\n          \"resourceId\" : \"UUUU-UUU\"\r\n        },\r\n        \"changeMessage\" : \"Family is at the same address found in other sources associated with this family.  Names are a good match.  Estimated births are reasonable.\",\r\n        \"modified\" : 123456789\r\n      },\r\n      \"description\" : \"/platform/sources/sources/MMMM-MMM\",\r\n      \"tags\" : [ {\r\n        \"resource\" : \"http://gedcomx.org/Name\"\r\n      }, {\r\n        \"resource\" : \"http://gedcomx.org/Gender\"\r\n      }, {\r\n        \"resource\" : \"http://gedcomx.org/Birth\"\r\n      } ]\r\n    } ],\r\n    \"id\" : \"RRRR-RRR\"\r\n  } ]\r\n}",
       "response" : {
         "code" : "201",
         "status_message" : "Created",
         "body" : "",
         "headers" : [
           {
+            "name" : "X-entity-id",
+            "value" : "SRSR-R01"
+          },
+          {
             "name" : "Transfer-encoding",
             "value" : "chunked"
           },
           {
-            "name" : "X-entity-id",
-            "value" : "SRSR-R01"
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:19:50 GMT"
           },
           {
             "name" : "Content-type",
@@ -61,19 +65,23 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gedcomx xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <relationship id=\"RRRR-RRR\">\n        <source description=\"/platform/sources/sources/MMMM-MMM\">\n            <fs:tag resource=\"http://gedcomx.org/Name\"/>\n            <fs:tag resource=\"http://gedcomx.org/Gender\"/>\n            <fs:tag resource=\"http://gedcomx.org/Birth\"/>\n            <attribution>\n                <contributor resource=\"/platform/tree/contributor/UUUU-UUU\" resourceId=\"UUUU-UUU\"/>\n                <modified>1970-01-02T10:17:36.789Z<\/modified>\n                <changeMessage>Family is at the same address found in other sources associated with this family.  Names are a good match.  Estimated births are reasonable.<\/changeMessage>\n            <\/attribution>\n        <\/source>\n    <\/relationship>\n<\/gedcomx>\n",
+      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gx:gedcomx xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <gx:relationship id=\"RRRR-RRR\">\n        <gx:source description=\"/platform/sources/sources/MMMM-MMM\">\n            <fs:tag resource=\"http://gedcomx.org/Name\"/>\n            <fs:tag resource=\"http://gedcomx.org/Gender\"/>\n            <fs:tag resource=\"http://gedcomx.org/Birth\"/>\n            <gx:attribution>\n                <gx:contributor resource=\"/platform/tree/contributor/UUUU-UUU\" resourceId=\"UUUU-UUU\"/>\n                <gx:modified>1970-01-02T03:17:36.789-07:00<\/gx:modified>\n                <gx:changeMessage>Family is at the same address found in other sources associated with this family.  Names are a good match.  Estimated births are reasonable.<\/gx:changeMessage>\n            <\/gx:attribution>\n        <\/gx:source>\n    <\/gx:relationship>\n<\/gx:gedcomx>\n",
       "response" : {
         "code" : "201",
         "status_message" : "Created",
         "body" : "",
         "headers" : [
           {
+            "name" : "X-entity-id",
+            "value" : "SRSR-R01"
+          },
+          {
             "name" : "Transfer-encoding",
             "value" : "chunked"
           },
           {
-            "name" : "X-entity-id",
-            "value" : "SRSR-R01"
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:19:49 GMT"
           },
           {
             "name" : "Content-type",

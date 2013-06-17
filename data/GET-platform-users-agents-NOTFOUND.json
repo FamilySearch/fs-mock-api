@@ -29,6 +29,10 @@
             "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
           },
           {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 16:39:39 GMT"
+          },
+          {
             "name" : "Content-type",
             "value" : "application/x-gedcomx-v1+json"
           },
@@ -70,12 +74,16 @@
             "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
           },
           {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 16:39:36 GMT"
+          },
+          {
             "name" : "Content-type",
             "value" : "application/x-gedcomx-v1+xml"
           },
           {
             "name" : "X-processing-time",
-            "value" : "1"
+            "value" : "3"
           },
           {
             "name" : "Content-location",

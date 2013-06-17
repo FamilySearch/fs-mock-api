@@ -25,12 +25,16 @@
             "value" : "chunked"
           },
           {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:18:41 GMT"
+          },
+          {
             "name" : "Content-type",
             "value" : "application/x-fs-v1+json"
           },
           {
             "name" : "X-processing-time",
-            "value" : "2"
+            "value" : "1"
           },
           {
             "name" : "Content-location",
@@ -55,11 +59,15 @@
       "response" : {
         "code" : "200",
         "status_message" : "OK",
-        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <fs:childAndParentsRelationship id=\"RRRX-RRX\">\n        <note>\n            <link href=\"https://familysearch.org/platform/tree/child-and-parents-relationships/RRRX-RRX/notes\" rel=\"child-and-parents-notes\" title=\"Child-and-Parents Relationship Notes\"/>\n            <subject>Sample<\/subject>\n            <text>Sample note text<\/text>\n        <\/note>\n    <\/fs:childAndParentsRelationship>\n<\/fs:familysearch>",
+        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <fs:childAndParentsRelationship id=\"RRRX-RRX\">\n        <gx:note>\n            <gx:link href=\"https://familysearch.org/platform/tree/child-and-parents-relationships/RRRX-RRX/notes\" rel=\"child-and-parents-notes\" title=\"Child-and-Parents Relationship Notes\"/>\n            <gx:subject>Sample<\/gx:subject>\n            <gx:text>Sample note text<\/gx:text>\n        <\/gx:note>\n    <\/fs:childAndParentsRelationship>\n<\/fs:familysearch>",
         "headers" : [
           {
             "name" : "Transfer-encoding",
             "value" : "chunked"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:18:37 GMT"
           },
           {
             "name" : "Content-type",
@@ -67,7 +75,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "1"
+            "value" : "2"
           },
           {
             "name" : "Content-location",

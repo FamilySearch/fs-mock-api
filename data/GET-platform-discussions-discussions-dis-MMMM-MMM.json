@@ -25,12 +25,16 @@
             "value" : "chunked"
           },
           {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 16:38:23 GMT"
+          },
+          {
             "name" : "Content-type",
             "value" : "application/x-fs-v1+json"
           },
           {
             "name" : "Last-modified",
-            "value" : "Tue, 14 May 2013 21:20:46 GMT"
+            "value" : "Mon, 17 Jun 2013 16:38:23 GMT"
           },
           {
             "name" : "Etag",
@@ -38,7 +42,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "2"
+            "value" : "3"
           },
           {
             "name" : "Content-location",
@@ -63,11 +67,15 @@
       "response" : {
         "code" : "200",
         "status_message" : "OK",
-        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\">\n    <fs:discussion id=\"dis-MMMM-MMM\">\n        <link href=\"https://familysearch.org/platform/discussions/discussions/dis-MMMM-MMM/comments\" rel=\"comments\" title=\"Comments\"/>\n        <fs:title>1900 US Census, Ethel Hollivet<\/fs:title>\n        <fs:details>Ethel Hollivet (line 75) with husband Albert Hollivet (line 74); also in the dwelling: step-father Joseph E Watkins (line 72), mother Lina Watkins (line 73), and grandmother -- Lina's mother -- Mary Sasnett (line 76).  <\/fs:details>\n        <fs:numberOfComments>2<\/fs:numberOfComments>\n    <\/fs:discussion>\n<\/fs:familysearch>",
+        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\">\n    <fs:discussion id=\"dis-MMMM-MMM\">\n        <gx:link href=\"https://familysearch.org/platform/discussions/discussions/dis-MMMM-MMM/comments\" rel=\"comments\" title=\"Comments\"/>\n        <fs:title>1900 US Census, Ethel Hollivet<\/fs:title>\n        <fs:details>Ethel Hollivet (line 75) with husband Albert Hollivet (line 74); also in the dwelling: step-father Joseph E Watkins (line 72), mother Lina Watkins (line 73), and grandmother -- Lina's mother -- Mary Sasnett (line 76).  <\/fs:details>\n        <fs:numberOfComments>2<\/fs:numberOfComments>\n    <\/fs:discussion>\n<\/fs:familysearch>",
         "headers" : [
           {
             "name" : "Transfer-encoding",
             "value" : "chunked"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 16:38:20 GMT"
           },
           {
             "name" : "Content-type",
@@ -75,7 +83,7 @@
           },
           {
             "name" : "Last-modified",
-            "value" : "Tue, 14 May 2013 21:20:43 GMT"
+            "value" : "Mon, 17 Jun 2013 16:38:20 GMT"
           },
           {
             "name" : "Etag",
@@ -83,7 +91,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "10"
+            "value" : "3"
           },
           {
             "name" : "Content-location",

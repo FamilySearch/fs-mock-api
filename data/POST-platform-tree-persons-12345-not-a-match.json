@@ -15,12 +15,16 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "{\n  \"persons\" : [ {\n    \"id\" : \"54321\"\n  } ]\n}",
+      "body" : "{\r\n  \"persons\" : [ {\r\n    \"id\" : \"54321\"\r\n  } ]\r\n}",
       "response" : {
         "code" : "204",
         "status_message" : "No Content",
         "body" : "",
         "headers" : [
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:20:35 GMT"
+          },
           {
             "name" : "Content-type",
             "value" : "text/html"
@@ -31,7 +35,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "30"
+            "value" : "40"
           }
         ]
       }
@@ -49,12 +53,16 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gedcomx xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <person id=\"54321\"/>\n<\/gedcomx>\n",
+      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gx:gedcomx xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <gx:person id=\"54321\"/>\n<\/gx:gedcomx>\n",
       "response" : {
         "code" : "204",
         "status_message" : "No Content",
         "body" : "",
         "headers" : [
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:20:33 GMT"
+          },
           {
             "name" : "Content-type",
             "value" : "text/html"
@@ -65,7 +73,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "3"
+            "value" : "2"
           }
         ]
       }

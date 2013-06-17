@@ -19,7 +19,7 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "{\n  \"merges\" : [ {\n    \"resourcesToDelete\" : [ {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/P12-345/conclusions/ABCD\"\n    }, {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/P12-345/source-references/EFGH\"\n    } ],\n    \"resourcesToCopy\" : [ {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/P54-321/conclusions/IJKL\"\n    }, {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/P54-321/source-references/MNOP\"\n    } ]\n  } ]\n}",
+      "body" : "{\r\n  \"merges\" : [ {\r\n    \"resourcesToDelete\" : [ {\r\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/P12-345/conclusions/ABCD\"\r\n    }, {\r\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/P12-345/source-references/EFGH\"\r\n    } ],\r\n    \"resourcesToCopy\" : [ {\r\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/P54-321/conclusions/IJKL\"\r\n    }, {\r\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/P54-321/source-references/MNOP\"\r\n    } ]\r\n  } ]\r\n}",
       "response" : {
         "code" : "204",
         "status_message" : "No Content",
@@ -28,6 +28,10 @@
           {
             "name" : "Cache-control",
             "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:20:31 GMT"
           },
           {
             "name" : "Content-type",
@@ -39,7 +43,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "72"
+            "value" : "51"
           }
         ]
       }
@@ -61,7 +65,7 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <fs:merge>\n        <fs:resourceToDelete resource=\"https://familysearch.org/platform/tree/persons/P12-345/conclusions/ABCD\"/>\n        <fs:resourceToDelete resource=\"https://familysearch.org/platform/tree/persons/P12-345/source-references/EFGH\"/>\n        <fs:resourceToCopy resource=\"https://familysearch.org/platform/tree/persons/P54-321/conclusions/IJKL\"/>\n        <fs:resourceToCopy resource=\"https://familysearch.org/platform/tree/persons/P54-321/source-references/MNOP\"/>\n    <\/fs:merge>\n<\/fs:familysearch>\n",
+      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <fs:merge>\n        <fs:resourceToDelete resource=\"https://familysearch.org/platform/tree/persons/P12-345/conclusions/ABCD\"/>\n        <fs:resourceToDelete resource=\"https://familysearch.org/platform/tree/persons/P12-345/source-references/EFGH\"/>\n        <fs:resourceToCopy resource=\"https://familysearch.org/platform/tree/persons/P54-321/conclusions/IJKL\"/>\n        <fs:resourceToCopy resource=\"https://familysearch.org/platform/tree/persons/P54-321/source-references/MNOP\"/>\n    <\/fs:merge>\n<\/fs:familysearch>\n",
       "response" : {
         "code" : "204",
         "status_message" : "No Content",
@@ -70,6 +74,10 @@
           {
             "name" : "Cache-control",
             "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:20:28 GMT"
           },
           {
             "name" : "Content-type",

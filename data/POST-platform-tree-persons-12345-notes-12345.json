@@ -15,12 +15,16 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "{\n  \"persons\" : [ {\n    \"notes\" : [ {\n      \"text\" : \"Sample note text\",\n      \"subject\" : \"Sample\",\n      \"id\" : \"1586334607\"\n    } ],\n    \"id\" : \"12345\"\n  } ]\n}",
+      "body" : "{\r\n  \"persons\" : [ {\r\n    \"notes\" : [ {\r\n      \"text\" : \"Sample note text\",\r\n      \"subject\" : \"Sample\",\r\n      \"id\" : \"1586334607\"\r\n    } ],\r\n    \"id\" : \"12345\"\r\n  } ]\r\n}",
       "response" : {
         "code" : "204",
         "status_message" : "No Content",
         "body" : "",
         "headers" : [
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:20:38 GMT"
+          },
           {
             "name" : "Content-type",
             "value" : "text/html"
@@ -31,7 +35,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "54"
+            "value" : "46"
           },
           {
             "name" : "Content-location",
@@ -53,12 +57,16 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <person id=\"12345\">\n        <note id=\"1586334607\">\n            <subject>Sample<\/subject>\n            <text>Sample note text<\/text>\n        <\/note>\n    <\/person>\n<\/fs:familysearch>\n",
+      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <gx:person id=\"12345\">\n        <gx:note id=\"1586334607\">\n            <gx:subject>Sample<\/gx:subject>\n            <gx:text>Sample note text<\/gx:text>\n        <\/gx:note>\n    <\/gx:person>\n<\/fs:familysearch>\n",
       "response" : {
         "code" : "204",
         "status_message" : "No Content",
         "body" : "",
         "headers" : [
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:20:36 GMT"
+          },
           {
             "name" : "Content-type",
             "value" : "text/html"
@@ -69,7 +77,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "4"
+            "value" : "3"
           },
           {
             "name" : "Content-location",

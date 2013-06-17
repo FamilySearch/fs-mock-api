@@ -29,12 +29,16 @@
             "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
           },
           {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:20:19 GMT"
+          },
+          {
             "name" : "Content-type",
             "value" : "application/atom+xml"
           },
           {
             "name" : "X-processing-time",
-            "value" : "0"
+            "value" : "1"
           }
         ]
       }
@@ -64,6 +68,10 @@
           {
             "name" : "Cache-control",
             "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:20:22 GMT"
           },
           {
             "name" : "Content-type",

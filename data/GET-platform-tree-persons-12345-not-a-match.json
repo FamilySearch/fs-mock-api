@@ -18,11 +18,15 @@
       "response" : {
         "code" : "200",
         "status_message" : "OK",
-        "body" : "{\n  \"persons\" : [ {\n    \"names\" : [ {\n      \"type\" : \"http://gedcomx.org/FormalName\",\n      \"nameForms\" : [ {\n        \"fullText\" : \"Anastasia Aleksandrova\"\n      } ]\n    } ],\n    \"gender\" : {\n      \"type\" : \"http://gedcomx.org/Female\"\n    },\n    \"living\" : true,\n    \"links\" : {\n      \"self\" : {\n        \"title\" : \"Conclusions\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/pid\"\n      }\n    },\n    \"id\" : \"pid\"\n  } ]\n}",
+        "body" : "{\n  \"persons\" : [ {\n    \"gender\" : {\n      \"type\" : \"http://gedcomx.org/Female\"\n    },\n    \"names\" : [ {\n      \"type\" : \"http://gedcomx.org/FormalName\",\n      \"nameForms\" : [ {\n        \"fullText\" : \"Anastasia Aleksandrova\"\n      } ]\n    } ],\n    \"living\" : true,\n    \"links\" : {\n      \"self\" : {\n        \"title\" : \"Person\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/12345\"\n      }\n    },\n    \"id\" : \"12345\"\n  } ]\n}",
         "headers" : [
           {
             "name" : "Transfer-encoding",
             "value" : "chunked"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:20:34 GMT"
           },
           {
             "name" : "Content-type",
@@ -51,11 +55,15 @@
       "response" : {
         "code" : "200",
         "status_message" : "OK",
-        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gedcomx xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <person id=\"pid\">\n        <link href=\"https://familysearch.org/platform/tree/persons/pid\" rel=\"self\" title=\"Conclusions\"/>\n        <living>true<\/living>\n        <gender type=\"http://gedcomx.org/Female\"/>\n        <name type=\"http://gedcomx.org/FormalName\">\n            <nameForm>\n                <fullText>Anastasia Aleksandrova<\/fullText>\n            <\/nameForm>\n        <\/name>\n    <\/person>\n<\/gedcomx>",
+        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gx:gedcomx xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <gx:person id=\"12345\">\n        <gx:link href=\"https://familysearch.org/platform/tree/persons/12345\" rel=\"self\" title=\"Person\"/>\n        <gx:living>true<\/gx:living>\n        <gx:gender type=\"http://gedcomx.org/Female\"/>\n        <gx:name type=\"http://gedcomx.org/FormalName\">\n            <gx:nameForm>\n                <gx:fullText>Anastasia Aleksandrova<\/gx:fullText>\n            <\/gx:nameForm>\n        <\/gx:name>\n    <\/gx:person>\n<\/gx:gedcomx>",
         "headers" : [
           {
             "name" : "Transfer-encoding",
             "value" : "chunked"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:20:32 GMT"
           },
           {
             "name" : "Content-type",
@@ -63,7 +71,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "1"
+            "value" : "2"
           }
         ]
       }

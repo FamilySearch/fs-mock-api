@@ -15,19 +15,19 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "{\n  \"relationships\" : [ {\n    \"type\" : \"http://gedcomx.org/Couple\",\n    \"facts\" : [ {\n      \"type\" : \"http://gedcomx.org/Marriage\",\n      \"date\" : {\n        \"original\" : \"June 1800\",\n        \"formal\" : \"+1800-06\"\n      },\n      \"place\" : {\n        \"original\" : \"Provo, Utah, Utah, United States\"\n      }\n    } ],\n    \"person1\" : {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/pid-1\",\n      \"resourceId\" : \"pid-1\"\n    },\n    \"person2\" : {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/pid-2\",\n      \"resourceId\" : \"pid-2\"\n    },\n    \"id\" : \"cid\"\n  } ]\n}",
+      "body" : "{\r\n  \"relationships\" : [ {\r\n    \"type\" : \"http://gedcomx.org/Couple\",\r\n    \"facts\" : [ {\r\n      \"type\" : \"http://gedcomx.org/Marriage\",\r\n      \"date\" : {\r\n        \"original\" : \"June 1800\",\r\n        \"formal\" : \"+1800-06\"\r\n      },\r\n      \"place\" : {\r\n        \"original\" : \"Provo, Utah, Utah, United States\"\r\n      }\r\n    } ],\r\n    \"person2\" : {\r\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/pid-2\",\r\n      \"resourceId\" : \"pid-2\"\r\n    },\r\n    \"person1\" : {\r\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/pid-1\",\r\n      \"resourceId\" : \"pid-1\"\r\n    },\r\n    \"id\" : \"cid\"\r\n  } ]\r\n}",
       "response" : {
         "code" : "201",
         "status_message" : "Created",
         "body" : "",
         "headers" : [
           {
-            "name" : "Transfer-encoding",
-            "value" : "chunked"
-          },
-          {
             "name" : "X-entity-id",
             "value" : "12345"
+          },
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
           },
           {
             "name" : "Link",
@@ -36,6 +36,10 @@
           {
             "name" : "Link",
             "value" : "<https://familysearch.org/platform/tree/couple-relationships/12345/notes>; rel=\"notes\"; title=\"Couple Relationship Notes\""
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:19:55 GMT"
           },
           {
             "name" : "Content-type",
@@ -47,7 +51,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "37"
+            "value" : "50"
           }
         ]
       }
@@ -65,19 +69,19 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gedcomx xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <relationship type=\"http://gedcomx.org/Couple\" id=\"cid\">\n        <person1 resource=\"https://familysearch.org/platform/tree/persons/pid-1\" resourceId=\"pid-1\"/>\n        <person2 resource=\"https://familysearch.org/platform/tree/persons/pid-2\" resourceId=\"pid-2\"/>\n        <fact type=\"http://gedcomx.org/Marriage\">\n            <date>\n                <original>June 1800<\/original>\n                <formal>+1800-06<\/formal>\n            <\/date>\n            <place>\n                <original>Provo, Utah, Utah, United States<\/original>\n            <\/place>\n        <\/fact>\n    <\/relationship>\n<\/gedcomx>\n",
+      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gx:gedcomx xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <gx:relationship type=\"http://gedcomx.org/Couple\" id=\"cid\">\n        <gx:person1 resource=\"https://familysearch.org/platform/tree/persons/pid-1\" resourceId=\"pid-1\"/>\n        <gx:person2 resource=\"https://familysearch.org/platform/tree/persons/pid-2\" resourceId=\"pid-2\"/>\n        <gx:fact type=\"http://gedcomx.org/Marriage\">\n            <gx:date>\n                <gx:original>June 1800<\/gx:original>\n                <gx:formal>+1800-06<\/gx:formal>\n            <\/gx:date>\n            <gx:place>\n                <gx:original>Provo, Utah, Utah, United States<\/gx:original>\n            <\/gx:place>\n        <\/gx:fact>\n    <\/gx:relationship>\n<\/gx:gedcomx>\n",
       "response" : {
         "code" : "201",
         "status_message" : "Created",
         "body" : "",
         "headers" : [
           {
-            "name" : "Transfer-encoding",
-            "value" : "chunked"
-          },
-          {
             "name" : "X-entity-id",
             "value" : "12345"
+          },
+          {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
           },
           {
             "name" : "Link",
@@ -86,6 +90,10 @@
           {
             "name" : "Link",
             "value" : "<https://familysearch.org/platform/tree/couple-relationships/12345/notes>; rel=\"notes\"; title=\"Couple Relationship Notes\""
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:19:53 GMT"
           },
           {
             "name" : "Content-type",
@@ -97,7 +105,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "3"
+            "value" : "4"
           }
         ]
       }

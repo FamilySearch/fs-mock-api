@@ -16,7 +16,7 @@
         },
         {
           "name" : "Content-Type",
-          "value" : "application/x-gedcomx-v1+xml"
+          "value" : "application/x-gedcomx-v1+json"
         },
         {
           "name" : "Authorization",
@@ -29,16 +29,20 @@
         "body" : "",
         "headers" : [
           {
-            "name" : "Transfer-encoding",
-            "value" : "chunked"
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 16:36:34 GMT"
           },
           {
             "name" : "Content-type",
             "value" : "application/xml"
           },
           {
+            "name" : "Content-length",
+            "value" : "0"
+          },
+          {
             "name" : "Warning",
-            "value" : "199 FamilySearch Best Practice Violation: Should specify versioned media type in Accept header, e.g. one of [ \"application/x-gedcomx-v1+xml\", \"application/x-gedcomx-v1+json\", \"application/atom+xml\", \"application/x-gedcomx-atom+json\", \"application/x-fs-v1+xml\", \"application/x-fs-v1+json\" ]."
+            "value" : "199 FamilySearch Best Practice Violation: Should specify versioned media type in Accept header, e.g. one of [ \"application/x-fs-v1+xml\", \"application/x-fs-v1+json\", \"application/atom+xml\", \"application/x-gedcomx-atom+json\", \"application/x-gedcomx-v1+xml\", \"application/x-gedcomx-v1+json\" ]."
           },
           {
             "name" : "Etag",
@@ -46,7 +50,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "2"
+            "value" : "3"
           },
           {
             "name" : "Content-location",

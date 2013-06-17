@@ -15,19 +15,23 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "{\n  \"childAndParentsRelationships\" : [ {\n    \"notes\" : [ {\n      \"text\" : \"Sample note text\",\n      \"subject\" : \"Sample\"\n    } ]\n  } ]\n}",
+      "body" : "{\r\n  \"childAndParentsRelationships\" : [ {\r\n    \"notes\" : [ {\r\n      \"text\" : \"Sample note text\",\r\n      \"subject\" : \"Sample\"\r\n    } ]\r\n  } ]\r\n}",
       "response" : {
         "code" : "201",
         "status_message" : "Created",
         "body" : "",
         "headers" : [
           {
+            "name" : "X-entity-id",
+            "value" : "1"
+          },
+          {
             "name" : "Transfer-encoding",
             "value" : "chunked"
           },
           {
-            "name" : "X-entity-id",
-            "value" : "1"
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:18:48 GMT"
           },
           {
             "name" : "Content-type",
@@ -39,7 +43,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "86"
+            "value" : "95"
           },
           {
             "name" : "Content-location",
@@ -61,19 +65,23 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <fs:childAndParentsRelationship>\n        <note>\n            <subject>Sample<\/subject>\n            <text>Sample note text<\/text>\n        <\/note>\n    <\/fs:childAndParentsRelationship>\n<\/fs:familysearch>\n",
+      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <fs:childAndParentsRelationship>\n        <gx:note>\n            <gx:subject>Sample<\/gx:subject>\n            <gx:text>Sample note text<\/gx:text>\n        <\/gx:note>\n    <\/fs:childAndParentsRelationship>\n<\/fs:familysearch>\n",
       "response" : {
         "code" : "201",
         "status_message" : "Created",
         "body" : "",
         "headers" : [
           {
+            "name" : "X-entity-id",
+            "value" : "1"
+          },
+          {
             "name" : "Transfer-encoding",
             "value" : "chunked"
           },
           {
-            "name" : "X-entity-id",
-            "value" : "1"
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:18:45 GMT"
           },
           {
             "name" : "Content-type",
@@ -85,7 +93,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "2"
+            "value" : "5"
           },
           {
             "name" : "Content-location",

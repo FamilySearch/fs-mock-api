@@ -18,7 +18,7 @@
       "response" : {
         "code" : "200",
         "status_message" : "OK",
-        "body" : "{\n  \"agents\" : [ {\n    \"emails\" : [ {\n      \"resource\" : \"mailto:someone@somewhere.org\"\n    } ],\n    \"accounts\" : [ {\n      \"accountName\" : \"account\"\n    } ],\n    \"names\" : [ {\n      \"value\" : \"John Smith\"\n    } ],\n    \"links\" : {\n      \"self\" : {\n        \"href\" : \"https://familysearch.org/platform/users/agents/12345\"\n      }\n    },\n    \"id\" : \"12345\"\n  } ]\n}",
+        "body" : "{\n  \"agents\" : [ {\n    \"names\" : [ {\n      \"value\" : \"John Smith\"\n    } ],\n    \"emails\" : [ {\n      \"resource\" : \"mailto:someone@somewhere.org\"\n    } ],\n    \"accounts\" : [ {\n      \"accountName\" : \"account\"\n    } ],\n    \"links\" : {\n      \"self\" : {\n        \"href\" : \"https://familysearch.org/platform/users/agents/12345\"\n      }\n    },\n    \"id\" : \"12345\"\n  } ]\n}",
         "headers" : [
           {
             "name" : "Transfer-encoding",
@@ -27,6 +27,10 @@
           {
             "name" : "Cache-control",
             "value" : "no-transform, max-age=604800"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 16:39:37 GMT"
           },
           {
             "name" : "Content-type",
@@ -59,7 +63,7 @@
       "response" : {
         "code" : "200",
         "status_message" : "OK",
-        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gedcomx xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\">\n    <agent id=\"12345\">\n        <link href=\"https://familysearch.org/platform/users/agents/12345\" rel=\"self\"/>\n        <account>\n            <accountName>account<\/accountName>\n        <\/account>\n        <email resource=\"mailto:someone@somewhere.org\"/>\n        <name>John Smith<\/name>\n    <\/agent>\n<\/gedcomx>",
+        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gx:gedcomx xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\">\n    <gx:agent id=\"12345\">\n        <gx:link href=\"https://familysearch.org/platform/users/agents/12345\" rel=\"self\"/>\n        <gx:account>\n            <gx:accountName>account<\/gx:accountName>\n        <\/gx:account>\n        <gx:email resource=\"mailto:someone@somewhere.org\"/>\n        <gx:name>John Smith<\/gx:name>\n    <\/gx:agent>\n<\/gx:gedcomx>",
         "headers" : [
           {
             "name" : "Transfer-encoding",
@@ -70,12 +74,16 @@
             "value" : "no-transform, max-age=604800"
           },
           {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 16:39:34 GMT"
+          },
+          {
             "name" : "Content-type",
             "value" : "application/x-gedcomx-v1+xml"
           },
           {
             "name" : "X-processing-time",
-            "value" : "8"
+            "value" : "32"
           },
           {
             "name" : "Content-location",

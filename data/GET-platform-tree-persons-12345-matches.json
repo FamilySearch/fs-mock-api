@@ -12,7 +12,7 @@
         },
         {
           "name" : "If-Modified-Since",
-          "value" : "Tue May 14 22:16:33 GMT+00:00 2013"
+          "value" : "Mon Jun 17 12:20:20 MDT 2013"
         },
         {
           "name" : "Authorization",
@@ -25,20 +25,24 @@
         "body" : "",
         "headers" : [
           {
-            "name" : "Transfer-encoding",
-            "value" : "chunked"
-          },
-          {
             "name" : "Cache-control",
             "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:20:20 GMT"
           },
           {
             "name" : "Content-type",
             "value" : "application/atom+xml"
           },
           {
+            "name" : "Content-length",
+            "value" : "0"
+          },
+          {
             "name" : "X-processing-time",
-            "value" : "1"
+            "value" : "0"
           }
         ]
       }
@@ -53,7 +57,7 @@
         },
         {
           "name" : "If-Modified-Since",
-          "value" : "Tue May 14 22:16:36 GMT+00:00 2013"
+          "value" : "Mon Jun 17 12:20:23 MDT 2013"
         },
         {
           "name" : "Authorization",
@@ -66,16 +70,20 @@
         "body" : "",
         "headers" : [
           {
-            "name" : "Transfer-encoding",
-            "value" : "chunked"
-          },
-          {
             "name" : "Cache-control",
             "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
           },
           {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:20:23 GMT"
+          },
+          {
             "name" : "Content-type",
             "value" : "application/x-gedcomx-atom+json"
+          },
+          {
+            "name" : "Content-length",
+            "value" : "0"
           },
           {
             "name" : "X-processing-time",

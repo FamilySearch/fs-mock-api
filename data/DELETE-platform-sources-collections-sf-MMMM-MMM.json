@@ -29,6 +29,10 @@
             "value" : "sf-MMMM-MMM"
           },
           {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 16:36:42 GMT"
+          },
+          {
             "name" : "Content-type",
             "value" : "application/x-fs-v1+json"
           },
@@ -74,6 +78,10 @@
             "value" : "sf-MMMM-MMM"
           },
           {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 16:36:39 GMT"
+          },
+          {
             "name" : "Content-type",
             "value" : "application/x-fs-v1+xml"
           },
@@ -83,7 +91,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "1"
+            "value" : "2"
           },
           {
             "name" : "Content-location",

@@ -18,11 +18,15 @@
       "response" : {
         "code" : "200",
         "status_message" : "OK",
-        "body" : "{\n  \"relationships\" : [ {\n    \"type\" : \"http://gedcomx.org/Couple\",\n    \"facts\" : [ {\n      \"type\" : \"http://gedcomx.org/Marriage\",\n      \"date\" : {\n        \"original\" : \"June 1800\",\n        \"formal\" : \"+1800-06\"\n      },\n      \"place\" : {\n        \"original\" : \"Provo, Utah, Utah, United States\"\n      }\n    } ],\n    \"person1\" : {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/pid-1\",\n      \"resourceId\" : \"pid-1\"\n    },\n    \"person2\" : {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/pid-2\",\n      \"resourceId\" : \"pid-2\"\n    },\n    \"links\" : {\n      \"source-references\" : {\n        \"title\" : \"Couple Relationship Source References\",\n        \"href\" : \"https://familysearch.org/platform/tree/couple-relationships/12345/source-references\"\n      },\n      \"relationship\" : {\n        \"title\" : \"Couple Relationship\",\n        \"href\" : \"https://familysearch.org/platform/tree/couple-relationships/12345\"\n      },\n      \"person1\" : {\n        \"title\" : \"Conclusions\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/pid-1\"\n      },\n      \"person2\" : {\n        \"title\" : \"Conclusions\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/pid-2\"\n      },\n      \"woman\" : {\n        \"title\" : \"Conclusions\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/pid-2\"\n      },\n      \"change-history\" : {\n        \"title\" : \"Couple Relationship Change History\",\n        \"href\" : \"https://familysearch.org/platform/tree/couple-relationships/12345/changes\"\n      },\n      \"notes\" : {\n        \"title\" : \"Couple Relationship Notes\",\n        \"href\" : \"https://familysearch.org/platform/tree/couple-relationships/12345/notes\"\n      },\n      \"man\" : {\n        \"title\" : \"Conclusions\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/pid-1\"\n      }\n    },\n    \"id\" : \"12345\"\n  } ]\n}",
+        "body" : "{\n  \"relationships\" : [ {\n    \"type\" : \"http://gedcomx.org/Couple\",\n    \"facts\" : [ {\n      \"type\" : \"http://gedcomx.org/Marriage\",\n      \"date\" : {\n        \"original\" : \"June 1800\",\n        \"formal\" : \"+1800-06\"\n      },\n      \"place\" : {\n        \"original\" : \"Provo, Utah, Utah, United States\"\n      }\n    } ],\n    \"person2\" : {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/pid-2\",\n      \"resourceId\" : \"pid-2\"\n    },\n    \"person1\" : {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/pid-1\",\n      \"resourceId\" : \"pid-1\"\n    },\n    \"links\" : {\n      \"source-references\" : {\n        \"title\" : \"Couple Relationship Source References\",\n        \"href\" : \"https://familysearch.org/platform/tree/couple-relationships/12345/source-references\"\n      },\n      \"relationship\" : {\n        \"title\" : \"Couple Relationship\",\n        \"href\" : \"https://familysearch.org/platform/tree/couple-relationships/12345\"\n      },\n      \"person1\" : {\n        \"title\" : \"Person\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/pid-1\"\n      },\n      \"person2\" : {\n        \"title\" : \"Person\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/pid-2\"\n      },\n      \"woman\" : {\n        \"title\" : \"Person\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/pid-2\"\n      },\n      \"change-history\" : {\n        \"title\" : \"Couple Relationship Change History\",\n        \"href\" : \"https://familysearch.org/platform/tree/couple-relationships/12345/changes\"\n      },\n      \"notes\" : {\n        \"title\" : \"Couple Relationship Notes\",\n        \"href\" : \"https://familysearch.org/platform/tree/couple-relationships/12345/notes\"\n      },\n      \"man\" : {\n        \"title\" : \"Person\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/pid-1\"\n      }\n    },\n    \"id\" : \"12345\"\n  } ]\n}",
         "headers" : [
           {
             "name" : "Transfer-encoding",
             "value" : "chunked"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:19:43 GMT"
           },
           {
             "name" : "Content-type",
@@ -30,7 +34,7 @@
           },
           {
             "name" : "Last-modified",
-            "value" : "Tue, 14 May 2013 21:16:11 GMT"
+            "value" : "Mon, 17 Jun 2013 17:19:43 GMT"
           },
           {
             "name" : "Etag",
@@ -63,11 +67,15 @@
       "response" : {
         "code" : "200",
         "status_message" : "OK",
-        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gedcomx xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <relationship type=\"http://gedcomx.org/Couple\" id=\"12345\">\n        <link href=\"https://familysearch.org/platform/tree/couple-relationships/12345/changes\" rel=\"change-history\" title=\"Couple Relationship Change History\"/>\n        <link href=\"https://familysearch.org/platform/tree/persons/pid-1\" rel=\"man\" title=\"Conclusions\"/>\n        <link href=\"https://familysearch.org/platform/tree/couple-relationships/12345/notes\" rel=\"notes\" title=\"Couple Relationship Notes\"/>\n        <link href=\"https://familysearch.org/platform/tree/persons/pid-1\" rel=\"person1\" title=\"Conclusions\"/>\n        <link href=\"https://familysearch.org/platform/tree/persons/pid-2\" rel=\"person2\" title=\"Conclusions\"/>\n        <link href=\"https://familysearch.org/platform/tree/couple-relationships/12345\" rel=\"relationship\" title=\"Couple Relationship\"/>\n        <link href=\"https://familysearch.org/platform/tree/couple-relationships/12345/source-references\" rel=\"source-references\" title=\"Couple Relationship Source References\"/>\n        <link href=\"https://familysearch.org/platform/tree/persons/pid-2\" rel=\"woman\" title=\"Conclusions\"/>\n        <person1 resource=\"https://familysearch.org/platform/tree/persons/pid-1\" resourceId=\"pid-1\"/>\n        <person2 resource=\"https://familysearch.org/platform/tree/persons/pid-2\" resourceId=\"pid-2\"/>\n        <fact type=\"http://gedcomx.org/Marriage\">\n            <date>\n                <original>June 1800<\/original>\n                <formal>+1800-06<\/formal>\n            <\/date>\n            <place>\n                <original>Provo, Utah, Utah, United States<\/original>\n            <\/place>\n        <\/fact>\n    <\/relationship>\n<\/gedcomx>",
+        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gx:gedcomx xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <gx:relationship type=\"http://gedcomx.org/Couple\" id=\"12345\">\n        <gx:link href=\"https://familysearch.org/platform/tree/couple-relationships/12345/changes\" rel=\"change-history\" title=\"Couple Relationship Change History\"/>\n        <gx:link href=\"https://familysearch.org/platform/tree/persons/pid-1\" rel=\"man\" title=\"Person\"/>\n        <gx:link href=\"https://familysearch.org/platform/tree/couple-relationships/12345/notes\" rel=\"notes\" title=\"Couple Relationship Notes\"/>\n        <gx:link href=\"https://familysearch.org/platform/tree/persons/pid-1\" rel=\"person1\" title=\"Person\"/>\n        <gx:link href=\"https://familysearch.org/platform/tree/persons/pid-2\" rel=\"person2\" title=\"Person\"/>\n        <gx:link href=\"https://familysearch.org/platform/tree/couple-relationships/12345\" rel=\"relationship\" title=\"Couple Relationship\"/>\n        <gx:link href=\"https://familysearch.org/platform/tree/couple-relationships/12345/source-references\" rel=\"source-references\" title=\"Couple Relationship Source References\"/>\n        <gx:link href=\"https://familysearch.org/platform/tree/persons/pid-2\" rel=\"woman\" title=\"Person\"/>\n        <gx:person1 resource=\"https://familysearch.org/platform/tree/persons/pid-1\" resourceId=\"pid-1\"/>\n        <gx:person2 resource=\"https://familysearch.org/platform/tree/persons/pid-2\" resourceId=\"pid-2\"/>\n        <gx:fact type=\"http://gedcomx.org/Marriage\">\n            <gx:date>\n                <gx:original>June 1800<\/gx:original>\n                <gx:formal>+1800-06<\/gx:formal>\n            <\/gx:date>\n            <gx:place>\n                <gx:original>Provo, Utah, Utah, United States<\/gx:original>\n            <\/gx:place>\n        <\/gx:fact>\n    <\/gx:relationship>\n<\/gx:gedcomx>",
         "headers" : [
           {
             "name" : "Transfer-encoding",
             "value" : "chunked"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:19:37 GMT"
           },
           {
             "name" : "Content-type",
@@ -75,7 +83,7 @@
           },
           {
             "name" : "Last-modified",
-            "value" : "Tue, 14 May 2013 21:16:05 GMT"
+            "value" : "Mon, 17 Jun 2013 17:19:37 GMT"
           },
           {
             "name" : "Etag",
@@ -83,7 +91,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "5"
+            "value" : "6"
           },
           {
             "name" : "Content-location",

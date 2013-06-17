@@ -18,11 +18,15 @@
       "response" : {
         "code" : "200",
         "status_message" : "OK",
-        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<feed xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns=\"http://www.w3.org/2005/Atom\">\n    <id>uuid:cea4c89b-3d68-4848-ac35-193c0f410bc6<\/id>\n    <link href=\"https://familysearch.org/platform/tree/persons/P12-345\" rel=\"person\" title=\"Conclusions\"/>\n    <link href=\"https://familysearch.org/platform/tree/persons/P12-345/changes\" rel=\"self\" title=\"Person Change History\"/>\n    <title>Change History for Person P12-345<\/title>\n    <updated>2013-05-14T21:15:06.385Z<\/updated>\n    <entry>\n        <fs:changeInfo objectType=\"http://gedcomx.org/Person\" operation=\"http://familysearch.org/v1/Create\" reason=\"because it was necessary\"/>\n        <contributor>\n            <name>Mr. Contributor<\/name>\n        <\/contributor>\n        <link href=\"https://familysearch.org/platform/users/agents/UKMGTY\" rel=\"agent\"/>\n        <link href=\"https://familysearch.org/platform/tree/changes/381633/restore\" rel=\"restore\" title=\"Restore Change\"/>\n        <title>Person Created<\/title>\n        <updated>2013-05-14T21:15:06.385Z<\/updated>\n    <\/entry>\n    <entry>\n        <fs:changeInfo objectModifier=\"http://gedcomx.org/Person\" objectType=\"http://gedcomx.org/Birth\" operation=\"http://familysearch.org/v1/Create\" reason=\"because it was necessary\"/>\n        <contributor>\n            <name>Mr. Contributor<\/name>\n        <\/contributor>\n        <link href=\"https://familysearch.org/platform/users/agents/UKMGTY\" rel=\"agent\"/>\n        <link href=\"https://familysearch.org/platform/tree/changes/173058/restore\" rel=\"restore\" title=\"Restore Change\"/>\n        <title>Birth Added<\/title>\n        <updated>2013-05-14T21:15:06.385Z<\/updated>\n    <\/entry>\n    <entry>\n        <fs:changeInfo objectType=\"http://gedcomx.org/Person\" operation=\"http://familysearch.org/v1/Delete\" reason=\"because it was necessary\"/>\n        <contributor>\n            <name>Mr. Contributor<\/name>\n        <\/contributor>\n        <link href=\"https://familysearch.org/platform/users/agents/UKMGTY\" rel=\"agent\"/>\n        <link href=\"https://familysearch.org/platform/tree/changes/433798/restore\" rel=\"restore\" title=\"Restore Change\"/>\n        <title>Person Removed<\/title>\n        <updated>2013-05-14T21:15:06.385Z<\/updated>\n    <\/entry>\n<\/feed>",
+        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<atom:feed xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <atom:id>uuid:fb93bd47-9065-4008-a076-89113918cfab<\/atom:id>\n    <atom:link href=\"https://familysearch.org/platform/tree/persons/P12-345\" rel=\"person\" title=\"Person\"/>\n    <atom:link href=\"https://familysearch.org/platform/tree/persons/P12-345/changes\" rel=\"self\" title=\"Person Change History\"/>\n    <atom:title>Change History for Person P12-345<\/atom:title>\n    <atom:updated>2013-06-17T11:20:07.928-06:00<\/atom:updated>\n    <atom:entry>\n        <fs:changeInfo objectType=\"http://gedcomx.org/Person\" operation=\"http://familysearch.org/v1/Create\" reason=\"because it was necessary\"/>\n        <atom:contributor>\n            <atom:name>Mr. Contributor<\/atom:name>\n        <\/atom:contributor>\n        <atom:link href=\"https://familysearch.org/platform/users/agents/UKMGTY\" rel=\"agent\"/>\n        <atom:link href=\"https://familysearch.org/platform/tree/changes/764676/restore\" rel=\"restore\" title=\"Restore Change\"/>\n        <atom:title>Person Created<\/atom:title>\n        <atom:updated>2013-06-17T11:20:07.928-06:00<\/atom:updated>\n    <\/atom:entry>\n    <atom:entry>\n        <fs:changeInfo objectModifier=\"http://gedcomx.org/Person\" objectType=\"http://gedcomx.org/Birth\" operation=\"http://familysearch.org/v1/Create\" reason=\"because it was necessary\"/>\n        <atom:contributor>\n            <atom:name>Mr. Contributor<\/atom:name>\n        <\/atom:contributor>\n        <atom:link href=\"https://familysearch.org/platform/users/agents/UKMGTY\" rel=\"agent\"/>\n        <atom:link href=\"https://familysearch.org/platform/tree/changes/137179/restore\" rel=\"restore\" title=\"Restore Change\"/>\n        <atom:title>Birth Added<\/atom:title>\n        <atom:updated>2013-06-17T11:20:07.928-06:00<\/atom:updated>\n    <\/atom:entry>\n    <atom:entry>\n        <fs:changeInfo objectType=\"http://gedcomx.org/Person\" operation=\"http://familysearch.org/v1/Delete\" reason=\"because it was necessary\"/>\n        <atom:contributor>\n            <atom:name>Mr. Contributor<\/atom:name>\n        <\/atom:contributor>\n        <atom:link href=\"https://familysearch.org/platform/users/agents/UKMGTY\" rel=\"agent\"/>\n        <atom:link href=\"https://familysearch.org/platform/tree/changes/320113/restore\" rel=\"restore\" title=\"Restore Change\"/>\n        <atom:title>Person Removed<\/atom:title>\n        <atom:updated>2013-06-17T11:20:07.928-06:00<\/atom:updated>\n    <\/atom:entry>\n<\/atom:feed>",
         "headers" : [
           {
             "name" : "Transfer-encoding",
             "value" : "chunked"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:20:07 GMT"
           },
           {
             "name" : "Content-type",
@@ -30,7 +34,7 @@
           },
           {
             "name" : "Last-modified",
-            "value" : "Tue, 14 May 2013 21:15:06 GMT"
+            "value" : "Mon, 17 Jun 2013 17:20:07 GMT"
           },
           {
             "name" : "Etag",
@@ -38,7 +42,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "4"
+            "value" : "2"
           }
         ]
       }
@@ -59,11 +63,15 @@
       "response" : {
         "code" : "200",
         "status_message" : "OK",
-        "body" : "{\n  \"id\" : \"uuid:6d4d424b-8b62-4de8-9fb1-8ee9d3015fd7\",\n  \"entries\" : [ {\n    \"title\" : \"Person Created\",\n    \"links\" : {\n      \"restore\" : {\n        \"title\" : \"Restore Change\",\n        \"href\" : \"https://familysearch.org/platform/tree/changes/101884/restore\"\n      },\n      \"agent\" : {\n        \"href\" : \"https://familysearch.org/platform/users/agents/UKMGTY\"\n      }\n    },\n    \"contributors\" : [ {\n      \"name\" : \"Mr. Contributor\"\n    } ],\n    \"updated\" : 1368566107420,\n    \"changeInfo\" : [ {\n      \"objectType\" : \"http://gedcomx.org/Person\",\n      \"reason\" : \"because it was necessary\",\n      \"operation\" : \"http://familysearch.org/v1/Create\"\n    } ]\n  }, {\n    \"title\" : \"Birth Added\",\n    \"links\" : {\n      \"restore\" : {\n        \"title\" : \"Restore Change\",\n        \"href\" : \"https://familysearch.org/platform/tree/changes/176309/restore\"\n      },\n      \"agent\" : {\n        \"href\" : \"https://familysearch.org/platform/users/agents/UKMGTY\"\n      }\n    },\n    \"contributors\" : [ {\n      \"name\" : \"Mr. Contributor\"\n    } ],\n    \"updated\" : 1368566107420,\n    \"changeInfo\" : [ {\n      \"objectType\" : \"http://gedcomx.org/Birth\",\n      \"reason\" : \"because it was necessary\",\n      \"operation\" : \"http://familysearch.org/v1/Create\",\n      \"objectModifier\" : \"http://gedcomx.org/Person\"\n    } ]\n  }, {\n    \"title\" : \"Person Removed\",\n    \"links\" : {\n      \"restore\" : {\n        \"title\" : \"Restore Change\",\n        \"href\" : \"https://familysearch.org/platform/tree/changes/142062/restore\"\n      },\n      \"agent\" : {\n        \"href\" : \"https://familysearch.org/platform/users/agents/UKMGTY\"\n      }\n    },\n    \"contributors\" : [ {\n      \"name\" : \"Mr. Contributor\"\n    } ],\n    \"updated\" : 1368566107420,\n    \"changeInfo\" : [ {\n      \"objectType\" : \"http://gedcomx.org/Person\",\n      \"reason\" : \"because it was necessary\",\n      \"operation\" : \"http://familysearch.org/v1/Delete\"\n    } ]\n  } ],\n  \"title\" : \"Change History for Person P12-345\",\n  \"links\" : {\n    \"person\" : {\n      \"title\" : \"Conclusions\",\n      \"href\" : \"https://familysearch.org/platform/tree/persons/P12-345\"\n    },\n    \"self\" : {\n      \"title\" : \"Person Change History\",\n      \"href\" : \"https://familysearch.org/platform/tree/persons/P12-345/changes\"\n    }\n  },\n  \"updated\" : 1368566107420\n}",
+        "body" : "{\n  \"id\" : \"uuid:7eb5570a-fa41-4de9-84ef-ba49493f999f\",\n  \"entries\" : [ {\n    \"title\" : \"Person Created\",\n    \"contributors\" : [ {\n      \"name\" : \"Mr. Contributor\"\n    } ],\n    \"updated\" : 1371489608690,\n    \"links\" : {\n      \"restore\" : {\n        \"title\" : \"Restore Change\",\n        \"href\" : \"https://familysearch.org/platform/tree/changes/774923/restore\"\n      },\n      \"agent\" : {\n        \"href\" : \"https://familysearch.org/platform/users/agents/UKMGTY\"\n      }\n    },\n    \"changeInfo\" : [ {\n      \"objectType\" : \"http://gedcomx.org/Person\",\n      \"operation\" : \"http://familysearch.org/v1/Create\",\n      \"reason\" : \"because it was necessary\"\n    } ]\n  }, {\n    \"title\" : \"Birth Added\",\n    \"contributors\" : [ {\n      \"name\" : \"Mr. Contributor\"\n    } ],\n    \"updated\" : 1371489608690,\n    \"links\" : {\n      \"restore\" : {\n        \"title\" : \"Restore Change\",\n        \"href\" : \"https://familysearch.org/platform/tree/changes/103888/restore\"\n      },\n      \"agent\" : {\n        \"href\" : \"https://familysearch.org/platform/users/agents/UKMGTY\"\n      }\n    },\n    \"changeInfo\" : [ {\n      \"objectType\" : \"http://gedcomx.org/Birth\",\n      \"objectModifier\" : \"http://gedcomx.org/Person\",\n      \"operation\" : \"http://familysearch.org/v1/Create\",\n      \"reason\" : \"because it was necessary\"\n    } ]\n  }, {\n    \"title\" : \"Person Removed\",\n    \"contributors\" : [ {\n      \"name\" : \"Mr. Contributor\"\n    } ],\n    \"updated\" : 1371489608690,\n    \"links\" : {\n      \"restore\" : {\n        \"title\" : \"Restore Change\",\n        \"href\" : \"https://familysearch.org/platform/tree/changes/152821/restore\"\n      },\n      \"agent\" : {\n        \"href\" : \"https://familysearch.org/platform/users/agents/UKMGTY\"\n      }\n    },\n    \"changeInfo\" : [ {\n      \"objectType\" : \"http://gedcomx.org/Person\",\n      \"operation\" : \"http://familysearch.org/v1/Delete\",\n      \"reason\" : \"because it was necessary\"\n    } ]\n  } ],\n  \"title\" : \"Change History for Person P12-345\",\n  \"updated\" : 1371489608690,\n  \"links\" : {\n    \"person\" : {\n      \"title\" : \"Person\",\n      \"href\" : \"https://familysearch.org/platform/tree/persons/P12-345\"\n    },\n    \"self\" : {\n      \"title\" : \"Person Change History\",\n      \"href\" : \"https://familysearch.org/platform/tree/persons/P12-345/changes\"\n    }\n  }\n}",
         "headers" : [
           {
             "name" : "Transfer-encoding",
             "value" : "chunked"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:20:08 GMT"
           },
           {
             "name" : "Content-type",
@@ -71,7 +79,7 @@
           },
           {
             "name" : "Last-modified",
-            "value" : "Tue, 14 May 2013 21:15:07 GMT"
+            "value" : "Mon, 17 Jun 2013 17:20:08 GMT"
           },
           {
             "name" : "Etag",
@@ -79,7 +87,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "4"
+            "value" : "3"
           }
         ]
       }

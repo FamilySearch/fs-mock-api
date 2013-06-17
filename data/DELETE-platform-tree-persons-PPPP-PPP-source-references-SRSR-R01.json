@@ -12,7 +12,7 @@
         },
         {
           "name" : "Content-Type",
-          "value" : "application/x-gedcomx-v1+xml"
+          "value" : "application/x-gedcomx-v1+json"
         },
         {
           "name" : "Authorization",
@@ -24,6 +24,10 @@
         "status_message" : "No Content",
         "body" : "",
         "headers" : [
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:21:18 GMT"
+          },
           {
             "name" : "Content-type",
             "value" : "text/html"

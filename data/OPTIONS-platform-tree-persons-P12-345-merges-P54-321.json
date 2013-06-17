@@ -29,6 +29,10 @@
             "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
           },
           {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:20:28 GMT"
+          },
+          {
             "name" : "Content-type",
             "value" : "application/x-fs-v1+json"
           },
@@ -68,6 +72,10 @@
           {
             "name" : "Cache-control",
             "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:20:25 GMT"
           },
           {
             "name" : "Content-type",

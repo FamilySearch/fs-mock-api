@@ -25,6 +25,10 @@
             "value" : "chunked"
           },
           {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:18:47 GMT"
+          },
+          {
             "name" : "Content-type",
             "value" : "application/x-fs-v1+json"
           },
@@ -55,11 +59,15 @@
       "response" : {
         "code" : "200",
         "status_message" : "OK",
-        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <fs:childAndParentsRelationship id=\"R12-3456\">\n        <link href=\"https://familysearch.org/platform/tree/child-and-parents-relationships/R12-3456\" rel=\"child-and-parents-relationship\" title=\"Child-and-Parents Relationship\"/>\n        <note id=\"1804317705\">\n            <link href=\"https://familysearch.org/platform/tree/child-and-parents-relationships/R12-3456/notes/1804317705\" rel=\"child-and-parents-note\" title=\"Child-and-Parents Relationship Note\"/>\n            <subject>note 0<\/subject>\n        <\/note>\n        <note id=\"1805241226\">\n            <link href=\"https://familysearch.org/platform/tree/child-and-parents-relationships/R12-3456/notes/1805241226\" rel=\"child-and-parents-note\" title=\"Child-and-Parents Relationship Note\"/>\n            <subject>note 1<\/subject>\n        <\/note>\n    <\/fs:childAndParentsRelationship>\n<\/fs:familysearch>",
+        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <fs:childAndParentsRelationship id=\"R12-3456\">\n        <gx:link href=\"https://familysearch.org/platform/tree/child-and-parents-relationships/R12-3456\" rel=\"child-and-parents-relationship\" title=\"Child-and-Parents Relationship\"/>\n        <gx:note id=\"1804317705\">\n            <gx:link href=\"https://familysearch.org/platform/tree/child-and-parents-relationships/R12-3456/notes/1804317705\" rel=\"child-and-parents-note\" title=\"Child-and-Parents Relationship Note\"/>\n            <gx:subject>note 0<\/gx:subject>\n        <\/gx:note>\n        <gx:note id=\"1805241226\">\n            <gx:link href=\"https://familysearch.org/platform/tree/child-and-parents-relationships/R12-3456/notes/1805241226\" rel=\"child-and-parents-note\" title=\"Child-and-Parents Relationship Note\"/>\n            <gx:subject>note 1<\/gx:subject>\n        <\/gx:note>\n    <\/fs:childAndParentsRelationship>\n<\/fs:familysearch>",
         "headers" : [
           {
             "name" : "Transfer-encoding",
             "value" : "chunked"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:18:44 GMT"
           },
           {
             "name" : "Content-type",

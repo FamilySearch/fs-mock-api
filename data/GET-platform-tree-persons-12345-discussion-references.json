@@ -18,11 +18,15 @@
       "response" : {
         "code" : "200",
         "status_message" : "OK",
-        "body" : "{\n  \"persons\" : [ {\n    \"links\" : {\n      \"person\" : {\n        \"title\" : \"Conclusions\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/12345\"\n      }\n    },\n    \"id\" : \"12345\",\n    \"discussion-references\" : [ \"https://familysearch.org/platform/discussions/discussions/67890\", \"https://familysearch.org/platform/discussions/discussions/67891\" ]\n  } ]\n}",
+        "body" : "{\n  \"persons\" : [ {\n    \"links\" : {\n      \"person\" : {\n        \"title\" : \"Person\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/12345\"\n      }\n    },\n    \"id\" : \"12345\",\n    \"discussion-references\" : [ \"https://familysearch.org/platform/discussions/discussions/67890\", \"https://familysearch.org/platform/discussions/discussions/67891\" ]\n  } ]\n}",
         "headers" : [
           {
             "name" : "Transfer-encoding",
             "value" : "chunked"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:20:19 GMT"
           },
           {
             "name" : "Content-type",
@@ -30,7 +34,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "2"
+            "value" : "3"
           },
           {
             "name" : "Content-location",
@@ -55,11 +59,15 @@
       "response" : {
         "code" : "200",
         "status_message" : "OK",
-        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <person id=\"12345\">\n        <fs:discussion-reference resource=\"https://familysearch.org/platform/discussions/discussions/67890\">\n            <link href=\"https://familysearch.org/platform/tree/persons/12345/discussion-references/67890\" rel=\"discussion-reference\" title=\"Person Discussion Reference\"/>\n        <\/fs:discussion-reference>\n        <fs:discussion-reference resource=\"https://familysearch.org/platform/discussions/discussions/67891\">\n            <link href=\"https://familysearch.org/platform/tree/persons/12345/discussion-references/67891\" rel=\"discussion-reference\" title=\"Person Discussion Reference\"/>\n        <\/fs:discussion-reference>\n        <link href=\"https://familysearch.org/platform/tree/persons/12345\" rel=\"person\" title=\"Conclusions\"/>\n    <\/person>\n<\/fs:familysearch>",
+        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <gx:person id=\"12345\">\n        <fs:discussion-reference resource=\"https://familysearch.org/platform/discussions/discussions/67890\">\n            <gx:link href=\"https://familysearch.org/platform/tree/persons/12345/discussion-references/67890\" rel=\"discussion-reference\" title=\"Person Discussion Reference\"/>\n        <\/fs:discussion-reference>\n        <fs:discussion-reference resource=\"https://familysearch.org/platform/discussions/discussions/67891\">\n            <gx:link href=\"https://familysearch.org/platform/tree/persons/12345/discussion-references/67891\" rel=\"discussion-reference\" title=\"Person Discussion Reference\"/>\n        <\/fs:discussion-reference>\n        <gx:link href=\"https://familysearch.org/platform/tree/persons/12345\" rel=\"person\" title=\"Person\"/>\n    <\/gx:person>\n<\/fs:familysearch>",
         "headers" : [
           {
             "name" : "Transfer-encoding",
             "value" : "chunked"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:20:17 GMT"
           },
           {
             "name" : "Content-type",

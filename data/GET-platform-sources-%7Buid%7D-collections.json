@@ -29,6 +29,10 @@
             "value" : "chunked"
           },
           {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 16:36:48 GMT"
+          },
+          {
             "name" : "Content-type",
             "value" : "application/x-fs-v1+json"
           },
@@ -63,11 +67,15 @@
       "response" : {
         "code" : "200",
         "status_message" : "OK",
-        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns:atom=\"http://www.w3.org/2005/Atom\" xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\">\n    <collection id=\"MMMM-MMM\">\n        <link href=\"https://familysearch.org/platform/sources/collections/MMMM-MMM\" rel=\"user-collection\" title=\"User-Defined Collection\"/>\n    <\/collection>\n<\/fs:familysearch>",
+        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns:atom=\"http://www.w3.org/2005/Atom\" xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\">\n    <gx:collection id=\"MMMM-MMM\">\n        <gx:link href=\"https://familysearch.org/platform/sources/collections/MMMM-MMM\" rel=\"user-collection\" title=\"User-Defined Collection\"/>\n    <\/gx:collection>\n<\/fs:familysearch>",
         "headers" : [
           {
             "name" : "Transfer-encoding",
             "value" : "chunked"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 16:36:46 GMT"
           },
           {
             "name" : "Content-type",

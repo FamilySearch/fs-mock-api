@@ -21,6 +21,10 @@
         "body" : "",
         "headers" : [
           {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:20:35 GMT"
+          },
+          {
             "name" : "Content-type",
             "value" : "application/x-gedcomx-v1+json"
           },
@@ -30,7 +34,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "1"
+            "value" : "0"
           }
         ]
       }
@@ -53,6 +57,10 @@
         "status_message" : "No Content",
         "body" : "",
         "headers" : [
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:20:33 GMT"
+          },
           {
             "name" : "Content-type",
             "value" : "application/x-gedcomx-v1+xml"

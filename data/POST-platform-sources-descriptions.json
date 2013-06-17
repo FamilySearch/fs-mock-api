@@ -15,23 +15,27 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "{\n  \"sourceDescriptions\" : [ {\n    \"citations\" : [ {\n      \"value\" : \"\\\"United States Census, 1900.\\\" database and digital images, FamilySearch (https://familysearch.org/: accessed 17 Mar 2012), Ethel Hollivet, 1900; citing United States Census Office, Washington, D.C., 1900 Population Census Schedules, Los Angeles, California, population schedule, Los Angeles Ward 6, Enumeration District 58, p. 20B, dwelling 470, family 501, FHL microfilm 1,240,090; citing NARA microfilm publication T623, roll 90.\"\n    } ],\n    \"about\" : \"https://familysearch.org/pal:/MM9.1.1/M9PJ-2JJ\",\n    \"titles\" : [ {\n      \"value\" : \"1900 US Census, Ethel Hollivet\"\n    } ],\n    \"notes\" : [ {\n      \"text\" : \"Ethel Hollivet (line 75) with husband Albert Hollivet (line 74); also in the dwelling: step-father Joseph E Watkins (line 72), mother Lina Watkins (line 73), and grandmother -- Lina's mother -- Mary Sasnett (line 76).  Albert's mother and brother also appear on this page -- Emma Hollivet (line 68), and Eddie (line 69).\"\n    } ],\n    \"id\" : \"MMMM-MMM\"\n  } ]\n}",
+      "body" : "{\r\n  \"sourceDescriptions\" : [ {\r\n    \"citations\" : [ {\r\n      \"value\" : \"\\\"United States Census, 1900.\\\" database and digital images, FamilySearch (https://familysearch.org/: accessed 17 Mar 2012), Ethel Hollivet, 1900; citing United States Census Office, Washington, D.C., 1900 Population Census Schedules, Los Angeles, California, population schedule, Los Angeles Ward 6, Enumeration District 58, p. 20B, dwelling 470, family 501, FHL microfilm 1,240,090; citing NARA microfilm publication T623, roll 90.\"\r\n    } ],\r\n    \"about\" : \"https://familysearch.org/pal:/MM9.1.1/M9PJ-2JJ\",\r\n    \"titles\" : [ {\r\n      \"value\" : \"1900 US Census, Ethel Hollivet\"\r\n    } ],\r\n    \"notes\" : [ {\r\n      \"text\" : \"Ethel Hollivet (line 75) with husband Albert Hollivet (line 74); also in the dwelling: step-father Joseph E Watkins (line 72), mother Lina Watkins (line 73), and grandmother -- Lina's mother -- Mary Sasnett (line 76).  Albert's mother and brother also appear on this page -- Emma Hollivet (line 68), and Eddie (line 69).\"\r\n    } ],\r\n    \"id\" : \"MMMM-MMM\"\r\n  } ]\r\n}",
       "response" : {
         "code" : "201",
         "status_message" : "Created",
         "body" : "",
         "headers" : [
           {
-            "name" : "Transfer-encoding",
-            "value" : "chunked"
-          },
-          {
             "name" : "X-entity-id",
             "value" : "MMMM-MMM"
           },
           {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
             "name" : "Cache-control",
             "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 16:36:37 GMT"
           },
           {
             "name" : "Content-type",
@@ -43,7 +47,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "103"
+            "value" : "251"
           }
         ]
       }
@@ -61,23 +65,27 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gedcomx xmlns:atom=\"http://www.w3.org/2005/Atom\" xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\">\n    <sourceDescription about=\"https://familysearch.org/pal:/MM9.1.1/M9PJ-2JJ\" id=\"MMMM-MMM\">\n        <citation>\n            <value>\"United States Census, 1900.\" database and digital images, FamilySearch (https://familysearch.org/: accessed 17 Mar 2012), Ethel Hollivet, 1900; citing United States Census Office, Washington, D.C., 1900 Population Census Schedules, Los Angeles, California, population schedule, Los Angeles Ward 6, Enumeration District 58, p. 20B, dwelling 470, family 501, FHL microfilm 1,240,090; citing NARA microfilm publication T623, roll 90.<\/value>\n        <\/citation>\n        <title>1900 US Census, Ethel Hollivet<\/title>\n        <note>\n            <text>Ethel Hollivet (line 75) with husband Albert Hollivet (line 74); also in the dwelling: step-father Joseph E Watkins (line 72), mother Lina Watkins (line 73), and grandmother -- Lina's mother -- Mary Sasnett (line 76).  Albert's mother and brother also appear on this page -- Emma Hollivet (line 68), and Eddie (line 69).<\/text>\n        <\/note>\n    <\/sourceDescription>\n<\/gedcomx>\n",
+      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gx:gedcomx xmlns:atom=\"http://www.w3.org/2005/Atom\" xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\">\n    <gx:sourceDescription about=\"https://familysearch.org/pal:/MM9.1.1/M9PJ-2JJ\" id=\"MMMM-MMM\">\n        <gx:citation>\n            <gx:value>\"United States Census, 1900.\" database and digital images, FamilySearch (https://familysearch.org/: accessed 17 Mar 2012), Ethel Hollivet, 1900; citing United States Census Office, Washington, D.C., 1900 Population Census Schedules, Los Angeles, California, population schedule, Los Angeles Ward 6, Enumeration District 58, p. 20B, dwelling 470, family 501, FHL microfilm 1,240,090; citing NARA microfilm publication T623, roll 90.<\/gx:value>\n        <\/gx:citation>\n        <gx:title>1900 US Census, Ethel Hollivet<\/gx:title>\n        <gx:note>\n            <gx:text>Ethel Hollivet (line 75) with husband Albert Hollivet (line 74); also in the dwelling: step-father Joseph E Watkins (line 72), mother Lina Watkins (line 73), and grandmother -- Lina's mother -- Mary Sasnett (line 76).  Albert's mother and brother also appear on this page -- Emma Hollivet (line 68), and Eddie (line 69).<\/gx:text>\n        <\/gx:note>\n    <\/gx:sourceDescription>\n<\/gx:gedcomx>\n",
       "response" : {
         "code" : "201",
         "status_message" : "Created",
         "body" : "",
         "headers" : [
           {
-            "name" : "Transfer-encoding",
-            "value" : "chunked"
-          },
-          {
             "name" : "X-entity-id",
             "value" : "MMMM-MMM"
           },
           {
+            "name" : "Transfer-encoding",
+            "value" : "chunked"
+          },
+          {
             "name" : "Cache-control",
             "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 16:36:36 GMT"
           },
           {
             "name" : "Content-type",
@@ -89,7 +97,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "4"
+            "value" : "7"
           }
         ]
       }

@@ -21,6 +21,10 @@
             "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
           },
           {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:21:51 GMT"
+          },
+          {
             "name" : "Content-type",
             "value" : "text/html"
           },
@@ -30,7 +34,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "1"
+            "value" : "0"
           },
           {
             "name" : "Content-location",

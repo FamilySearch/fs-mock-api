@@ -25,6 +25,10 @@
             "value" : "chunked"
           },
           {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:21:34 GMT"
+          },
+          {
             "name" : "Content-type",
             "value" : "application/x-gedcomx-v1+json"
           },
@@ -64,6 +68,10 @@
           {
             "name" : "Transfer-encoding",
             "value" : "chunked"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:21:30 GMT"
           },
           {
             "name" : "Content-type",

@@ -18,11 +18,15 @@
       "response" : {
         "code" : "200",
         "status_message" : "OK",
-        "body" : "{\n  \"relationships\" : [ {\n    \"type\" : \"http://gedcomx.org/Couple\",\n    \"facts\" : [ {\n      \"type\" : \"http://gedcomx.org/Marriage\",\n      \"date\" : {\n        \"original\" : \"1 January 1786\"\n      },\n      \"place\" : {\n        \"original\" : \"Boston, MA\"\n      }\n    } ],\n    \"person1\" : {\n      \"resource\" : \"/tree/persons/KJ8T-GZ1\",\n      \"resourceId\" : \"KJ8T-GZ1\"\n    },\n    \"person2\" : {\n      \"resource\" : \"/tree/persons/KJ8T-GZ2\",\n      \"resourceId\" : \"KJ8T-GZ2\"\n    },\n    \"links\" : {\n      \"relationship\" : {\n        \"title\" : \"Couple Relationship\",\n        \"href\" : \"https://familysearch.org/platform/tree/couple-relationships/KJ8T-GZ0\"\n      },\n      \"person1\" : {\n        \"title\" : \"Conclusions\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/12345\"\n      },\n      \"person2\" : {\n        \"title\" : \"Conclusions\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/12345\"\n      },\n      \"woman\" : {\n        \"title\" : \"Conclusions\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/12345\"\n      },\n      \"man\" : {\n        \"title\" : \"Conclusions\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/12345\"\n      }\n    },\n    \"id\" : \"KJ8T-GZ0\"\n  } ],\n  \"links\" : {\n    \"person\" : {\n      \"title\" : \"Conclusions\",\n      \"href\" : \"https://familysearch.org/platform/tree/persons/12345\"\n    }\n  }\n}",
+        "body" : "{\n  \"relationships\" : [ {\n    \"type\" : \"http://gedcomx.org/Couple\",\n    \"facts\" : [ {\n      \"type\" : \"http://gedcomx.org/Marriage\",\n      \"date\" : {\n        \"original\" : \"1 January 1786\"\n      },\n      \"place\" : {\n        \"original\" : \"Boston, MA\"\n      }\n    } ],\n    \"person2\" : {\n      \"resource\" : \"/tree/persons/KJ8T-GZ2\",\n      \"resourceId\" : \"KJ8T-GZ2\"\n    },\n    \"person1\" : {\n      \"resource\" : \"/tree/persons/KJ8T-GZ1\",\n      \"resourceId\" : \"KJ8T-GZ1\"\n    },\n    \"links\" : {\n      \"relationship\" : {\n        \"title\" : \"Couple Relationship\",\n        \"href\" : \"https://familysearch.org/platform/tree/couple-relationships/KJ8T-GZ0\"\n      },\n      \"person1\" : {\n        \"title\" : \"Person\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/12345\"\n      },\n      \"person2\" : {\n        \"title\" : \"Person\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/12345\"\n      },\n      \"woman\" : {\n        \"title\" : \"Person\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/12345\"\n      },\n      \"man\" : {\n        \"title\" : \"Person\",\n        \"href\" : \"https://familysearch.org/platform/tree/persons/12345\"\n      }\n    },\n    \"id\" : \"KJ8T-GZ0\"\n  } ],\n  \"links\" : {\n    \"person\" : {\n      \"title\" : \"Person\",\n      \"href\" : \"https://familysearch.org/platform/tree/persons/12345\"\n    }\n  }\n}",
         "headers" : [
           {
             "name" : "Transfer-encoding",
             "value" : "chunked"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:20:57 GMT"
           },
           {
             "name" : "Content-type",
@@ -55,11 +59,15 @@
       "response" : {
         "code" : "200",
         "status_message" : "OK",
-        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gedcomx xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <link href=\"https://familysearch.org/platform/tree/persons/12345\" rel=\"person\" title=\"Conclusions\"/>\n    <relationship type=\"http://gedcomx.org/Couple\" id=\"KJ8T-GZ0\">\n        <link href=\"https://familysearch.org/platform/tree/persons/12345\" rel=\"man\" title=\"Conclusions\"/>\n        <link href=\"https://familysearch.org/platform/tree/persons/12345\" rel=\"person1\" title=\"Conclusions\"/>\n        <link href=\"https://familysearch.org/platform/tree/persons/12345\" rel=\"person2\" title=\"Conclusions\"/>\n        <link href=\"https://familysearch.org/platform/tree/couple-relationships/KJ8T-GZ0\" rel=\"relationship\" title=\"Couple Relationship\"/>\n        <link href=\"https://familysearch.org/platform/tree/persons/12345\" rel=\"woman\" title=\"Conclusions\"/>\n        <person1 resource=\"/tree/persons/KJ8T-GZ1\" resourceId=\"KJ8T-GZ1\"/>\n        <person2 resource=\"/tree/persons/KJ8T-GZ2\" resourceId=\"KJ8T-GZ2\"/>\n        <fact type=\"http://gedcomx.org/Marriage\">\n            <date>\n                <original>1 January 1786<\/original>\n            <\/date>\n            <place>\n                <original>Boston, MA<\/original>\n            <\/place>\n        <\/fact>\n    <\/relationship>\n<\/gedcomx>",
+        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gx:gedcomx xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <gx:link href=\"https://familysearch.org/platform/tree/persons/12345\" rel=\"person\" title=\"Person\"/>\n    <gx:relationship type=\"http://gedcomx.org/Couple\" id=\"KJ8T-GZ0\">\n        <gx:link href=\"https://familysearch.org/platform/tree/persons/12345\" rel=\"man\" title=\"Person\"/>\n        <gx:link href=\"https://familysearch.org/platform/tree/persons/12345\" rel=\"person1\" title=\"Person\"/>\n        <gx:link href=\"https://familysearch.org/platform/tree/persons/12345\" rel=\"person2\" title=\"Person\"/>\n        <gx:link href=\"https://familysearch.org/platform/tree/couple-relationships/KJ8T-GZ0\" rel=\"relationship\" title=\"Couple Relationship\"/>\n        <gx:link href=\"https://familysearch.org/platform/tree/persons/12345\" rel=\"woman\" title=\"Person\"/>\n        <gx:person1 resource=\"/tree/persons/KJ8T-GZ1\" resourceId=\"KJ8T-GZ1\"/>\n        <gx:person2 resource=\"/tree/persons/KJ8T-GZ2\" resourceId=\"KJ8T-GZ2\"/>\n        <gx:fact type=\"http://gedcomx.org/Marriage\">\n            <gx:date>\n                <gx:original>1 January 1786<\/gx:original>\n            <\/gx:date>\n            <gx:place>\n                <gx:original>Boston, MA<\/gx:original>\n            <\/gx:place>\n        <\/gx:fact>\n    <\/gx:relationship>\n<\/gx:gedcomx>",
         "headers" : [
           {
             "name" : "Transfer-encoding",
             "value" : "chunked"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:20:56 GMT"
           },
           {
             "name" : "Content-type",
@@ -67,7 +75,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "3"
+            "value" : "2"
           },
           {
             "name" : "Content-location",

@@ -15,12 +15,16 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "{\n  \"relationships\" : [ {\n    \"facts\" : [ {\n      \"type\" : \"http://gedcomx.org/Marriage\",\n      \"id\" : \"C123-456\"\n    } ]\n  } ]\n}",
+      "body" : "{\r\n  \"relationships\" : [ {\r\n    \"facts\" : [ {\r\n      \"type\" : \"http://gedcomx.org/Marriage\",\r\n      \"id\" : \"C123-456\"\r\n    } ]\r\n  } ]\r\n}",
       "response" : {
         "code" : "204",
         "status_message" : "No Content",
         "body" : "",
         "headers" : [
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:19:47 GMT"
+          },
           {
             "name" : "Content-type",
             "value" : "text/html"
@@ -31,7 +35,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "45"
+            "value" : "49"
           },
           {
             "name" : "Content-location",
@@ -53,12 +57,16 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gedcomx xmlns=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <relationship>\n        <fact type=\"http://gedcomx.org/Marriage\" id=\"C123-456\"/>\n    <\/relationship>\n<\/gedcomx>\n",
+      "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gx:gedcomx xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <gx:relationship>\n        <gx:fact type=\"http://gedcomx.org/Marriage\" id=\"C123-456\"/>\n    <\/gx:relationship>\n<\/gx:gedcomx>\n",
       "response" : {
         "code" : "204",
         "status_message" : "No Content",
         "body" : "",
         "headers" : [
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:19:40 GMT"
+          },
           {
             "name" : "Content-type",
             "value" : "text/html"

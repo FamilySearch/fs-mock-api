@@ -8,7 +8,7 @@
       "headers" : [
         {
           "name" : "Content-Type",
-          "value" : "application/x-fs-v1+xml"
+          "value" : "application/x-fs-v1+json"
         },
         {
           "name" : "X-Reason",
@@ -27,6 +27,10 @@
           {
             "name" : "Cache-control",
             "value" : "no-cache, no-store, no-transform, must-revalidate, max-age=0"
+          },
+          {
+            "name" : "Date",
+            "value" : "Mon, 17 Jun 2013 17:18:33 GMT"
           },
           {
             "name" : "Content-type",
