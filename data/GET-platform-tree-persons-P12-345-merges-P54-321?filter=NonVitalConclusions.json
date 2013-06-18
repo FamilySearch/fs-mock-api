@@ -18,7 +18,7 @@
       "response" : {
         "code" : "200",
         "status_message" : "OK",
-        "body" : "{\n  \"mergeAnalyses\" : [ {\n    \"conflictingResources\" : [ {\n      \"survivorResource\" : {\n        \"resource\" : \"https://familysearch.org/platform/tree/persons/P12-345/conclusions/ABCD\"\n      },\n      \"duplicateResource\" : {\n        \"resource\" : \"https://familysearch.org/platform/tree/persons/P54-321/conclusions/EFGH\"\n      }\n    }, {\n      \"survivorResource\" : {\n        \"resource\" : \"https://familysearch.org/platform/tree/persons/P12-345/conclusions/IJKL\"\n      },\n      \"duplicateResource\" : {\n        \"resource\" : \"https://familysearch.org/platform/tree/persons/P54-321/conclusions/MNOP\"\n      }\n    } ],\n    \"survivorResources\" : [ {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/P12-345/conclusions/YZAB\"\n    }, {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/P12-345/conclusions/CDEF\"\n    } ],\n    \"duplicateResources\" : [ {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/P54-321/conclusions/QRST\"\n    }, {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/P54-321/conclusions/UVWX\"\n    } ],\n    \"survivor\" : {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/P12-345\"\n    },\n    \"duplicate\" : {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/P54-321\"\n    }\n  } ]\n}",
+        "body" : "{\n  \"mergeAnalyses\" : [ {\n    \"survivor\" : {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/P12-345\"\n    },\n    \"duplicate\" : {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/P54-321\"\n    },\n    \"conflictingResources\" : [ {\n      \"survivorResource\" : {\n        \"resource\" : \"https://familysearch.org/platform/tree/persons/P12-345/conclusions/ABCD\"\n      },\n      \"duplicateResource\" : {\n        \"resource\" : \"https://familysearch.org/platform/tree/persons/P54-321/conclusions/EFGH\"\n      }\n    }, {\n      \"survivorResource\" : {\n        \"resource\" : \"https://familysearch.org/platform/tree/persons/P12-345/conclusions/IJKL\"\n      },\n      \"duplicateResource\" : {\n        \"resource\" : \"https://familysearch.org/platform/tree/persons/P54-321/conclusions/MNOP\"\n      }\n    } ],\n    \"survivorResources\" : [ {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/P12-345/conclusions/YZAB\"\n    }, {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/P12-345/conclusions/CDEF\"\n    } ],\n    \"duplicateResources\" : [ {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/P54-321/conclusions/QRST\"\n    }, {\n      \"resource\" : \"https://familysearch.org/platform/tree/persons/P54-321/conclusions/UVWX\"\n    } ]\n  } ]\n}",
         "headers" : [
           {
             "name" : "Transfer-encoding",
@@ -30,7 +30,7 @@
           },
           {
             "name" : "Date",
-            "value" : "Mon, 17 Jun 2013 17:20:29 GMT"
+            "value" : "Tue, 18 Jun 2013 22:06:33 GMT"
           },
           {
             "name" : "Content-type",
@@ -38,7 +38,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "0"
+            "value" : "1"
           }
         ]
       }
@@ -71,7 +71,7 @@
           },
           {
             "name" : "Date",
-            "value" : "Mon, 17 Jun 2013 17:20:26 GMT"
+            "value" : "Tue, 18 Jun 2013 22:06:27 GMT"
           },
           {
             "name" : "Content-type",
@@ -79,7 +79,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "1"
+            "value" : "0"
           }
         ]
       }

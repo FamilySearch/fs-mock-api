@@ -30,7 +30,7 @@
         "headers" : [
           {
             "name" : "Date",
-            "value" : "Mon, 17 Jun 2013 16:36:34 GMT"
+            "value" : "Tue, 18 Jun 2013 22:11:26 GMT"
           },
           {
             "name" : "Content-type",
@@ -42,7 +42,7 @@
           },
           {
             "name" : "Warning",
-            "value" : "199 FamilySearch Best Practice Violation: Should specify versioned media type in Accept header, e.g. one of [ \"application/x-fs-v1+xml\", \"application/x-fs-v1+json\", \"application/atom+xml\", \"application/x-gedcomx-atom+json\", \"application/x-gedcomx-v1+xml\", \"application/x-gedcomx-v1+json\" ]."
+            "value" : "199 FamilySearch Best Practice Violation: Should specify versioned media type in Accept header, e.g. one of [ \"application/atom+xml\", \"application/x-gedcomx-atom+json\", \"application/x-fs-v1+xml\", \"application/x-fs-v1+json\", \"application/x-gedcomx-v1+xml\", \"application/x-gedcomx-v1+json\" ]."
           },
           {
             "name" : "Etag",

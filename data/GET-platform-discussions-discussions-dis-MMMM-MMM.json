@@ -18,7 +18,7 @@
       "response" : {
         "code" : "200",
         "status_message" : "OK",
-        "body" : "{\n  \"discussions\" : [ {\n    \"title\" : \"1900 US Census, Ethel Hollivet\",\n    \"details\" : \"Ethel Hollivet (line 75) with husband Albert Hollivet (line 74); also in the dwelling: step-father Joseph E Watkins (line 72), mother Lina Watkins (line 73), and grandmother -- Lina's mother -- Mary Sasnett (line 76).  \",\n    \"numberOfComments\" : 2,\n    \"links\" : {\n      \"comments\" : {\n        \"title\" : \"Comments\",\n        \"href\" : \"https://familysearch.org/platform/discussions/discussions/dis-MMMM-MMM/comments\"\n      }\n    },\n    \"id\" : \"dis-MMMM-MMM\"\n  } ]\n}",
+        "body" : "{\n  \"discussions\" : [ {\n    \"details\" : \"Ethel Hollivet (line 75) with husband Albert Hollivet (line 74); also in the dwelling: step-father Joseph E Watkins (line 72), mother Lina Watkins (line 73), and grandmother -- Lina's mother -- Mary Sasnett (line 76).  \",\n    \"title\" : \"1900 US Census, Ethel Hollivet\",\n    \"numberOfComments\" : 2,\n    \"links\" : {\n      \"comments\" : {\n        \"title\" : \"Comments\",\n        \"href\" : \"https://familysearch.org/platform/discussions/discussions/dis-MMMM-MMM/comments\"\n      }\n    },\n    \"id\" : \"dis-MMMM-MMM\"\n  } ]\n}",
         "headers" : [
           {
             "name" : "Transfer-encoding",
@@ -26,7 +26,7 @@
           },
           {
             "name" : "Date",
-            "value" : "Mon, 17 Jun 2013 16:38:23 GMT"
+            "value" : "Tue, 18 Jun 2013 22:14:37 GMT"
           },
           {
             "name" : "Content-type",
@@ -34,7 +34,7 @@
           },
           {
             "name" : "Last-modified",
-            "value" : "Mon, 17 Jun 2013 16:38:23 GMT"
+            "value" : "Tue, 18 Jun 2013 22:14:37 GMT"
           },
           {
             "name" : "Etag",
@@ -42,7 +42,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "3"
+            "value" : "5"
           },
           {
             "name" : "Content-location",
@@ -75,7 +75,7 @@
           },
           {
             "name" : "Date",
-            "value" : "Mon, 17 Jun 2013 16:38:20 GMT"
+            "value" : "Tue, 18 Jun 2013 22:14:31 GMT"
           },
           {
             "name" : "Content-type",
@@ -83,7 +83,7 @@
           },
           {
             "name" : "Last-modified",
-            "value" : "Mon, 17 Jun 2013 16:38:20 GMT"
+            "value" : "Tue, 18 Jun 2013 22:14:31 GMT"
           },
           {
             "name" : "Etag",
@@ -91,7 +91,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "3"
+            "value" : "7"
           },
           {
             "name" : "Content-location",

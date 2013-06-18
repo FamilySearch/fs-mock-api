@@ -27,7 +27,7 @@
           },
           {
             "name" : "Date",
-            "value" : "Mon, 17 Jun 2013 17:20:18 GMT"
+            "value" : "Tue, 18 Jun 2013 22:06:10 GMT"
           },
           {
             "name" : "Content-type",
@@ -39,7 +39,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "55"
+            "value" : "30"
           },
           {
             "name" : "Content-location",
@@ -73,7 +73,7 @@
           },
           {
             "name" : "Date",
-            "value" : "Mon, 17 Jun 2013 17:20:16 GMT"
+            "value" : "Tue, 18 Jun 2013 22:06:08 GMT"
           },
           {
             "name" : "Content-type",
@@ -85,7 +85,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "3"
+            "value" : "6"
           },
           {
             "name" : "Content-location",

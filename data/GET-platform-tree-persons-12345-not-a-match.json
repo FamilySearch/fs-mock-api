@@ -26,7 +26,7 @@
           },
           {
             "name" : "Date",
-            "value" : "Mon, 17 Jun 2013 17:20:34 GMT"
+            "value" : "Tue, 18 Jun 2013 22:06:40 GMT"
           },
           {
             "name" : "Content-type",
@@ -34,7 +34,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "1"
+            "value" : "2"
           }
         ]
       }
@@ -63,7 +63,7 @@
           },
           {
             "name" : "Date",
-            "value" : "Mon, 17 Jun 2013 17:20:32 GMT"
+            "value" : "Tue, 18 Jun 2013 22:06:36 GMT"
           },
           {
             "name" : "Content-type",

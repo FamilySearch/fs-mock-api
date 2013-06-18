@@ -15,7 +15,7 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "{\r\n  \"persons\" : [ {\r\n    \"sources\" : [ {\r\n      \"attribution\" : {\r\n        \"contributor\" : {\r\n          \"resource\" : \"/platform/tree/contributor/UUUU-UUU\",\r\n          \"resourceId\" : \"UUUU-UUU\"\r\n        },\r\n        \"changeMessage\" : \"Family is at the same address found in other sources associated with this family.  Names are a good match.  Estimated births are reasonable.\",\r\n        \"modified\" : 123456789\r\n      },\r\n      \"description\" : \"/platform/sources/sources/MMMM-MMM\",\r\n      \"tags\" : [ {\r\n        \"resource\" : \"http://gedcomx.org/Name\"\r\n      }, {\r\n        \"resource\" : \"http://gedcomx.org/Gender\"\r\n      }, {\r\n        \"resource\" : \"http://gedcomx.org/Birth\"\r\n      } ]\r\n    } ]\r\n  } ]\r\n}",
+      "body" : "{\r\n  \"persons\" : [ {\r\n    \"sources\" : [ {\r\n      \"description\" : \"/platform/sources/sources/MMMM-MMM\",\r\n      \"attribution\" : {\r\n        \"contributor\" : {\r\n          \"resource\" : \"/platform/tree/contributor/UUUU-UUU\",\r\n          \"resourceId\" : \"UUUU-UUU\"\r\n        },\r\n        \"changeMessage\" : \"Family is at the same address found in other sources associated with this family.  Names are a good match.  Estimated births are reasonable.\",\r\n        \"modified\" : 123456789\r\n      },\r\n      \"tags\" : [ {\r\n        \"resource\" : \"http://gedcomx.org/Name\"\r\n      }, {\r\n        \"resource\" : \"http://gedcomx.org/Gender\"\r\n      }, {\r\n        \"resource\" : \"http://gedcomx.org/Birth\"\r\n      } ]\r\n    } ]\r\n  } ]\r\n}",
       "response" : {
         "code" : "201",
         "status_message" : "Created",
@@ -31,7 +31,7 @@
           },
           {
             "name" : "Date",
-            "value" : "Mon, 17 Jun 2013 17:21:20 GMT"
+            "value" : "Tue, 18 Jun 2013 22:08:05 GMT"
           },
           {
             "name" : "Content-type",
@@ -43,7 +43,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "38"
+            "value" : "98"
           },
           {
             "name" : "Content-location",
@@ -81,7 +81,7 @@
           },
           {
             "name" : "Date",
-            "value" : "Mon, 17 Jun 2013 17:21:18 GMT"
+            "value" : "Tue, 18 Jun 2013 22:08:02 GMT"
           },
           {
             "name" : "Content-type",
@@ -93,7 +93,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "4"
+            "value" : "7"
           },
           {
             "name" : "Content-location",

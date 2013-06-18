@@ -19,7 +19,7 @@
           "value" : "Bearer YOUR_ACCESS_TOKEN_HERE"
         }
       ],
-      "body" : "{\r\n  \"sourceDescriptions\" : [ {\r\n    \"citations\" : [ {\r\n      \"value\" : \"\\\"United States Census, 1900.\\\" database and digital images, FamilySearch (https://familysearch.org/: accessed 17 Mar 2012), Ethel Hollivet, 1900; citing United States Census Office, Washington, D.C., 1900 Population Census Schedules, Los Angeles, California, population schedule, Los Angeles Ward 6, Enumeration District 58, p. 20B, dwelling 470, family 501, FHL microfilm 1,240,090; citing NARA microfilm publication T623, roll 90.\"\r\n    } ],\r\n    \"about\" : \"https://familysearch.org/pal:/MM9.1.1/M9PJ-2JJ\",\r\n    \"titles\" : [ {\r\n      \"value\" : \"1900 US Census, Ethel Hollivet\"\r\n    } ],\r\n    \"notes\" : [ {\r\n      \"text\" : \"Ethel Hollivet (line 75) with husband Albert Hollivet (line 74); also in the dwelling: step-father Joseph E Watkins (line 72), mother Lina Watkins (line 73), and grandmother -- Lina's mother -- Mary Sasnett (line 76).  Albert's mother and brother also appear on this page -- Emma Hollivet (line 68), and Eddie (line 69).\"\r\n    } ],\r\n    \"id\" : \"MMMM-MMM\"\r\n  } ]\r\n}",
+      "body" : "{\r\n  \"sourceDescriptions\" : [ {\r\n    \"about\" : \"https://familysearch.org/pal:/MM9.1.1/M9PJ-2JJ\",\r\n    \"titles\" : [ {\r\n      \"value\" : \"1900 US Census, Ethel Hollivet\"\r\n    } ],\r\n    \"notes\" : [ {\r\n      \"text\" : \"Ethel Hollivet (line 75) with husband Albert Hollivet (line 74); also in the dwelling: step-father Joseph E Watkins (line 72), mother Lina Watkins (line 73), and grandmother -- Lina's mother -- Mary Sasnett (line 76).  Albert's mother and brother also appear on this page -- Emma Hollivet (line 68), and Eddie (line 69).\"\r\n    } ],\r\n    \"citations\" : [ {\r\n      \"value\" : \"\\\"United States Census, 1900.\\\" database and digital images, FamilySearch (https://familysearch.org/: accessed 17 Mar 2012), Ethel Hollivet, 1900; citing United States Census Office, Washington, D.C., 1900 Population Census Schedules, Los Angeles, California, population schedule, Los Angeles Ward 6, Enumeration District 58, p. 20B, dwelling 470, family 501, FHL microfilm 1,240,090; citing NARA microfilm publication T623, roll 90.\"\r\n    } ],\r\n    \"id\" : \"MMMM-MMM\"\r\n  } ]\r\n}",
       "response" : {
         "code" : "204",
         "status_message" : "No Content",
@@ -27,7 +27,7 @@
         "headers" : [
           {
             "name" : "Date",
-            "value" : "Mon, 17 Jun 2013 16:36:57 GMT"
+            "value" : "Tue, 18 Jun 2013 22:12:06 GMT"
           },
           {
             "name" : "Content-type",
@@ -39,7 +39,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "76"
+            "value" : "174"
           },
           {
             "name" : "Content-location",
@@ -73,7 +73,7 @@
         "headers" : [
           {
             "name" : "Date",
-            "value" : "Mon, 17 Jun 2013 16:36:54 GMT"
+            "value" : "Tue, 18 Jun 2013 22:12:01 GMT"
           },
           {
             "name" : "Content-type",
@@ -85,7 +85,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "7"
+            "value" : "11"
           },
           {
             "name" : "Content-location",

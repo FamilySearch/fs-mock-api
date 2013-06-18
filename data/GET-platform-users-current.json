@@ -18,7 +18,7 @@
       "response" : {
         "code" : "200",
         "status_message" : "OK",
-        "body" : "{\n  \"users\" : [ {\n    \"id\" : \"cis.MMM.RX9\",\n    \"contactName\" : \"Pete Townsend\",\n    \"treeUserId\" : \"PXRQ-FMXT\",\n    \"email\" : \"peter@acme.org\",\n    \"fullName\" : \"Pete Townsend\",\n    \"links\" : {\n      \"self\" : {\n        \"href\" : \"https://familysearch.org/platform/users/current\"\n      }\n    }\n  } ]\n}",
+        "body" : "{\n  \"users\" : [ {\n    \"id\" : \"cis.MMM.RX9\",\n    \"displayName\" : \"Pete\",\n    \"country\" : \"USA\",\n    \"contactName\" : \"Pete Townsend\",\n    \"fullName\" : \"Pete Townsend\",\n    \"givenName\" : \"Pete\",\n    \"email\" : \"peter@acme.org\",\n    \"birthDate\" : \"5 Apr 1976\",\n    \"personId\" : \"KYMF-G5T\",\n    \"familyName\" : \"Townsend\",\n    \"phoneNumber\" : \"555-555-0123\",\n    \"mailingAddress\" : \"50 W South Temple\\nSalt Lake City, UT 84150\",\n    \"preferredLanguage\" : \"en\",\n    \"treeUserId\" : \"PXRQ-FMXT\",\n    \"links\" : {\n      \"self\" : {\n        \"href\" : \"https://familysearch.org/platform/users/current\"\n      }\n    }\n  } ]\n}",
         "headers" : [
           {
             "name" : "Transfer-encoding",
@@ -30,7 +30,7 @@
           },
           {
             "name" : "Date",
-            "value" : "Mon, 17 Jun 2013 16:39:41 GMT"
+            "value" : "Tue, 18 Jun 2013 22:16:52 GMT"
           },
           {
             "name" : "Content-type",
@@ -38,7 +38,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "1"
+            "value" : "2"
           }
         ]
       }
@@ -59,7 +59,7 @@
       "response" : {
         "code" : "200",
         "status_message" : "OK",
-        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\">\n    <fs:user id=\"cis.MMM.RX9\">\n        <gx:link href=\"https://familysearch.org/platform/users/current\" rel=\"self\"/>\n        <fs:contactName>Pete Townsend<\/fs:contactName>\n        <fs:email>peter@acme.org<\/fs:email>\n        <fs:fullName>Pete Townsend<\/fs:fullName>\n        <fs:treeUserId>PXRQ-FMXT<\/fs:treeUserId>\n    <\/fs:user>\n<\/fs:familysearch>",
+        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\">\n    <fs:user id=\"cis.MMM.RX9\">\n        <gx:link href=\"https://familysearch.org/platform/users/current\" rel=\"self\"/>\n        <fs:birthDate>5 Apr 1976<\/fs:birthDate>\n        <fs:contactName>Pete Townsend<\/fs:contactName>\n        <fs:country>USA<\/fs:country>\n        <fs:displayName>Pete<\/fs:displayName>\n        <fs:email>peter@acme.org<\/fs:email>\n        <fs:familyName>Townsend<\/fs:familyName>\n        <fs:fullName>Pete Townsend<\/fs:fullName>\n        <fs:givenName>Pete<\/fs:givenName>\n        <fs:mailingAddress>50 W South Temple\nSalt Lake City, UT 84150<\/fs:mailingAddress>\n        <fs:personId>KYMF-G5T<\/fs:personId>\n        <fs:phoneNumber>555-555-0123<\/fs:phoneNumber>\n        <fs:preferredLanguage>en<\/fs:preferredLanguage>\n        <fs:treeUserId>PXRQ-FMXT<\/fs:treeUserId>\n    <\/fs:user>\n<\/fs:familysearch>",
         "headers" : [
           {
             "name" : "Transfer-encoding",
@@ -71,7 +71,7 @@
           },
           {
             "name" : "Date",
-            "value" : "Mon, 17 Jun 2013 16:39:40 GMT"
+            "value" : "Tue, 18 Jun 2013 22:16:50 GMT"
           },
           {
             "name" : "Content-type",

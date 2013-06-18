@@ -18,7 +18,7 @@
       "response" : {
         "code" : "200",
         "status_message" : "OK",
-        "body" : "{\n  \"childAndParentsRelationships\" : [ {\n    \"sources\" : [ {\n      \"attribution\" : {\n        \"contributor\" : {\n          \"resource\" : \"/platform/tree/contributor/UUUU-UUU\",\n          \"resourceId\" : \"UUUU-UUU\"\n        },\n        \"changeMessage\" : \"Family is at the same address found in other sources associated with this family.  Names are a good match.  Estimated births are reasonable.\",\n        \"modified\" : 123456789\n      },\n      \"description\" : \"/platform/sources/sources/MMMM-MMM\",\n      \"links\" : {\n        \"child-and-parents-source-reference\" : {\n          \"title\" : \"Child-and-Parents Relationship Source Reference\",\n          \"href\" : \"https://familysearch.org/platform/tree/child-and-parents-relationships/RRRR-RRR/source-references/1608352222\"\n        }\n      },\n      \"tags\" : [ {\n        \"resource\" : \"http://gedcomx.org/Name\"\n      }, {\n        \"resource\" : \"http://gedcomx.org/Gender\"\n      }, {\n        \"resource\" : \"http://gedcomx.org/Birth\"\n      } ]\n    }, {\n      \"attribution\" : {\n        \"contributor\" : {\n          \"resource\" : \"/platform/tree/contributor/UUUU-UUU\",\n          \"resourceId\" : \"UUUU-UUU\"\n        },\n        \"changeMessage\" : \"Dates and location match with other sources.\",\n        \"modified\" : 987654321\n      },\n      \"description\" : \"/platform/sources/sources/BBBB-BBB\",\n      \"links\" : {\n        \"child-and-parents-source-reference\" : {\n          \"title\" : \"Child-and-Parents Relationship Source Reference\",\n          \"href\" : \"https://familysearch.org/platform/tree/child-and-parents-relationships/RRRR-RRR/source-references/1199130365\"\n        }\n      }\n    } ],\n    \"links\" : {\n      \"child-and-parents-relationship\" : {\n        \"title\" : \"Child-and-Parents Relationship\",\n        \"href\" : \"https://familysearch.org/platform/tree/child-and-parents-relationships/RRRR-RRR\"\n      }\n    },\n    \"id\" : \"RRRR-RRR\"\n  } ]\n}",
+        "body" : "{\n  \"childAndParentsRelationships\" : [ {\n    \"sources\" : [ {\n      \"description\" : \"/platform/sources/sources/MMMM-MMM\",\n      \"attribution\" : {\n        \"contributor\" : {\n          \"resource\" : \"/platform/tree/contributor/UUUU-UUU\",\n          \"resourceId\" : \"UUUU-UUU\"\n        },\n        \"changeMessage\" : \"Family is at the same address found in other sources associated with this family.  Names are a good match.  Estimated births are reasonable.\",\n        \"modified\" : 123456789\n      },\n      \"links\" : {\n        \"child-and-parents-source-reference\" : {\n          \"title\" : \"Child-and-Parents Relationship Source Reference\",\n          \"href\" : \"https://familysearch.org/platform/tree/child-and-parents-relationships/RRRR-RRR/source-references/307604284\"\n        }\n      },\n      \"tags\" : [ {\n        \"resource\" : \"http://gedcomx.org/Name\"\n      }, {\n        \"resource\" : \"http://gedcomx.org/Gender\"\n      }, {\n        \"resource\" : \"http://gedcomx.org/Birth\"\n      } ]\n    }, {\n      \"description\" : \"/platform/sources/sources/BBBB-BBB\",\n      \"attribution\" : {\n        \"contributor\" : {\n          \"resource\" : \"/platform/tree/contributor/UUUU-UUU\",\n          \"resourceId\" : \"UUUU-UUU\"\n        },\n        \"changeMessage\" : \"Dates and location match with other sources.\",\n        \"modified\" : 987654321\n      },\n      \"links\" : {\n        \"child-and-parents-source-reference\" : {\n          \"title\" : \"Child-and-Parents Relationship Source Reference\",\n          \"href\" : \"https://familysearch.org/platform/tree/child-and-parents-relationships/RRRR-RRR/source-references/912062859\"\n        }\n      }\n    } ],\n    \"links\" : {\n      \"child-and-parents-relationship\" : {\n        \"title\" : \"Child-and-Parents Relationship\",\n        \"href\" : \"https://familysearch.org/platform/tree/child-and-parents-relationships/RRRR-RRR\"\n      }\n    },\n    \"id\" : \"RRRR-RRR\"\n  } ]\n}",
         "headers" : [
           {
             "name" : "Transfer-encoding",
@@ -26,7 +26,7 @@
           },
           {
             "name" : "Date",
-            "value" : "Mon, 17 Jun 2013 17:19:20 GMT"
+            "value" : "Tue, 18 Jun 2013 22:04:24 GMT"
           },
           {
             "name" : "Content-type",
@@ -34,7 +34,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "1"
+            "value" : "6"
           },
           {
             "name" : "Content-location",
@@ -59,7 +59,7 @@
       "response" : {
         "code" : "200",
         "status_message" : "OK",
-        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <fs:childAndParentsRelationship id=\"RRRR-RRR\">\n        <gx:link href=\"https://familysearch.org/platform/tree/child-and-parents-relationships/RRRR-RRR\" rel=\"child-and-parents-relationship\" title=\"Child-and-Parents Relationship\"/>\n        <gx:source description=\"/platform/sources/sources/MMMM-MMM\">\n            <fs:tag resource=\"http://gedcomx.org/Name\"/>\n            <fs:tag resource=\"http://gedcomx.org/Gender\"/>\n            <fs:tag resource=\"http://gedcomx.org/Birth\"/>\n            <gx:link href=\"https://familysearch.org/platform/tree/child-and-parents-relationships/RRRR-RRR/source-references/1078838855\" rel=\"child-and-parents-source-reference\" title=\"Child-and-Parents Relationship Source Reference\"/>\n            <gx:attribution>\n                <gx:contributor resource=\"/platform/tree/contributor/UUUU-UUU\" resourceId=\"UUUU-UUU\"/>\n                <gx:modified>1970-01-02T03:17:36.789-07:00<\/gx:modified>\n                <gx:changeMessage>Family is at the same address found in other sources associated with this family.  Names are a good match.  Estimated births are reasonable.<\/gx:changeMessage>\n            <\/gx:attribution>\n        <\/gx:source>\n        <gx:source description=\"/platform/sources/sources/BBBB-BBB\">\n            <gx:link href=\"https://familysearch.org/platform/tree/child-and-parents-relationships/RRRR-RRR/source-references/840204364\" rel=\"child-and-parents-source-reference\" title=\"Child-and-Parents Relationship Source Reference\"/>\n            <gx:attribution>\n                <gx:contributor resource=\"/platform/tree/contributor/UUUU-UUU\" resourceId=\"UUUU-UUU\"/>\n                <gx:modified>1970-01-12T03:20:54.321-07:00<\/gx:modified>\n                <gx:changeMessage>Dates and location match with other sources.<\/gx:changeMessage>\n            <\/gx:attribution>\n        <\/gx:source>\n    <\/fs:childAndParentsRelationship>\n<\/fs:familysearch>",
+        "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<fs:familysearch xmlns:gx=\"http://gedcomx.org/v1/\" xmlns:fs=\"http://familysearch.org/v1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <fs:childAndParentsRelationship id=\"RRRR-RRR\">\n        <gx:link href=\"https://familysearch.org/platform/tree/child-and-parents-relationships/RRRR-RRR\" rel=\"child-and-parents-relationship\" title=\"Child-and-Parents Relationship\"/>\n        <gx:source description=\"/platform/sources/sources/MMMM-MMM\">\n            <fs:tag resource=\"http://gedcomx.org/Name\"/>\n            <fs:tag resource=\"http://gedcomx.org/Gender\"/>\n            <fs:tag resource=\"http://gedcomx.org/Birth\"/>\n            <gx:link href=\"https://familysearch.org/platform/tree/child-and-parents-relationships/RRRR-RRR/source-references/2074547714\" rel=\"child-and-parents-source-reference\" title=\"Child-and-Parents Relationship Source Reference\"/>\n            <gx:attribution>\n                <gx:contributor resource=\"/platform/tree/contributor/UUUU-UUU\" resourceId=\"UUUU-UUU\"/>\n                <gx:modified>1970-01-02T03:17:36.789-07:00<\/gx:modified>\n                <gx:changeMessage>Family is at the same address found in other sources associated with this family.  Names are a good match.  Estimated births are reasonable.<\/gx:changeMessage>\n            <\/gx:attribution>\n        <\/gx:source>\n        <gx:source description=\"/platform/sources/sources/BBBB-BBB\">\n            <gx:link href=\"https://familysearch.org/platform/tree/child-and-parents-relationships/RRRR-RRR/source-references/378936506\" rel=\"child-and-parents-source-reference\" title=\"Child-and-Parents Relationship Source Reference\"/>\n            <gx:attribution>\n                <gx:contributor resource=\"/platform/tree/contributor/UUUU-UUU\" resourceId=\"UUUU-UUU\"/>\n                <gx:modified>1970-01-12T03:20:54.321-07:00<\/gx:modified>\n                <gx:changeMessage>Dates and location match with other sources.<\/gx:changeMessage>\n            <\/gx:attribution>\n        <\/gx:source>\n    <\/fs:childAndParentsRelationship>\n<\/fs:familysearch>",
         "headers" : [
           {
             "name" : "Transfer-encoding",
@@ -67,7 +67,7 @@
           },
           {
             "name" : "Date",
-            "value" : "Mon, 17 Jun 2013 17:19:17 GMT"
+            "value" : "Tue, 18 Jun 2013 22:04:19 GMT"
           },
           {
             "name" : "Content-type",
@@ -75,7 +75,7 @@
           },
           {
             "name" : "X-processing-time",
-            "value" : "2"
+            "value" : "3"
           },
           {
             "name" : "Content-location",
