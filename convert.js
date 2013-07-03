@@ -60,7 +60,7 @@ function processUsecaseFile(usecaseFile) {
     break;
   }
   
-  var destinationPath = destinationDir + '/' + requestMethod + requestPath.replace(/\//g,'-').replace(/\./g,'') + '.json';
+  var destinationPath = destinationDir + '/' + requestMethod + requestPath.replace(/\//g,'-').replace(/\./g,'').replace('?','_') + '.json';
   
   // Validate the length of the file name.
   // What should we do about names that are too long?

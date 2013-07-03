@@ -49,7 +49,7 @@ http.createServer(function(req, res){
       requestAcceptHeader = req.headers.accept;
   
   // Convert the url to a file name
-  var requestFilename = 'data/' + requestMethod + requestUrl.replace(/\//g,'-').replace(/\./g,'') + '.json';
+  var requestFilename = 'data/' + requestMethod + requestUrl.replace(/\//g,'-').replace(/\./g,'').replace('?','_') + '.json';
   
   // See if the file exists
   fs.readFile(requestFilename, { encoding: 'utf8' }, function(err, data){
